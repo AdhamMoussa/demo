@@ -1,0 +1,20 @@
+.page-layout {
+  &__row {
+    background-color: red;
+    display: flex;
+  }
+  &__left-pane {
+    height: 2000px;
+    width: 310px;
+    background-color: #fff;
+    background-image: url("../images/left-pane/side-pane.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+  }
+  &__right-pane {
+    height: 2000px;
+    width: calc(100% - 310px);
+    background-color: green;
+  }
+}
