@@ -13550,7 +13550,8 @@ body {
   margin: 0 12px; }
 
 .left-pane__user {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 50px; }
   .left-pane__user-img {
     margin-bottom: 17px; }
     .left-pane__user-img img {
@@ -13568,12 +13569,50 @@ body {
   .left-pane__user-title {
     color: #9bb0bf;
     margin-bottom: 10px; }
-  .left-pane__user-status span {
-    display: block;
+  .left-pane__user-status {
     width: 50px;
     height: 20px;
     background-color: #36d68c;
-    font-size: 10px;
     border-radius: 3px;
-    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto; }
+    .left-pane__user-status span {
+      font-size: 10px;
+      color: #fff; }
+
+.left-pane__links {
+  padding-left: 64px; }
+
+.left-pane__link-wrapper:not(:last-child) {
+  margin-bottom: 45px; }
+
+.left-pane__link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .left-pane__link-icon {
+    margin-right: 24px; }
+    .left-pane__link-icon img {
+      width: 26px;
+      height: 26px;
+      -o-object-fit: contain;
+         object-fit: contain;
+      -o-object-position: center;
+         object-position: center; }
+  .left-pane__link-text a {
+    color: #9bb0bf; }
+  .left-pane__link-active {
+    color: #11428c !important; }
+  .left-pane__link.has-nested-links {
+    position: relative;
+    margin-bottom: 13px; }
+    .left-pane__link.has-nested-links::after {
+      content: "\f0da";
+      font-family: FontAwesome;
+      position: absolute;
+      top: 50%;
+      right: 48px;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
