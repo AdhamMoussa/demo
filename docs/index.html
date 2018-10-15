@@ -8,7 +8,7 @@
   <!-- Styles CSS -->
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/styles/styles-451e1735db.css"/>
+  <link rel="stylesheet" href="assets/styles/styles-b754d2d122.css"/>
 
   <title>Provide It</title>
 </head>
@@ -42,7 +42,8 @@
                 <div class="left-pane__user-name font15">Richard V.Welsh</div>
                 <div class="left-pane__user-title font12">Project Manager</div>
               </div>
-              <div class="left-pane__user-status">
+              <!-- use "offline" class for offline status -->
+              <div class="left-pane__user-status online">
                 <span>online</span>
               </div>
             </div>
@@ -61,33 +62,46 @@
               </div>
               <!-- Tenders -->
               <div class="left-pane__link-wrapper">
-                <div class="left-pane__link has-nested-links">
-                  <div class="left-pane__link-icon">
-                    <img src="assets/images/left-pane/tenders-icon.png" alt="tenders icon">
+                <a data-toggle="collapse" href="#collapseTenders" aria-expanded="false" aria-controls="collapseTenders">
+                  <div class="left-pane__link">
+                    <div class="left-pane__link-icon">
+                      <img src="assets/images/left-pane/tenders-icon.png" alt="tenders icon">
+                    </div>
+                    <div class="left-pane__link-text">
+                      <span class="font15 left-pane__link-active">Tenders</span>
+                    </div>
                   </div>
-                  <div class="left-pane__link-text">
-                    <a class="font15 left-pane__link-active" data-toggle="collapse" href="#collapseTenders"
-                      aria-expanded="false" aria-controls="collapseTenders">Tenders</a>
-                  </div>
-                </div>
+                </a>
                 <div class="left-pane__nested-links collapse" id="collapseTenders">
-                  <div>
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                    Nihil anim
-                    keffiyeh helvetica,
-                    craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                  <div class="left-pane__nested-link">
+                    <a class="font13" href="#">New Tender</a>
+                  </div>
+                  <div class="left-pane__nested-link">
+                    <a class="font13" href="#">Old Tenders</a>
+                  </div>
+                  <div class="left-pane__nested-link">
+                    <a class="font13" href="#">Future Tenders</a>
                   </div>
                 </div>
               </div>
               <!-- Profile -->
               <div class="left-pane__link-wrapper">
-                <div class="left-pane__link">
-                  <div class="left-pane__link-icon">
-                    <img src="assets/images/left-pane/profile-icon.png" alt="profile icon">
+                <a data-toggle="collapse" href="#collapseProfile" aria-expanded="false" aria-controls="collapseProfile">
+                  <div class="left-pane__link">
+                    <div class="left-pane__link-icon">
+                      <img src="assets/images/left-pane/profile-icon.png" alt="profile icon">
+                    </div>
+                    <div class="left-pane__link-text">
+                      <span class="font15">Profile</span>
+                    </div>
                   </div>
-                  <div class="left-pane__link-text">
-                    <a class="font15" href="#">Profile</a>
-                  </div>
+                </a>
+                <div class="left-pane__nested-links collapse" id="collapseProfile">
+                  <!-- nested link example
+                    <div class="left-pane__nested-link">
+                      <a class="font13" href="#">nested link</a>
+                    </div>
+                  -->
                 </div>
               </div>
               <!-- settings -->
@@ -103,13 +117,22 @@
               </div>
               <!-- Employees -->
               <div class="left-pane__link-wrapper">
-                <div class="left-pane__link">
-                  <div class="left-pane__link-icon">
-                    <img src="assets/images/left-pane/employees-icon.png" alt="employees icon">
+                <a data-toggle="collapse" href="#collapseEmployees" aria-expanded="false" aria-controls="collapseEmployees">
+                  <div class="left-pane__link">
+                    <div class="left-pane__link-icon">
+                      <img src="assets/images/left-pane/employees-icon.png" alt="employees icon">
+                    </div>
+                    <div class="left-pane__link-text">
+                      <span class="font15" href="#">Employees</span>
+                    </div>
                   </div>
-                  <div class="left-pane__link-text">
-                    <a class="font15" href="#">Employees</a>
-                  </div>
+                </a>
+                <div class="left-pane__nested-links collapse" id="collapseEmployees">
+                  <!-- nested link example
+                      <div class="left-pane__nested-link">
+                        <a class="font13" href="#">nested link</a>
+                      </div>
+                    -->
                 </div>
               </div>
               <!-- Logout -->

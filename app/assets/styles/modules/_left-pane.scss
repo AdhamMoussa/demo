@@ -48,7 +48,6 @@
     &-status {
       width: 50px;
       height: 20px;
-      background-color: $green;
       border-radius: 3px;
       display: flex;
       align-items: center;
@@ -57,6 +56,12 @@
       span {
         font-size: 10px;
         color: #fff;
+      }
+      &.online {
+        background-color: $green;
+      }
+      &.offline {
+        background-color: $grey3;
       }
     }
   }
@@ -72,6 +77,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 19px;
+    position: relative;
     &-icon {
       margin-right: 24px;
       img {
@@ -82,22 +89,37 @@
       }
     }
     &-text {
-      a {
+      a,
+      span {
         color: $grey3;
+      }
+      span {
+        &::after {
+          content: "\f0da";
+          font-family: FontAwesome;
+          position: absolute;
+          top: 50%;
+          right: 47px;
+          transform: translateY(-50%);
+        }
       }
     }
     &-active {
       color: $blue !important;
     }
-    &.has-nested-links {
+  }
+  &__nested-link {
+    padding-left: 64px;
+    a {
+      color: $grey3;
+      display: block;
       position: relative;
-      margin-bottom: 13px;
-      &::after {
+      &::before {
         content: "\f0da";
         font-family: FontAwesome;
         position: absolute;
         top: 50%;
-        right: 48px;
+        left: -14px;
         transform: translateY(-50%);
       }
     }
