@@ -1,0 +1,14 @@
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // background-image: url();
+  &__inner {
+    padding: 24px 25px;
+    p {
+      margin: 0;
+      font-size: 14px;
+    }
+  }
+}

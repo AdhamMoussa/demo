@@ -1,0 +1,61 @@
+.header {
+  background-color: $light-blue;
+  color: #fff;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 25px 9px;
+  }
+  &__welcome {
+    p {
+      font-weight: 300;
+      margin: 0;
+    }
+  }
+  &__user {
+    display: flex;
+    &-updates {
+      margin-right: 25px;
+      &-icon {
+        position: relative;
+        &:first-child {
+          margin-right: 40px;
+        }
+        i {
+          font-size: 15px;
+        }
+      }
+      &-count {
+        position: absolute;
+        top: -7px;
+        left: 7px;
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        background-color: $green-blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+          font-size: 9px;
+          font-weight: 500;
+          line-height: 1;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+    &-icon {
+      img {
+        width: 28px;
+        height: 28px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+      }
+    }
+  }
+}

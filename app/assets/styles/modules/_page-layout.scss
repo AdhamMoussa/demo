@@ -10,12 +10,14 @@
     background-size: 310px auto;
     background-repeat: no-repeat;
     background-position: 100% 0;
-    padding-bottom: 80px;
+    padding-bottom: 160px;
     position: relative;
+    border-right: 1px solid $grey4;
   }
   &__right-pane {
     width: calc(100% - 310px);
     background-color: #fff;
-    height: 1000px;
+    padding-bottom: 160px;
+    position: relative;
   }
 }

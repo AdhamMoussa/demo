@@ -1,14 +1,21 @@
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../../../node_modules/mdbootstrap/scss/mdb.scss';
 
-
+// base
 @import 'base/variables';
 @import 'base/mixins';
 @import 'base/typography';
 @import 'base/global';
 
-
+// layout
 @import 'modules/page-layout';
 @import 'modules/left-pane';
+@import 'modules/right-pane';
 
+// components
+@import 'modules/header';
+@import 'modules/footer';
+@import 'modules/sections-cards';
+
+// specific page
 @import 'modules/main-dashboard';

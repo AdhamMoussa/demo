@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <div class="main-container main-dashboard">
+  <div class="main-container">
     <div class="page-layout">
       <div class="page-layout__row">
         <!-- start left side -->
@@ -74,6 +74,7 @@
                     </div>
                   </div>
                 </a>
+                <!-- tenders nested links -->
                 <div class="left-pane__nested-links collapse" id="collapseTenders">
                   <div class="left-pane__nested-link">
                     <a class="font13" href="#">New Tender</a>
@@ -98,6 +99,7 @@
                     </div>
                   </div>
                 </a>
+                <!-- profile nested links -->
                 <div class="left-pane__nested-links collapse" id="collapseProfile">
                   <!-- nested link example
                     <div class="left-pane__nested-link">
@@ -129,6 +131,7 @@
                     </div>
                   </div>
                 </a>
+                <!-- employees nested links -->
                 <div class="left-pane__nested-links collapse" id="collapseEmployees">
                   <!-- nested link example
                       <div class="left-pane__nested-link">
@@ -153,16 +156,16 @@
             <div class="left-pane__footer">
               <div class="left-pane__footer-links">
                 <a href="#">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
                 <a href="#">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
                 </a>
                 <a href="#">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
                 </a>
                 <a href="#">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
@@ -170,7 +173,155 @@
         </div>
         <!-- /end left side -->
         <!-- start right side -->
-        <div class="page-layout__right-pane"></div>
+        <div class="page-layout__right-pane">
+          <!-- Start Header -->
+          <header class="header">
+            <div class="header__inner">
+              <div class="header__welcome">
+                <p class="font12">Weclome <span>Richard V. Welsh</span> to your dashboard!</p>
+              </div>
+              <div class="header__user">
+                <!-- updates -->
+                <div class="header__user-updates d-flex align-items-center">
+                  <!-- notifications -->
+                  <div class="header__user-updates-icon">
+                    <i class="fa fa-bell" aria-hidden="true"></i>
+                    <!-- count -->
+                    <div class="header__user-updates-count">
+                      <span>3</span>
+                    </div>
+                  </div>
+                  <!-- messages -->
+                  <div class="header__user-updates-icon">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <!-- count -->
+                    <div class="header__user-updates-count">
+                      <span>6</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- user icon -->
+                <div class="header__user-icon">
+                  <img src="assets/images/left-pane/user-photo.png" alt="user photo">
+                </div>
+              </div>
+            </div>
+          </header>
+          <!-- /End Header -->
+          <div class="right-pane main-dashboard">
+            <div class="right-pane__content">
+              <div class="sections-cards">
+                <!-- Card deck -->
+                <div class="card-deck">
+                  <!-- Tenders Card -->
+                  <div class="card">
+                    <!--Card body-->
+                    <div class="card-body">
+                      <a href="#">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="sections-cards__icon">
+                            <img src="assets/images/sections-cards/tenders-icon.png" alt="tenders icon">
+                          </div>
+                          <div class="sections-cards__description">
+                            <span>List of</span>
+                            <h4>Tenders</h4>
+                          </div>
+                        </div>
+                        <div class="sections-cards__footer">
+                          <div class="d-flex align-items-center">
+                            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                            <span>Active Tenders</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- /Tenders Card -->
+                  <!-- Profile Card -->
+                  <div class="card">
+                    <!--Card body-->
+                    <div class="card-body">
+                      <a href="#">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="sections-cards__icon">
+                            <img src="assets/images/sections-cards/profile-icon.png" alt="Profile icon">
+                          </div>
+                          <div class="sections-cards__description">
+                            <span>Edit</span>
+                            <h4>Profile</h4>
+                          </div>
+                        </div>
+                        <div class="sections-cards__footer">
+                          <div class="d-flex align-items-center">
+                            <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                            <span>Edit Profile Settings</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- /Profile Card -->
+                  <!-- Settings Card -->
+                  <div class="card">
+                    <!--Card body-->
+                    <div class="card-body">
+                      <a href="#">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="sections-cards__icon">
+                            <img src="assets/images/sections-cards/settings-icon.png" alt="Settings icon">
+                          </div>
+                          <div class="sections-cards__description">
+                            <span>Change</span>
+                            <h4>Settings</h4>
+                          </div>
+                        </div>
+                        <div class="sections-cards__footer">
+                          <div class="d-flex align-items-center">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                            <span>Edit Admin Settings</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- /Settings Card -->
+                  <!-- Employees Card -->
+                  <div class="card">
+                    <!--Card body-->
+                    <div class="card-body">
+                      <a href="#">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="sections-cards__icon">
+                            <img src="assets/images/sections-cards/employees-icon.png" alt="Employees icon">
+                          </div>
+                          <div class="sections-cards__description">
+                            <span>List of</span>
+                            <h4>Employees</h4>
+                          </div>
+                        </div>
+                        <div class="sections-cards__footer">
+                          <div class="d-flex align-items-center">
+                            <i class="fa fa-repeat" aria-hidden="true"></i>
+                            <span>Complete List of Bidders</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- /Employees Card -->
+                </div>
+                <!-- Card deck -->
+              </div>
+            </div>
+          </div>
+          <!-- Start Footer -->
+          <footer class="footer">
+            <div class="footer__inner">
+              <p class="m-0">&copy; 2018 Provite IT GmbH. All rights reserved</p>
+            </div>
+          </footer>
+          <!-- /End Footer -->
+        </div>
         <!-- /end right side -->
       </div>
     </div>

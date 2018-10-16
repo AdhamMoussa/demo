@@ -1,5 +1,4 @@
 .left-pane {
-  border-right: 1px solid $grey4;
   &__head {
     padding: 6px 20px;
     background-color: #fff;
@@ -72,6 +71,11 @@
   &__link-wrapper {
     &:not(:last-child) {
       margin-bottom: 45px;
+    }
+    &:last-child {
+      .left-pane__link {
+        margin-bottom: 0 !important;
+      }
     }
   }
   &__link {

@@ -1,0 +1,51 @@
+.sections-cards {
+  .card-deck {
+    margin: 0 !important;
+  }
+  .card {
+    margin: 0 !important;
+    transition: 0.4s;
+    box-shadow: none;
+    border: 1px solid rgba(209, 217, 222, 0.28);
+    border-radius: 0;
+    &:not(:last-child) {
+      margin-right: 54px !important;
+    }
+    &:hover {
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
+  &__icon {
+    img {
+      width: 38px;
+      height: auto;
+    }
+  }
+  &__description {
+    span {
+      font-size: 14px;
+      color: $black;
+    }
+    h4 {
+      font-size: 25px;
+      font-weight: 500;
+      color: $blue;
+      margin: 0;
+    }
+  }
+  &__footer {
+    margin-top: 38px;
+    & > div {
+      color: $grey5;
+      i {
+        margin-right: 7px;
+        color: $grey5;
+        font-size: 12px;
+      }
+      span {
+        font-size: 13px;
+      }
+    }
+  }
+}
