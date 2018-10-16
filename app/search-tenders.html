@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Styles CSS -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- build:css assets/styles/styles.css -->
+  <link rel="stylesheet" href="temp/styles/styles.css">
+  <!-- endbuild -->
+
+  <title>Provide It</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="page-layout">
+      <div class="page-layout__row">
+        <!-- start left side -->
+        <div class="page-layout__left-pane">
+          <div class="left-pane">
+            <!-- head -->
+            <div class="left-pane__head">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="left-pane__logo d-flex align-items-center">
+                  <img src="assets/images/logo.png" alt="logo" class="img-fluid">
+                  <h1 class="left-pane__logo-name font18 m-0">Provide It</h1>
+                </div>
+                <div class="left-pane__head-sep"></div>
+                <div class="left-pane__head-text">
+                  <p class="font8 m-0">Simple, smart & scalable<br />Tenders management tool</p>
+                </div>
+              </div>
+            </div>
+            <!-- user -->
+            <div class="left-pane__user">
+              <div class="left-pane__user-img">
+                <img src="assets/images/user-photo.png" alt="user" class="img-fluid">
+              </div>
+              <div class="left-pane__user-info">
+                <div class="left-pane__user-name font15">Richard V.Welsh</div>
+                <div class="left-pane__user-title font12">Project Manager</div>
+              </div>
+              <!-- use "offline" class for offline status -->
+              <div class="left-pane__user-status online">
+                <span>online</span>
+              </div>
+            </div>
+            <!-- links -->
+            <div class="left-pane__links">
+              <!-- dashboard -->
+              <div class="left-pane__link-wrapper">
+                <div class="left-pane__link">
+                  <div class="left-pane__link-icon">
+                    <img src="assets/images/dashboard-icons/dashboard-icon-grey.png" alt="dashboard icon">
+                  </div>
+                  <div class="left-pane__link-text">
+                    <a class="font15" href="#">Dashboard</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Tenders -->
+              <div class="left-pane__link-wrapper">
+                <a data-toggle="collapse" href="#collapseTenders" aria-expanded="false" aria-controls="collapseTenders">
+                  <div class="left-pane__link">
+                    <div class="left-pane__link-icon">
+                      <img src="assets/images/dashboard-icons/tenders-left.png" alt="tenders icon">
+                    </div>
+                    <div class="left-pane__link-text">
+                      <span class="font15 left-pane__link-active">Tenders</span>
+                    </div>
+                  </div>
+                </a>
+                <!-- tenders nested links -->
+                <div class="left-pane__nested-links collapse" id="collapseTenders">
+                  <div class="left-pane__nested-link">
+                    <a class="font13" href="#">New Tender</a>
+                  </div>
+                  <div class="left-pane__nested-link">
+                    <a class="font13" href="#">Old Tenders</a>
+                  </div>
+                  <div class="left-pane__nested-link">
+                    <a class="font13" href="#">Future Tenders</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Profile -->
+              <div class="left-pane__link-wrapper">
+                <a data-toggle="collapse" href="#collapseProfile" aria-expanded="false" aria-controls="collapseProfile">
+                  <div class="left-pane__link">
+                    <div class="left-pane__link-icon">
+                      <img src="assets/images/dashboard-icons/profile-icon-grey.png" alt="profile icon">
+                    </div>
+                    <div class="left-pane__link-text">
+                      <span class="font15">Profile</span>
+                    </div>
+                  </div>
+                </a>
+                <!-- profile nested links -->
+                <div class="left-pane__nested-links collapse" id="collapseProfile">
+                  <!-- nested link example
+                    <div class="left-pane__nested-link">
+                      <a class="font13" href="#">nested link</a>
+                    </div>
+                  -->
+                </div>
+              </div>
+              <!-- settings -->
+              <div class="left-pane__link-wrapper">
+                <div class="left-pane__link">
+                  <div class="left-pane__link-icon">
+                    <img src="assets/images/dashboard-icons/settings-icon-grey.png" alt="settings icon">
+                  </div>
+                  <div class="left-pane__link-text">
+                    <a class="font15" href="#">Settings</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Employees -->
+              <div class="left-pane__link-wrapper">
+                <a data-toggle="collapse" href="#collapseEmployees" aria-expanded="false" aria-controls="collapseEmployees">
+                  <div class="left-pane__link">
+                    <div class="left-pane__link-icon">
+                      <img src="assets/images/dashboard-icons/employees-icon-grey.png" alt="employees icon">
+                    </div>
+                    <div class="left-pane__link-text">
+                      <span class="font15" href="#">Employees</span>
+                    </div>
+                  </div>
+                </a>
+                <!-- employees nested links -->
+                <div class="left-pane__nested-links collapse" id="collapseEmployees">
+                  <!-- nested link example
+                      <div class="left-pane__nested-link">
+                        <a class="font13" href="#">nested link</a>
+                      </div>
+                    -->
+                </div>
+              </div>
+              <!-- Logout -->
+              <div class="left-pane__link-wrapper">
+                <div class="left-pane__link">
+                  <div class="left-pane__link-icon">
+                    <img src="assets/images/dashboard-icons/logout-icon.png" alt="logout icon">
+                  </div>
+                  <div class="left-pane__link-text">
+                    <a class="font15" href="#">Logout</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- left pane footer -->
+            <div class="left-pane__footer">
+              <div class="left-pane__footer-links">
+                <a href="#">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /end left side -->
+        <!-- start right side -->
+        <div class="page-layout__right-pane">
+          <!-- Start Header -->
+          <header class="header">
+            <div class="header__inner">
+              <div class="header__welcome">
+                <p class="font12">Weclome <span>Richard V. Welsh</span> to your dashboard!</p>
+              </div>
+              <div class="header__user">
+                <!-- updates -->
+                <div class="header__user-updates d-flex align-items-center">
+                  <!-- notifications -->
+                  <div class="header__user-updates-icon">
+                    <i class="fa fa-bell" aria-hidden="true"></i>
+                    <!-- count -->
+                    <div class="header__user-updates-count">
+                      <span>3</span>
+                    </div>
+                  </div>
+                  <!-- messages -->
+                  <div class="header__user-updates-icon">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <!-- count -->
+                    <div class="header__user-updates-count">
+                      <span>6</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- user icon -->
+                <div class="header__user-icon">
+                  <img src="assets/images/user-photo.png" alt="user photo">
+                </div>
+              </div>
+            </div>
+          </header>
+          <!-- /End Header -->
+          <div class="right-pane">
+            <div class="right-pane__content">
+              <!-- Start Search Tenders -->
+              <div class="tenders-search">
+                <div class="tenders-search__bar">
+                  <label for="search-input">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </label>
+                  <input class="input" type="text" id="search-input" placeholder="Search Tenders..." />
+                </div>
+                <div class="tenders-search__results">
+                  <div class="tenders-search__results-title">
+                    <h2>Search results for <span>construction companies</span></h2>
+                  </div>
+                  <div class="tenders-search__results-stats">
+                    <p>Showing <span>8</span> out of <span>10</span> results</p>
+                  </div>
+                  <div class="tenders-search__results-items row alig">
+                    <!-- item -->
+                    <div class="tenders-search__results-item col-xl-3">
+                      <!-- Card -->
+                      <div class="card">
+                        <!--Card body-->
+                        <div class="card-body">
+                          <div class="company-logo">
+                            <img src="assets/images/companies/AHG-Logo.png" alt="company logo" class="img-fluid">
+                          </div>
+                          <div class="company-name">
+                            <h5>Rixos Saadiyat Island Hotel Project innovation</h5>
+                          </div>
+                          <hr />
+                          <div class="company-networth">
+                            <div class="company-networth__text">Net Worth:</div>
+                            <div class="company-networth__amount">$2.3 Billion</div>
+                          </div>
+                          <div class="company-profile-link">
+                            <a href="#">View Profile <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Card -->
+                    </div>
+                    <!-- /item -->
+                    <!-- item -->
+                    <div class="tenders-search__results-item col-xl-3">
+                      <!-- Card -->
+                      <div class="card">
+                        <!--Card body-->
+                        <div class="card-body">
+                          <div class="company-logo">
+                            <img src="assets/images/companies/actco.png" alt="company logo" class="img-fluid">
+                          </div>
+                          <div class="company-name">
+                            <h5>Rixos Saadiyat Island Hotel Project innovation</h5>
+                          </div>
+                          <hr />
+                          <div class="company-networth">
+                            <div class="company-networth__text">Net Worth:</div>
+                            <div class="company-networth__amount">$2.3 Billion</div>
+                          </div>
+                          <div class="company-profile-link">
+                            <a href="#">View Profile <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Card -->
+                    </div>
+                    <!-- /item -->
+                    <!-- item -->
+                    <div class="tenders-search__results-item col-xl-3">
+                      <!-- Card -->
+                      <div class="card">
+                        <!--Card body-->
+                        <div class="card-body">
+                          <div class="company-logo">
+                            <img src="assets/images/companies/acc-logo.png" alt="company logo" class="img-fluid">
+                          </div>
+                          <div class="company-name">
+                            <h5>Rixos Saadiyat Island Hotel Project innovation</h5>
+                          </div>
+                          <hr />
+                          <div class="company-networth">
+                            <div class="company-networth__text">Net Worth:</div>
+                            <div class="company-networth__amount">$2.3 Billion</div>
+                          </div>
+                          <div class="company-profile-link">
+                            <a href="#">View Profile <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Card -->
+                    </div>
+                    <!-- /item -->
+                    <!-- item -->
+                    <div class="tenders-search__results-item col-xl-3">
+                      <!-- Card -->
+                      <div class="card">
+                        <!--Card body-->
+                        <div class="card-body">
+                          <div class="company-logo">
+                            <img src="assets/images/companies/an-logo.png" alt="company logo" class="img-fluid">
+                          </div>
+                          <div class="company-name">
+                            <h5>Rixos Saadiyat Island Hotel Project innovation</h5>
+                          </div>
+                          <hr />
+                          <div class="company-networth">
+                            <div class="company-networth__text">Net Worth:</div>
+                            <div class="company-networth__amount">$2.3 Billion</div>
+                          </div>
+                          <div class="company-profile-link">
+                            <a href="#">View Profile <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Card -->
+                    </div>
+                    <!-- /item -->
+                    <!-- item -->
+                    <div class="tenders-search__results-item col-xl-3">
+                      <!-- Card -->
+                      <div class="card">
+                        <!--Card body-->
+                        <div class="card-body">
+                          <div class="company-logo">
+                            <img src="assets/images/companies/arabtec-logo.png" alt="company logo" class="img-fluid">
+                          </div>
+                          <div class="company-name">
+                            <h5>Rixos Saadiyat Island Hotel Project innovation</h5>
+                          </div>
+                          <hr />
+                          <div class="company-networth">
+                            <div class="company-networth__text">Net Worth:</div>
+                            <div class="company-networth__amount">$2.3 Billion</div>
+                          </div>
+                          <div class="company-profile-link">
+                            <a href="#">View Profile <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Card -->
+                    </div>
+                    <!-- /item -->
+                    <!-- item -->
+                    <div class="tenders-search__results-item col-xl-3">
+                      <!-- Card -->
+                      <div class="card">
+                        <!--Card body-->
+                        <div class="card-body">
+                          <div class="company-logo">
+                            <img src="assets/images/companies/wade-adams-logo.png" alt="company logo" class="img-fluid">
+                          </div>
+                          <div class="company-name">
+                            <h5>Rixos Saadiyat Island Hotel Project innovation</h5>
+                          </div>
+                          <hr />
+                          <div class="company-networth">
+                            <div class="company-networth__text">Net Worth:</div>
+                            <div class="company-networth__amount">$2.3 Billion</div>
+                          </div>
+                          <div class="company-profile-link">
+                            <a href="#">View Profile <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Card -->
+                    </div>
+                    <!-- /item -->
+                    <!-- item -->
+                    <div class="tenders-search__results-item col-xl-3">
+                      <!-- Card -->
+                      <div class="card">
+                        <!--Card body-->
+                        <div class="card-body">
+                          <div class="company-logo">
+                            <img src="assets/images/companies/AHG-Logo.png" alt="company logo" class="img-fluid">
+                          </div>
+                          <div class="company-name">
+                            <h5>Rixos Saadiyat Island Hotel Project innovation</h5>
+                          </div>
+                          <hr />
+                          <div class="company-networth">
+                            <div class="company-networth__text">Net Worth:</div>
+                            <div class="company-networth__amount">$2.3 Billion</div>
+                          </div>
+                          <div class="company-profile-link">
+                            <a href="#">View Profile <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Card -->
+                    </div>
+                    <!-- /item -->
+                    <!-- item -->
+                    <div class="tenders-search__results-item col-xl-3">
+                      <!-- Card -->
+                      <div class="card">
+                        <!--Card body-->
+                        <div class="card-body">
+                          <div class="company-logo">
+                            <img src="assets/images/companies/Laing-logo.png" alt="company logo" class="img-fluid">
+                          </div>
+                          <div class="company-name">
+                            <h5>Rixos Saadiyat Island Hotel Project innovation</h5>
+                          </div>
+                          <hr />
+                          <div class="company-networth">
+                            <div class="company-networth__text">Net Worth:</div>
+                            <div class="company-networth__amount">$2.3 Billion</div>
+                          </div>
+                          <div class="company-profile-link">
+                            <a href="#">View Profile <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Card -->
+                    </div>
+                    <!-- /item -->
+                  </div>
+                </div>
+              </div>
+              <!-- /End Search Tenders -->
+            </div>
+          </div>
+          <!-- Start Footer -->
+          <footer class="footer">
+            <div class="footer__inner">
+              <p class="copy m-0">&copy; 2018 Provite IT GmbH. All rights reserved</p>
+              <a href="https://www.proviteit.com" target="_blank" class="url m-0">www.proviteit.com</a>
+            </div>
+          </footer>
+          <!-- /End Footer -->
+        </div>
+        <!-- /end right side -->
+      </div>
+    </div>
+  </div>
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="assets/scripts/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="assets/scripts/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="assets/scripts/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="assets/scripts/mdb.min.js"></script>
+  <!-- build:js assets/scripts/App.js -->
+  <script src="temp/scripts/app.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>

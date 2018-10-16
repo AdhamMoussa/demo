@@ -1,0 +1,106 @@
+.tenders-search {
+  padding: 0 25px;
+  &__bar {
+    margin-bottom: 57px;
+    position: relative;
+    input {
+      width: 100%;
+      font-size: 30px;
+      color: #939597;
+      padding-bottom: 28px;
+      padding-right: 50px;
+    }
+    label {
+      position: absolute;
+      top: 7.5px;
+      right: 0;
+      i {
+        color: $black2;
+        font-size: 30px;
+      }
+    }
+  }
+  &__results {
+    &-title {
+      h2 {
+        font-size: 30px;
+        color: $black2;
+        margin: 0 0 20px;
+      }
+    }
+    &-stats {
+      margin-bottom: 50px;
+      p {
+        font-size: 22px;
+        color: #939597;
+        margin: 0;
+      }
+    }
+    &-items {
+      .card {
+        margin: 0 !important;
+        margin-bottom: 60px !important;
+        transition: 0.4s;
+        box-shadow: none;
+        border: 1px solid rgba(209, 217, 222, 0.28);
+        border-radius: 0;
+        &:hover {
+          box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+      }
+    }
+    &-item {
+      width: 336px;
+      .card-body {
+        padding: 35px;
+        hr {
+          margin: 25px 0;
+        }
+      }
+      .company {
+        &-logo {
+          margin-bottom: 18px;
+          img {
+            max-height: 80px;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+        &-name {
+          h5 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 500;
+            color: #2e2e2e;
+          }
+        }
+        &-networth {
+          margin-bottom: 30px;
+          &__text {
+            font-size: 18px;
+            color: $blue;
+            font-weight: 500;
+            margin-bottom: 5px;
+          }
+          &__amount {
+            font-size: 18px;
+            font-weight: 500;
+            color: $grey3;
+          }
+        }
+        &-profile-link {
+          a {
+            font-size: 16px;
+            font-weight: 500;
+            color: $grey2;
+            i {
+              font-size: 16px;
+              margin-left: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

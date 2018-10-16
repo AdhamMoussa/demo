@@ -13814,6 +13814,24 @@ body {
 .table-component .table th {
   border: none !important; }
 
+.table-component .no-tenders {
+  margin-top: 100px;
+  text-align: center; }
+  .table-component .no-tenders p {
+    font-size: 30px;
+    color: #45484b;
+    margin: 16px 0 0; }
+  .table-component .no-tenders span {
+    font-size: 19px;
+    color: #a4a6a7; }
+
+.input {
+  border: none;
+  border-bottom: 1px solid #c9c9c9;
+  background-color: transparent; }
+  .input:focus {
+    outline: none; }
+
 .latest-tenders {
   padding: 50px 25px 0; }
   .latest-tenders__head {
@@ -13827,3 +13845,78 @@ body {
     margin: 0; }
   .latest-tenders__add-btn a i {
     margin-right: 9px; }
+
+.tenders-search {
+  padding: 0 25px; }
+  .tenders-search__bar {
+    margin-bottom: 57px;
+    position: relative; }
+    .tenders-search__bar input {
+      width: 100%;
+      font-size: 30px;
+      color: #939597;
+      padding-bottom: 28px;
+      padding-right: 50px; }
+    .tenders-search__bar label {
+      position: absolute;
+      top: 7.5px;
+      right: 0; }
+      .tenders-search__bar label i {
+        color: #45484b;
+        font-size: 30px; }
+  .tenders-search__results-title h2 {
+    font-size: 30px;
+    color: #45484b;
+    margin: 0 0 20px; }
+  .tenders-search__results-stats {
+    margin-bottom: 50px; }
+    .tenders-search__results-stats p {
+      font-size: 22px;
+      color: #939597;
+      margin: 0; }
+  .tenders-search__results-items .card {
+    margin: 0 !important;
+    margin-bottom: 60px !important;
+    transition: 0.4s;
+    box-shadow: none;
+    border: 1px solid rgba(209, 217, 222, 0.28);
+    border-radius: 0; }
+    .tenders-search__results-items .card:hover {
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .tenders-search__results-item {
+    width: 336px; }
+    .tenders-search__results-item .card-body {
+      padding: 35px; }
+      .tenders-search__results-item .card-body hr {
+        margin: 25px 0; }
+    .tenders-search__results-item .company-logo {
+      margin-bottom: 18px; }
+      .tenders-search__results-item .company-logo img {
+        max-height: 80px;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: center;
+           object-position: center; }
+    .tenders-search__results-item .company-name h5 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 500;
+      color: #2e2e2e; }
+    .tenders-search__results-item .company-networth {
+      margin-bottom: 30px; }
+      .tenders-search__results-item .company-networth__text {
+        font-size: 18px;
+        color: #11428c;
+        font-weight: 500;
+        margin-bottom: 5px; }
+      .tenders-search__results-item .company-networth__amount {
+        font-size: 18px;
+        font-weight: 500;
+        color: #9bb0bf; }
+    .tenders-search__results-item .company-profile-link a {
+      font-size: 16px;
+      font-weight: 500;
+      color: #7a858d; }
+      .tenders-search__results-item .company-profile-link a i {
+        font-size: 16px;
+        margin-left: 8px; }

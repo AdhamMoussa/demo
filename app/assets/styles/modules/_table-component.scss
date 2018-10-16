@@ -27,4 +27,17 @@
   .table th {
     border: none !important;
   }
+  .no-tenders {
+    margin-top: 100px;
+    text-align: center;
+    p {
+      font-size: 30px;
+      color: $black2;
+      margin: 16px 0 0;
+    }
+    span {
+      font-size: 19px;
+      color: #a4a6a7;
+    }
+  }
 }
