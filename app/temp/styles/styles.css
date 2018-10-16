@@ -13506,14 +13506,17 @@ COLORS
   box-sizing: border-box !important; }
 
 body {
-  font-family: poppins; }
+  font-family: poppins;
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-size: cover; }
 
 .main-container {
-  max-width: 1600px;
+  max-width: 1920px;
   margin: 0 auto; }
 
 .page-layout__row {
-  background-color: red;
   display: flex; }
 
 .page-layout__left-pane {
@@ -13529,8 +13532,9 @@ body {
 
 .page-layout__right-pane {
   width: calc(100% - 310px);
-  background-color: #fff;
-  padding-bottom: 160px;
+  background-color: #fbfbfb;
+  padding-bottom: 100px;
+  margin-bottom: 60px;
   position: relative; }
 
 .left-pane__head {
@@ -13657,10 +13661,8 @@ body {
     .left-pane__footer-links a:not(:last-child) {
       margin-right: 15px; }
 
-.right-pane {
-  background-color: #fbfbfb; }
-  .right-pane__content {
-    padding: 35px 25px 97px; }
+.right-pane__content {
+  padding: 35px 0 0; }
 
 .header {
   background-color: #0b99e3;
@@ -13716,48 +13718,112 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0; }
+  bottom: -66px; }
   .footer__inner {
-    padding: 24px 25px; }
-    .footer__inner p {
-      margin: 0;
+    padding: 24px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline; }
+    .footer__inner p, .footer__inner a {
       font-size: 14px; }
+      .footer__inner p.copy, .footer__inner a.copy {
+        color: #545c61; }
+      .footer__inner p.url, .footer__inner a.url {
+        color: #11428c; }
 
-.sections-cards .card-deck {
-  margin: 0 !important; }
+.sections-cards {
+  padding: 0 25px 50px;
+  border-bottom: 1px solid #e7e7e7; }
+  .sections-cards .card-deck {
+    margin: 0 !important; }
+  .sections-cards .card {
+    margin: 0 !important;
+    transition: 0.4s;
+    box-shadow: none;
+    border: 1px solid rgba(209, 217, 222, 0.28);
+    border-radius: 0; }
+    .sections-cards .card:not(:last-child) {
+      margin-right: 54px !important; }
+    .sections-cards .card:hover {
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .sections-cards__icon img {
+    width: 38px;
+    height: auto; }
+  .sections-cards__description span {
+    font-size: 14px;
+    color: #212529; }
+  .sections-cards__description h4 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #11428c;
+    margin: 0; }
+  .sections-cards__footer {
+    margin-top: 38px; }
+    .sections-cards__footer > div {
+      color: #9da2aa; }
+      .sections-cards__footer > div i {
+        margin-right: 7px;
+        color: #9da2aa;
+        font-size: 12px; }
+      .sections-cards__footer > div span {
+        font-size: 13px; }
 
-.sections-cards .card {
-  margin: 0 !important;
-  transition: 0.4s;
-  box-shadow: none;
-  border: 1px solid rgba(209, 217, 222, 0.28);
-  border-radius: 0; }
-  .sections-cards .card:not(:last-child) {
-    margin-right: 54px !important; }
-  .sections-cards .card:hover {
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-
-.sections-cards__icon img {
-  width: 38px;
-  height: auto; }
-
-.sections-cards__description span {
-  font-size: 14px;
-  color: #212529; }
-
-.sections-cards__description h4 {
-  font-size: 25px;
+.button {
+  color: #fff !important;
+  font-size: 13px;
   font-weight: 500;
-  color: #11428c;
   margin: 0; }
+  .button:hover {
+    color: #fff !important; }
 
-.sections-cards__footer {
-  margin-top: 38px; }
-  .sections-cards__footer > div {
-    color: #9da2aa; }
-    .sections-cards__footer > div i {
-      margin-right: 7px;
-      color: #9da2aa;
-      font-size: 12px; }
-    .sections-cards__footer > div span {
-      font-size: 13px; }
+.button--large {
+  background-color: #04a9f4;
+  width: 187px;
+  padding: 14px 32px; }
+
+.button--small {
+  background-color: #6282b3;
+  width: 100px;
+  padding: 10px 24px; }
+
+.table-component .table-striped tbody tr:nth-of-type(odd) {
+  background-color: #fff !important; }
+
+.table-component .table-striped tbody tr:nth-of-type(even) {
+  background-color: #f9f9f9 !important; }
+
+.table-component table.table-hover tbody tr:hover {
+  transition: 0.5s;
+  background-color: #f5fbff !important; }
+
+.table-component .table thead {
+  background-color: #f6f8fa;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7; }
+
+.table-component .table thead tr th {
+  font-size: 16px;
+  color: #212529;
+  font-weight: 500; }
+
+.table-component .table tbody tr td {
+  font-size: 16px;
+  color: #9bb0bf; }
+
+.table-component .table td,
+.table-component .table th {
+  border: none !important; }
+
+.latest-tenders {
+  padding: 50px 25px 0; }
+  .latest-tenders__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px; }
+  .latest-tenders__title h2 {
+    font-size: 30px;
+    color: #45484b;
+    margin: 0; }
+  .latest-tenders__add-btn a i {
+    margin-right: 9px; }

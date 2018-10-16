@@ -1,6 +1,5 @@
 .page-layout {
   &__row {
-    background-color: red;
     display: flex;
   }
   &__left-pane {
@@ -16,8 +15,9 @@
   }
   &__right-pane {
     width: calc(100% - 310px);
-    background-color: #fff;
-    padding-bottom: 160px;
+    background-color: $grey6;
+    padding-bottom: 100px;
+    margin-bottom: 60px;
     position: relative;
   }
 }

@@ -2,13 +2,21 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -66px;
   // background-image: url();
   &__inner {
     padding: 24px 25px;
-    p {
-      margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    p, a {
       font-size: 14px;
+      &.copy {
+        color: $grey7;
+      }
+      &.url {
+        color: $blue;
+      }
     }
   }
 }

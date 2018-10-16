@@ -1,0 +1,21 @@
+.button {
+  color: #fff !important;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+  &:hover {
+    color: #fff !important;
+  }
+}
+
+.button--large {
+  background-color: $aqua;
+  width: 187px;
+  padding: 14px 32px;
+}
+
+.button--small {
+  background-color: #6282b3;
+  width: 100px;
+  padding: 10px 24px;
+}
