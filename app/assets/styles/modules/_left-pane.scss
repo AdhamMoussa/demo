@@ -1,4 +1,5 @@
 .left-pane {
+  border-right: 1px solid $grey4;
   &__head {
     padding: 6px 20px;
     background-color: #fff;
@@ -121,6 +122,23 @@
         top: 50%;
         left: -14px;
         transform: translateY(-50%);
+      }
+    }
+  }
+  &__footer {
+    padding: 24px 0;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    &-links {
+      a {
+        color: $grey2;
+        font-size: 22px;
+        &:not(:last-child) {
+          margin-right: 15px;
+        }
       }
     }
   }

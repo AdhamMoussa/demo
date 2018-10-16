@@ -13517,123 +13517,130 @@ body {
   display: flex; }
 
 .page-layout__left-pane {
-  height: 2000px;
   width: 310px;
   background-color: #fff;
   background-image: url("../images/left-pane/side-pane.png");
-  background-size: contain;
+  background-size: 310px auto;
   background-repeat: no-repeat;
-  background-position: 100% 0; }
+  background-position: 100% 0;
+  padding-bottom: 80px;
+  position: relative; }
 
 .page-layout__right-pane {
-  height: 2000px;
   width: calc(100% - 310px);
-  background-color: green; }
-
-.left-pane__head {
-  padding: 6px 20px;
   background-color: #fff;
-  color: #636363;
-  margin-bottom: 38px; }
+  height: 1000px; }
 
-.left-pane__logo img {
-  width: 24px;
-  height: 40px;
-  margin-right: 7px; }
-
-.left-pane__logo-name {
-  color: #04a9f4;
-  font-weight: 700;
-  text-transform: uppercase; }
-
-.left-pane__head-sep {
-  width: 1px;
-  height: 12px;
-  background-color: #e0e7f0;
-  margin: 0 12px; }
-
-.left-pane__user {
-  text-align: center;
-  margin-bottom: 50px; }
-  .left-pane__user-img {
-    margin-bottom: 17px; }
-    .left-pane__user-img img {
-      width: 82px;
-      height: 82px;
-      -o-object-fit: cover;
-         object-fit: cover;
-      -o-object-position: top;
-         object-position: top;
-      border-radius: 50%; }
-  .left-pane__user-name {
-    color: #7a858d;
-    margin-bottom: 10px;
-    font-weight: 500; }
-  .left-pane__user-title {
-    color: #9bb0bf;
-    margin-bottom: 10px; }
-  .left-pane__user-status {
-    width: 50px;
-    height: 20px;
-    border-radius: 3px;
+.left-pane {
+  border-right: 1px solid #e7e7e7; }
+  .left-pane__head {
+    padding: 6px 20px;
+    background-color: #fff;
+    color: #636363;
+    margin-bottom: 38px; }
+  .left-pane__logo img {
+    width: 24px;
+    height: 40px;
+    margin-right: 7px; }
+  .left-pane__logo-name {
+    color: #04a9f4;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .left-pane__head-sep {
+    width: 1px;
+    height: 12px;
+    background-color: #e0e7f0;
+    margin: 0 12px; }
+  .left-pane__user {
+    text-align: center;
+    margin-bottom: 50px; }
+    .left-pane__user-img {
+      margin-bottom: 17px; }
+      .left-pane__user-img img {
+        width: 82px;
+        height: 82px;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: top;
+           object-position: top;
+        border-radius: 50%; }
+    .left-pane__user-name {
+      color: #7a858d;
+      margin-bottom: 10px;
+      font-weight: 500; }
+    .left-pane__user-title {
+      color: #9bb0bf;
+      margin-bottom: 10px; }
+    .left-pane__user-status {
+      width: 50px;
+      height: 20px;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto; }
+      .left-pane__user-status span {
+        font-size: 10px;
+        color: #fff; }
+      .left-pane__user-status.online {
+        background-color: #36d68c; }
+      .left-pane__user-status.offline {
+        background-color: #9bb0bf; }
+  .left-pane__links {
+    padding-left: 64px; }
+  .left-pane__link-wrapper:not(:last-child) {
+    margin-bottom: 45px; }
+  .left-pane__link {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
-    margin: 0 auto; }
-    .left-pane__user-status span {
-      font-size: 10px;
-      color: #fff; }
-    .left-pane__user-status.online {
-      background-color: #36d68c; }
-    .left-pane__user-status.offline {
-      background-color: #9bb0bf; }
-
-.left-pane__links {
-  padding-left: 64px; }
-
-.left-pane__link-wrapper:not(:last-child) {
-  margin-bottom: 45px; }
-
-.left-pane__link {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 19px;
-  position: relative; }
-  .left-pane__link-icon {
-    margin-right: 24px; }
-    .left-pane__link-icon img {
-      width: 26px;
-      height: 26px;
-      -o-object-fit: contain;
-         object-fit: contain;
-      -o-object-position: center;
-         object-position: center; }
-  .left-pane__link-text a,
-  .left-pane__link-text span {
-    color: #9bb0bf; }
-  .left-pane__link-text span::after {
-    content: "\f0da";
-    font-family: FontAwesome;
-    position: absolute;
-    top: 50%;
-    right: 47px;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
-  .left-pane__link-active {
-    color: #11428c !important; }
-
-.left-pane__nested-link {
-  padding-left: 64px; }
-  .left-pane__nested-link a {
-    color: #9bb0bf;
-    display: block;
+    margin-bottom: 19px;
     position: relative; }
-    .left-pane__nested-link a::before {
+    .left-pane__link-icon {
+      margin-right: 24px; }
+      .left-pane__link-icon img {
+        width: 26px;
+        height: 26px;
+        -o-object-fit: contain;
+           object-fit: contain;
+        -o-object-position: center;
+           object-position: center; }
+    .left-pane__link-text a,
+    .left-pane__link-text span {
+      color: #9bb0bf; }
+    .left-pane__link-text span::after {
       content: "\f0da";
       font-family: FontAwesome;
       position: absolute;
       top: 50%;
-      left: -14px;
+      right: 47px;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%); }
+    .left-pane__link-active {
+      color: #11428c !important; }
+  .left-pane__nested-link {
+    padding-left: 64px; }
+    .left-pane__nested-link a {
+      color: #9bb0bf;
+      display: block;
+      position: relative; }
+      .left-pane__nested-link a::before {
+        content: "\f0da";
+        font-family: FontAwesome;
+        position: absolute;
+        top: 50%;
+        left: -14px;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); }
+  .left-pane__footer {
+    padding: 24px 0;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+    .left-pane__footer-links a {
+      color: #7a858d;
+      font-size: 22px; }
+      .left-pane__footer-links a:not(:last-child) {
+        margin-right: 15px; }

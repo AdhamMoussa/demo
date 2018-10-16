@@ -4,17 +4,18 @@
     display: flex;
   }
   &__left-pane {
-    height: 2000px;
     width: 310px;
     background-color: #fff;
     background-image: url("../images/left-pane/side-pane.png");
-    background-size: contain;
+    background-size: 310px auto;
     background-repeat: no-repeat;
     background-position: 100% 0;
+    padding-bottom: 80px;
+    position: relative;
   }
   &__right-pane {
-    height: 2000px;
     width: calc(100% - 310px);
-    background-color: green;
+    background-color: #fff;
+    height: 1000px;
   }
 }
