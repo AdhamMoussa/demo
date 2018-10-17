@@ -13533,7 +13533,7 @@ body {
 .page-layout__left-pane {
   width: 310px;
   background-color: #fff;
-  background-image: url("../images/left-pane/side-pane.png");
+  background-image: url("../images/side-pane.png");
   background-size: 310px auto;
   background-repeat: no-repeat;
   background-position: 100% 0;
