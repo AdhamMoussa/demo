@@ -1,0 +1,96 @@
+.latest-tenders {
+  padding: 50px 25px 0;
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+  }
+  &__title {
+    h2 {
+      font-size: 30px;
+      color: $black2;
+      margin: 0;
+    }
+  }
+  &__add-btn {
+    a {
+      i {
+        margin-right: 9px;
+      }
+    }
+  }
+}
+
+.tender-company {
+  padding: 0 25px;
+  &__head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 57px;
+    h1 {
+      font-size: 30px;
+      color: $black2;
+      margin: 0 33px 0 0;
+    }
+    img {
+      max-height: 80px;
+      max-width: 100%;
+      width: auto;
+    }
+  }
+  &__table {
+    margin-bottom: 40px;
+  }
+  &__doc {
+    &-title {
+      font-size: 20px;
+      font-weight: 500;
+      color: $black;
+      margin-bottom: 30px;
+    }
+    &-download {
+      display: inline-block;
+      margin-bottom: 45px;
+      a {
+        display: flex;
+        align-items: flex-end;
+        line-height: 1.2;
+        img {
+          width: 44px;
+          height: 50px;
+          margin-right: 10px;
+        }
+        p {
+          font-size: 16px;
+          color: $aqua;
+          border-bottom: 1px solid $aqua;
+          padding-bottom: 1px;
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  &__interest {
+    display: flex;
+    align-items: center;
+    span {
+      font-size: 13px;
+      font-weight: 600;
+      color: $grey2;
+      letter-spacing: 1.85px;
+      margin: 0 40px;
+    }
+    a {
+      width: 300px;
+      i {
+        margin-left: 8px;
+      }
+    }
+    #not-interested {
+      background-color: #aebbc4;
+    }
+  }
+}

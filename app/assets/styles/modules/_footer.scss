@@ -3,7 +3,6 @@
   left: 0;
   right: 0;
   bottom: -66px;
-  // background-image: url();
   &__inner {
     padding: 24px 25px;
     display: flex;
@@ -11,6 +10,7 @@
     align-items: baseline;
     p, a {
       font-size: 14px;
+      line-height: 24px;
       &.copy {
         color: $grey7;
       }

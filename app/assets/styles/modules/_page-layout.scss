@@ -1,6 +1,10 @@
 .page-layout {
   &__row {
     display: flex;
+    background-image: url("../images/bg.png");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-size: cover;
   }
   &__left-pane {
     width: 310px;
@@ -12,6 +16,7 @@
     padding-bottom: 160px;
     position: relative;
     border-right: 1px solid $grey4;
+    min-height: 100vh;
   }
   &__right-pane {
     width: calc(100% - 310px);
@@ -19,5 +24,6 @@
     padding-bottom: 100px;
     margin-bottom: 60px;
     position: relative;
+    min-height: 100vh;
   }
 }

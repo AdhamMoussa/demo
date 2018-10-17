@@ -27,6 +27,10 @@
   .table th {
     border: none !important;
   }
+  table.table td {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
   .no-tenders {
     margin-top: 100px;
     text-align: center;

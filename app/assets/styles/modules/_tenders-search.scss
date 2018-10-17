@@ -21,21 +21,6 @@
     }
   }
   &__results {
-    &-title {
-      h2 {
-        font-size: 30px;
-        color: $black2;
-        margin: 0 0 20px;
-      }
-    }
-    &-stats {
-      margin-bottom: 50px;
-      p {
-        font-size: 22px;
-        color: #939597;
-        margin: 0;
-      }
-    }
     &-items {
       .card {
         margin: 0 !important;
