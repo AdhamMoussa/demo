@@ -93,4 +93,55 @@
       background-color: #aebbc4;
     }
   }
+  &__querry {
+    margin-bottom: 77px;
+    &-title {
+      font-size: 20px;
+      color: $blue;
+      margin-bottom: 100px;
+    }
+    form {
+      input.input {
+        display: block;
+        width: 100%;
+        font-size: 20px;
+        margin-bottom: 60px;
+        color: $grey1;
+        &::placeholder {
+          color: #a6b8d2;
+        }
+      }
+      button {
+        width: 300px;
+        font-size: 18px;
+        i {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}
+
+.bid-detail {
+  background-color: #f5fbff;
+  padding: 35px 25px 150px;
+  margin-bottom: 50px;
+  &__title {
+    margin-bottom: 65px;
+    font-size: 30px;
+    color: $black2;
+  }
+  &__inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    input {
+      width: 45%;
+      font-size: 20px;
+      color: $grey1;
+      &::placeholder {
+        color: #a6b8d2;
+      }
+    }
+  }
 }
