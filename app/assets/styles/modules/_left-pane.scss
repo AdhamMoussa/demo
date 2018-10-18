@@ -1,4 +1,8 @@
 .left-pane {
+  background-image: url("../images/side-pane.png");
+  background-size: 300px auto;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
   &__head {
     padding: 6px 20px;
     background-color: #fff;
@@ -15,6 +19,7 @@
       color: $aqua;
       font-weight: 700;
       text-transform: uppercase;
+      white-space: nowrap;
     }
   }
   &__head-sep {

@@ -13476,12 +13476,12 @@ COLORS
   font-size: 18px; }
 
 .title {
-  font-size: 30px;
+  font-size: 24px;
   color: #45484b;
   margin: 0 0 20px; }
 
 .subtitle {
-  font-size: 22px;
+  font-size: 18px;
   color: #939597;
   margin: 0;
   margin-bottom: 50px; }
@@ -13531,150 +13531,142 @@ body {
   background-size: cover; }
 
 .page-layout__left-pane {
-  width: 310px;
+  width: 300px;
   background-color: #fff;
-  background-image: url("../images/side-pane.png");
-  background-size: 310px auto;
-  background-repeat: no-repeat;
-  background-position: 100% 0;
-  padding-bottom: 160px;
+  padding-bottom: 100px;
   position: relative;
   border-right: 1px solid #e7e7e7;
   min-height: 100vh; }
 
 .page-layout__right-pane {
-  width: calc(100% - 310px);
+  width: calc(100% - 300px);
   background-color: #fbfbfb;
   padding-bottom: 100px;
   margin-bottom: 60px;
   position: relative;
   min-height: 100vh; }
 
-.left-pane__head {
-  padding: 6px 20px;
-  background-color: #fff;
-  color: #636363;
-  margin-bottom: 38px; }
-
-.left-pane__logo img {
-  width: 24px;
-  height: 40px;
-  margin-right: 7px; }
-
-.left-pane__logo-name {
-  color: #04a9f4;
-  font-weight: 700;
-  text-transform: uppercase; }
-
-.left-pane__head-sep {
-  width: 1px;
-  height: 12px;
-  background-color: #e0e7f0;
-  margin: 0 12px; }
-
-.left-pane__user {
-  text-align: center;
-  margin-bottom: 50px; }
-  .left-pane__user-img {
-    margin-bottom: 17px; }
-    .left-pane__user-img img {
-      width: 82px;
-      height: 82px;
-      -o-object-fit: cover;
-         object-fit: cover;
-      -o-object-position: top;
-         object-position: top;
-      border-radius: 50%; }
-  .left-pane__user-name {
-    color: #7a858d;
-    margin-bottom: 10px;
-    font-weight: 500; }
-  .left-pane__user-title {
-    color: #9bb0bf;
-    margin-bottom: 10px; }
-  .left-pane__user-status {
-    width: 50px;
-    height: 20px;
-    border-radius: 3px;
+.left-pane {
+  background-image: url("../images/side-pane.png");
+  background-size: 300px auto;
+  background-repeat: no-repeat;
+  background-position: 100% 0; }
+  .left-pane__head {
+    padding: 6px 20px;
+    background-color: #fff;
+    color: #636363;
+    margin-bottom: 38px; }
+  .left-pane__logo img {
+    width: 24px;
+    height: 40px;
+    margin-right: 7px; }
+  .left-pane__logo-name {
+    color: #04a9f4;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap; }
+  .left-pane__head-sep {
+    width: 1px;
+    height: 12px;
+    background-color: #e0e7f0;
+    margin: 0 12px; }
+  .left-pane__user {
+    text-align: center;
+    margin-bottom: 50px; }
+    .left-pane__user-img {
+      margin-bottom: 17px; }
+      .left-pane__user-img img {
+        width: 82px;
+        height: 82px;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: top;
+           object-position: top;
+        border-radius: 50%; }
+    .left-pane__user-name {
+      color: #7a858d;
+      margin-bottom: 10px;
+      font-weight: 500; }
+    .left-pane__user-title {
+      color: #9bb0bf;
+      margin-bottom: 10px; }
+    .left-pane__user-status {
+      width: 50px;
+      height: 20px;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto; }
+      .left-pane__user-status span {
+        font-size: 10px;
+        color: #fff; }
+      .left-pane__user-status.online {
+        background-color: #36d68c; }
+      .left-pane__user-status.offline {
+        background-color: #9bb0bf; }
+  .left-pane__links {
+    padding-left: 64px; }
+  .left-pane__link-wrapper:not(:last-child) {
+    margin-bottom: 45px; }
+  .left-pane__link-wrapper:last-child .left-pane__link {
+    margin-bottom: 0 !important; }
+  .left-pane__link {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
-    margin: 0 auto; }
-    .left-pane__user-status span {
-      font-size: 10px;
-      color: #fff; }
-    .left-pane__user-status.online {
-      background-color: #36d68c; }
-    .left-pane__user-status.offline {
-      background-color: #9bb0bf; }
-
-.left-pane__links {
-  padding-left: 64px; }
-
-.left-pane__link-wrapper:not(:last-child) {
-  margin-bottom: 45px; }
-
-.left-pane__link-wrapper:last-child .left-pane__link {
-  margin-bottom: 0 !important; }
-
-.left-pane__link {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 19px;
-  position: relative; }
-  .left-pane__link-icon {
-    margin-right: 24px; }
-    .left-pane__link-icon img {
-      width: 26px;
-      height: 26px;
-      -o-object-fit: contain;
-         object-fit: contain;
-      -o-object-position: center;
-         object-position: center; }
-  .left-pane__link-text a,
-  .left-pane__link-text span {
-    color: #9bb0bf; }
-  .left-pane__link-text span::after {
-    content: "\f0da";
-    font-family: FontAwesome;
-    position: absolute;
-    top: 50%;
-    right: 47px;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
-  .left-pane__link-active {
-    color: #11428c !important; }
-
-.left-pane__nested-link {
-  padding-left: 64px; }
-  .left-pane__nested-link a {
-    color: #9bb0bf;
-    display: block;
+    margin-bottom: 19px;
     position: relative; }
-    .left-pane__nested-link a::before {
+    .left-pane__link-icon {
+      margin-right: 24px; }
+      .left-pane__link-icon img {
+        width: 26px;
+        height: 26px;
+        -o-object-fit: contain;
+           object-fit: contain;
+        -o-object-position: center;
+           object-position: center; }
+    .left-pane__link-text a,
+    .left-pane__link-text span {
+      color: #9bb0bf; }
+    .left-pane__link-text span::after {
       content: "\f0da";
       font-family: FontAwesome;
       position: absolute;
       top: 50%;
-      left: -14px;
+      right: 47px;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%); }
-
-.left-pane__footer {
-  padding: 24px 0;
-  background-color: #fff;
-  text-align: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0; }
-  .left-pane__footer-links a {
-    color: #7a858d;
-    font-size: 18px;
-    line-height: 1; }
-    .left-pane__footer-links a:not(:last-child) {
-      margin-right: 15px; }
+    .left-pane__link-active {
+      color: #11428c !important; }
+  .left-pane__nested-link {
+    padding-left: 64px; }
+    .left-pane__nested-link a {
+      color: #9bb0bf;
+      display: block;
+      position: relative; }
+      .left-pane__nested-link a::before {
+        content: "\f0da";
+        font-family: FontAwesome;
+        position: absolute;
+        top: 50%;
+        left: -14px;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); }
+  .left-pane__footer {
+    padding: 24px 0;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+    .left-pane__footer-links a {
+      color: #7a858d;
+      font-size: 18px;
+      line-height: 1; }
+      .left-pane__footer-links a:not(:last-child) {
+        margin-right: 15px; }
 
 .right-pane__content {
   padding: 35px 0 0; }
@@ -13769,7 +13761,7 @@ body {
     font-size: 14px;
     color: #212529; }
   .sections-cards__description h4 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     color: #11428c;
     margin: 0; }
@@ -13820,12 +13812,12 @@ body {
   border-bottom: 1px solid #e7e7e7; }
 
 .table-component .table thead tr th {
-  font-size: 16px;
+  font-size: 14px;
   color: #212529;
   font-weight: 500; }
 
 .table-component .table tbody tr td {
-  font-size: 16px;
+  font-size: 14px;
   color: #9bb0bf;
   padding: 25px; }
 
@@ -13841,11 +13833,11 @@ body {
   margin-top: 100px;
   text-align: center; }
   .table-component .no-tenders p {
-    font-size: 30px;
+    font-size: 24px;
     color: #45484b;
     margin: 16px 0 0; }
   .table-component .no-tenders span {
-    font-size: 19px;
+    font-size: 16px;
     color: #a4a6a7; }
 
 .input {
@@ -13862,7 +13854,7 @@ body {
   align-items: center; }
 
 .pagination .page-numbers {
-  font-size: 16px;
+  font-size: 14px;
   color: #626467;
   background-color: #d9e5ee;
   margin: 0 5px;
@@ -13881,7 +13873,7 @@ body {
 
 .pagination .prev,
 .pagination .next {
-  font-size: 18px;
+  font-size: 14px;
   color: #626467; }
 
 .pagination .prev {
@@ -13903,7 +13895,7 @@ body {
     align-items: center;
     margin-bottom: 45px; }
   .latest-tenders__title h2 {
-    font-size: 30px;
+    font-size: 24px;
     color: #45484b;
     margin: 0; }
   .latest-tenders__add-btn a i {
@@ -13916,17 +13908,17 @@ body {
     align-items: center;
     margin-bottom: 57px; }
     .tender-company__head h1 {
-      font-size: 30px;
+      font-size: 24px;
       color: #45484b;
       margin: 0 33px 0 0; }
     .tender-company__head img {
-      max-height: 80px;
+      max-height: 60px;
       max-width: 100%;
       width: auto; }
   .tender-company__table {
     margin-bottom: 40px; }
   .tender-company__doc-title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: #212529;
     margin-bottom: 30px; }
@@ -13942,7 +13934,7 @@ body {
         height: 50px;
         margin-right: 10px; }
       .tender-company__doc-download a p {
-        font-size: 16px;
+        font-size: 14px;
         color: #04a9f4;
         border-bottom: 1px solid #04a9f4;
         padding-bottom: 1px; }
@@ -13958,7 +13950,8 @@ body {
       letter-spacing: 1.85px;
       margin: 0 40px; }
     .tender-company__interest a {
-      width: 300px; }
+      width: 260px;
+      font-size: 14px; }
       .tender-company__interest a i {
         margin-left: 8px; }
     .tender-company__interest #not-interested {
@@ -13966,13 +13959,13 @@ body {
   .tender-company__querry {
     margin-bottom: 77px; }
     .tender-company__querry-title {
-      font-size: 20px;
+      font-size: 18px;
       color: #11428c;
-      margin-bottom: 100px; }
+      margin-bottom: 50px; }
     .tender-company__querry form input.input {
       display: block;
       width: 100%;
-      font-size: 20px;
+      font-size: 16px;
       margin-bottom: 60px;
       color: #636363; }
       .tender-company__querry form input.input::-webkit-input-placeholder {
@@ -13984,18 +13977,18 @@ body {
       .tender-company__querry form input.input::placeholder {
         color: #a6b8d2; }
     .tender-company__querry form button {
-      width: 300px;
-      font-size: 18px; }
+      width: 260px;
+      font-size: 14px; }
       .tender-company__querry form button i {
         margin-left: 8px; }
 
 .bid-detail {
   background-color: #f5fbff;
-  padding: 35px 25px 150px;
+  padding: 35px 25px 100px;
   margin-bottom: 50px; }
   .bid-detail__title {
     margin-bottom: 65px;
-    font-size: 30px;
+    font-size: 24px;
     color: #45484b; }
   .bid-detail__inputs {
     display: flex;
@@ -14003,7 +13996,7 @@ body {
     align-items: center; }
     .bid-detail__inputs input {
       width: 45%;
-      font-size: 20px;
+      font-size: 16px;
       color: #636363; }
       .bid-detail__inputs input::-webkit-input-placeholder {
         color: #a6b8d2; }
@@ -14021,7 +14014,7 @@ body {
     position: relative; }
     .tenders-search__bar input {
       width: 100%;
-      font-size: 30px;
+      font-size: 24px;
       color: #939597;
       padding-bottom: 28px;
       padding-right: 50px; }
@@ -14038,17 +14031,19 @@ body {
     transition: 0.4s;
     box-shadow: none;
     border: 1px solid rgba(209, 217, 222, 0.28);
-    border-radius: 0; }
+    border-radius: 0;
+    min-height: 100%; }
     .tenders-search__results-items .card:hover {
       box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   .tenders-search__results-item {
-    width: 336px; }
+    width: 336px;
+    margin-bottom: 20px; }
     .tenders-search__results-item .card-body {
-      padding: 35px; }
+      padding: 35px 25px 10px; }
       .tenders-search__results-item .card-body hr {
         margin: 25px 0; }
     .tenders-search__results-item .company-logo {
-      margin-bottom: 18px; }
+      margin-bottom: 24px; }
       .tenders-search__results-item .company-logo img {
         max-height: 80px;
         -o-object-fit: cover;
@@ -14059,7 +14054,7 @@ body {
       margin: 0;
       font-size: 18px;
       font-weight: 500;
-      color: #2e2e2e; }
+      color: #7a858d; }
     .tenders-search__results-item .company-networth {
       margin-bottom: 30px; }
       .tenders-search__results-item .company-networth__text {

@@ -5,7 +5,7 @@
     position: relative;
     input {
       width: 100%;
-      font-size: 30px;
+      font-size: 24px;
       color: #939597;
       padding-bottom: 28px;
       padding-right: 50px;
@@ -29,6 +29,7 @@
         box-shadow: none;
         border: 1px solid rgba(209, 217, 222, 0.28);
         border-radius: 0;
+        min-height: 100%;
         &:hover {
           box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
             0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -37,15 +38,16 @@
     }
     &-item {
       width: 336px;
+      margin-bottom: 20px;
       .card-body {
-        padding: 35px;
+        padding: 35px 25px 10px;
         hr {
           margin: 25px 0;
         }
       }
       .company {
         &-logo {
-          margin-bottom: 18px;
+          margin-bottom: 24px;
           img {
             max-height: 80px;
             object-fit: cover;
@@ -57,7 +59,7 @@
             margin: 0;
             font-size: 18px;
             font-weight: 500;
-            color: #2e2e2e;
+            color: $grey2;
           }
         }
         &-networth {
