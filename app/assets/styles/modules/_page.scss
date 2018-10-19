@@ -146,3 +146,131 @@
     }
   }
 }
+
+.bids-cards {
+  margin-bottom: 50px;
+  .card-deck {
+    margin: 0 !important;
+  }
+  .card {
+    margin: 0 !important;
+    transition: 0.4s;
+    box-shadow: none;
+    border: 1px solid rgba(209, 217, 222, 0.28);
+    border-radius: 0;
+    &:not(:last-child) {
+      margin-right: 54px !important;
+    }
+    &:hover {
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
+  &__text {
+    margin-right: 20px;
+    span {
+      font-size: 14px;
+      color: $black;
+    }
+    p {
+      font-size: 24px;
+      color: $blue;
+      font-weight: 500;
+      line-height: 1;
+    }
+  }
+  &__count {
+    font-size: 24px;
+    color: $grey3;
+  }
+}
+
+.send-doc {
+  margin-bottom: 10px;
+  &__title {
+    font-size: 18px;
+    color: $blue;
+    margin-bottom: 50px;
+  }
+  form {
+    display: flex;
+    align-items: baseline;
+    .send-doc__input {
+      position: relative;
+      width: 75%;
+      margin: 0 50px 60px 0;
+      input.input {
+        width: 100%;
+        font-size: 16px;
+        color: $grey1;
+        padding-left: 128px;
+        &::placeholder {
+          color: #a6b8d2;
+        }
+      }
+      label {
+        position: absolute;
+        font-size: 16px;
+        color: #a6b8d2;
+        margin: 0;
+      }
+    }
+    button {
+      width: calc(25% - 50px);
+      font-size: 14px;
+      i {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+.bids-download {
+  display: flex;
+  margin-bottom: 60px;
+  img {
+    width: 40px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  &__bids-received {
+    a {
+      margin-right: 80px;
+      display: flex;
+      align-items: center;
+      p {
+        color: $green-blue;
+      }
+    }
+  }
+  &__invited-bidders {
+    a {
+      display: flex;
+      align-items: center;
+      p {
+        color: $blue;
+      }
+    }
+  }
+}
+
+.unread-querries {
+  padding: 60px 25px;
+  h3.title {
+    margin-bottom: 40px;
+  }
+  .table td:first-child {
+    color: #9e3852;
+  }
+}
+
+.previous-querries {
+  padding: 0 25px;
+  h3.title {
+    margin-bottom: 40px;
+  }
+}

@@ -8,7 +8,9 @@
   <!-- Styles CSS -->
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/styles/styles-082dc1ba4f.css"/>
+  <!-- build:css assets/styles/styles.css -->
+  <link rel="stylesheet" href="temp/styles/styles.css">
+  <!-- endbuild -->
 
   <title>Provide It</title>
 </head>
@@ -209,10 +211,6 @@
           <div class="right-pane">
             <div class="right-pane__content">
               <div class="tender-company">
-                <div class="tender-company__head">
-                  <h1>Al Habtoor Group</h1>
-                  <img src="assets/images/companies/AHG-Logo.png" alt="company logo">
-                </div>
                 <h2 class="title">Tender Detail</h2>
                 <p class="subtitle">Construction of five-star hotel comprising (2) basement levels, a ground floor and
                   (11) additional floors offering (400) rooms.</p>
@@ -251,97 +249,203 @@
                   </div>
                 </div>
                 <!-- /project doc -->
-                <!-- Querry -->
-                <div class="tender-company__querry">
-                  <h3 class="tender-company__querry-title">Do you have any querry ?</h3>
+                <!-- Start bids cards -->
+                <div class="bids-cards">
+                  <!-- Card deck -->
+                  <div class="card-deck">
+                    <!-- interested Card -->
+                    <div class="card">
+                      <!--Card body-->
+                      <div class="card-body">
+                        <a href="#">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="bids-cards__text">
+                              <span>Interested</span>
+                              <p class="m-0">Bidders</p>
+                            </div>
+                            <div class="bids-cards__count">345</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- /interested Card -->
+                    <!-- interested Card -->
+                    <div class="card">
+                      <!--Card body-->
+                      <div class="card-body">
+                        <a href="#">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="bids-cards__text">
+                              <span>Not Interested</span>
+                              <p class="m-0">Bidders</p>
+                            </div>
+                            <div class="bids-cards__count">100</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- /interested Card -->
+                    <!-- interested Card -->
+                    <div class="card">
+                      <!--Card body-->
+                      <div class="card-body">
+                        <a href="#">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="bids-cards__text">
+                              <span>Invited</span>
+                              <p class="m-0">Bidders</p>
+                            </div>
+                            <div class="bids-cards__count">32</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- /interested Card -->
+                    <!-- interested Card -->
+                    <div class="card">
+                      <!--Card body-->
+                      <div class="card-body">
+                        <a href="#">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="bids-cards__text">
+                              <span>Total</span>
+                              <p class="m-0">Bids Received</p>
+                            </div>
+                            <div class="bids-cards__count">422</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- /interested Card -->
+                  </div>
+                  <!-- Card deck -->
+                </div>
+                <!-- /End bids cards -->
+                <!-- send doc -->
+                <div class="send-doc">
+                  <h3 class="send-doc__title">Send final documentation</h3>
                   <form>
-                    <input type="text" class="input" placeholder="Type you question">
-                    <button type="submit" class="btn button button--large">Send Querry<i class="fa fa-angle-double-right"
+                    <div class="send-doc__input">
+                      <label for="send-doc-input">Type URL here |</label>
+                      <input type="text" class="input" id="send-doc-input">
+                    </div>
+                    <button type="submit" class="btn button button--large">Send<i class="fa fa-angle-double-right"
                         aria-hidden="true"></i></button>
                   </form>
                 </div>
-                <!-- /Querry -->
-                <!-- Bid Detail -->
-                <div class="bid-detail">
-                  <h3 class="bid-detail__title">Bid Detail</h3>
-                  <div class="bid-detail__inputs">
-                    <input type="text" class="input" placeholder="Enter Bid details">
-                    <input type="number" class="input" placeholder="Enter Amount in AED">
-                  </div>
-                </div>
-                <!-- /Bid Detail -->
-                <!-- querries table -->
-                <div class="tender-company__table">
-                  <!-- table -->
-                  <div class="table-component">
-                    <table class="table table-striped table-hover table-responsive">
-                      <thead>
-                        <tr>
-                          <th scope="col">Posted Date</th>
-                          <th scope="col">Querry</th>
-                          <th scope="col">Reply Date</th>
-                          <th scope="col">Answer</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>October 9, 2018</td>
-                          <td>Construction of five-star hotel comprising (2) basement levels, a ground floor and (11)
-                            additional floors offering (400) rooms.</td>
-                          <td>Dubai</td>
-                          <td>Post Poned</td>
-                        </tr>
-                        <tr>
-                          <td>October 9, 2018</td>
-                          <td>Construction of five-star hotel comprising (2) basement levels, a ground floor and (11)
-                            additional floors offering (400) rooms.</td>
-                          <td>Abu Dhabi</td>
-                          <td>Post Poned</td>
-                        </tr>
-                        <tr>
-                          <td>October 9, 2018</td>
-                          <td>Construction of five-star hotel comprising (2) basement levels, a ground floor and (11)
-                            additional floors offering (400) rooms.</td>
-                          <td>Dubai</td>
-                          <td>Post Poned</td>
-                        </tr>
-                        <tr>
-                          <td>October 9, 2018</td>
-                          <td>Construction of five-star hotel comprising (2) basement levels, a ground floor and (11)
-                            additional floors offering (400) rooms.</td>
-                          <td>Al Ain</td>
-                          <td>Post Poned</td>
-                        </tr>
-                        <tr>
-                          <td>October 9, 2018</td>
-                          <td>Construction of five-star hotel comprising (2) basement levels, a ground floor and (11)
-                            additional floors offering (400) rooms.</td>
-                          <td>Dubai</td>
-                          <td>Post Poned</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-                <!-- /querries table -->
-                <!-- querries pagination -->
-                <div class="pagination">
-                  <div class="pagination-wrapper">
-                    <a class="prev disabled" href="#">
-                      Previous
+                <!-- /send doc -->
+                <!-- bids download -->
+                <div class="bids-download">
+                  <div class="bids-download__bids-received">
+                    <a href="#">
+                      <img src="assets/images/dashboard-icons/green-doc.png" alt="doc">
+                      <p class="m-0">Download Bids Received</p>
                     </a>
-                    <a class='page-numbers disabled' href='#'>1</a>
-                    <a class='page-numbers' href="#">2</a>
-                    <a class='page-numbers' href='#'>3</a>
-                    <a class='page-numbers' href='#'>4</a>
-                    <a class='page-numbers' href='#'>5</a>
-                    <a class="next" href="#">
-                      Next
+                  </div>
+                  <div class="bids-download__invited-bidders">
+                    <a href="#">
+                      <img src="assets/images/dashboard-icons/blue-doc.png" alt="doc">
+                      <p class="m-0">Download Invited Bidders</p>
                     </a>
                   </div>
                 </div>
-                <!-- /querries pagination -->
+                <!-- /bids download -->
               </div>
+              <hr class="m-0" />
+              <!-- unread querries table -->
+              <div class="unread-querries">
+                <h3 class="title">Unread Querries</h3>
+                <div class="table-component">
+                  <table class="table table-striped table-hover table-responsive">
+                    <thead>
+                      <tr>
+                        <th scope="col">Posted Date</th>
+                        <th scope="col">Querry</th>
+                        <th scope="col">Reply Date</th>
+                        <th scope="col">Answer</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>October 9, 2018</td>
+                        <td>Construction of five-star hotel comprising (2) basement levels, a ground floor and (11)
+                          additional floors offering (400) rooms.</td>
+                        <td>Dubai</td>
+                        <td>Post Poned</td>
+                      </tr>
+                      <tr>
+                        <td>October 9, 2018</td>
+                        <td>Construction of five-star hotel comprising (2) basement levels, a ground floor and (11)
+                          additional floors offering (400) rooms.</td>
+                        <td>Abu Dhabi</td>
+                        <td>Post Poned</td>
+                      </tr>
+                      <tr>
+                        <td>October 9, 2018</td>
+                        <td>Construction of five-star hotel comprising (2) basement levels, a ground floor and (11)
+                          additional floors offering (400) rooms.</td>
+                        <td>Dubai</td>
+                        <td>Post Poned</td>
+                      </tr>
+                      <tr>
+                        <td>October 9, 2018</td>
+                        <td>Construction of five-star hotel comprising (2) basement levels, a ground floor and (11)
+                          additional floors offering (400) rooms.</td>
+                        <td>Al Ain</td>
+                        <td>Post Poned</td>
+                      </tr>
+                      <tr>
+                        <td>October 9, 2018</td>
+                        <td>Construction of five-star hotel comprising (2) basement levels, a ground floor and (11)
+                          additional floors offering (400) rooms.</td>
+                        <td>Dubai</td>
+                        <td>Post Poned</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- /unread querries table -->
+              <!-- previous querries table -->
+              <div class="previous-querries">
+                <h3 class="title">Previous Querries</h3>
+                <div class="table-component">
+                  <table class="table table-striped table-hover table-responsive">
+                    <thead>
+                      <tr>
+                        <th scope="col">Posted Date</th>
+                        <th scope="col">Querry</th>
+                        <th scope="col">Reply Date</th>
+                        <th scope="col">Answer</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>October 9, 2018</td>
+                        <td>Construction of five-star hotel comprising (2) basement levels, a ground floor and (11)
+                          additional floors offering (400) rooms.</td>
+                        <td>Dubai</td>
+                        <td>Post Poned</td>
+                      </tr>
+                      <tr>
+                        <td>October 9, 2018</td>
+                        <td>Construction of five-star hotel comprising (2) basement levels, a ground floor and (11)
+                          additional floors offering (400) rooms.</td>
+                        <td>Abu Dhabi</td>
+                        <td>Post Poned</td>
+                      </tr>
+                      <tr>
+                        <td>October 9, 2018</td>
+                        <td>Construction of five-star hotel comprising (2) basement levels, a ground floor and (11)
+                          additional floors offering (400) rooms.</td>
+                        <td>Dubai</td>
+                        <td>Post Poned</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- /previous querries table -->
             </div>
           </div>
           <!-- Start Footer -->
@@ -366,7 +470,9 @@
   <script type="text/javascript" src="assets/scripts/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="assets/scripts/mdb.min.js"></script>
-  <script src="assets/scripts/App-695d171ae7.js"></script>
+  <!-- build:js assets/scripts/App.js -->
+  <script src="temp/scripts/app.js"></script>
+  <!-- endbuild -->
 </body>
 
 </html>

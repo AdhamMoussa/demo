@@ -14007,6 +14007,105 @@ body {
       .bid-detail__inputs input::placeholder {
         color: #a6b8d2; }
 
+.bids-cards {
+  margin-bottom: 50px; }
+  .bids-cards .card-deck {
+    margin: 0 !important; }
+  .bids-cards .card {
+    margin: 0 !important;
+    transition: 0.4s;
+    box-shadow: none;
+    border: 1px solid rgba(209, 217, 222, 0.28);
+    border-radius: 0; }
+    .bids-cards .card:not(:last-child) {
+      margin-right: 54px !important; }
+    .bids-cards .card:hover {
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .bids-cards__text {
+    margin-right: 20px; }
+    .bids-cards__text span {
+      font-size: 14px;
+      color: #212529; }
+    .bids-cards__text p {
+      font-size: 24px;
+      color: #11428c;
+      font-weight: 500;
+      line-height: 1; }
+  .bids-cards__count {
+    font-size: 24px;
+    color: #9bb0bf; }
+
+.send-doc {
+  margin-bottom: 10px; }
+  .send-doc__title {
+    font-size: 18px;
+    color: #11428c;
+    margin-bottom: 50px; }
+  .send-doc form {
+    display: flex;
+    align-items: baseline; }
+    .send-doc form .send-doc__input {
+      position: relative;
+      width: 75%;
+      margin: 0 50px 60px 0; }
+      .send-doc form .send-doc__input input.input {
+        width: 100%;
+        font-size: 16px;
+        color: #636363;
+        padding-left: 128px; }
+        .send-doc form .send-doc__input input.input::-webkit-input-placeholder {
+          color: #a6b8d2; }
+        .send-doc form .send-doc__input input.input:-ms-input-placeholder {
+          color: #a6b8d2; }
+        .send-doc form .send-doc__input input.input::-ms-input-placeholder {
+          color: #a6b8d2; }
+        .send-doc form .send-doc__input input.input::placeholder {
+          color: #a6b8d2; }
+      .send-doc form .send-doc__input label {
+        position: absolute;
+        font-size: 16px;
+        color: #a6b8d2;
+        margin: 0; }
+    .send-doc form button {
+      width: calc(25% - 50px);
+      font-size: 14px; }
+      .send-doc form button i {
+        margin-left: 8px; }
+
+.bids-download {
+  display: flex;
+  margin-bottom: 60px; }
+  .bids-download img {
+    width: 40px;
+    height: 50px;
+    margin-right: 10px; }
+  .bids-download p {
+    font-size: 16px;
+    font-weight: 500; }
+  .bids-download__bids-received a {
+    margin-right: 80px;
+    display: flex;
+    align-items: center; }
+    .bids-download__bids-received a p {
+      color: #37d592; }
+  .bids-download__invited-bidders a {
+    display: flex;
+    align-items: center; }
+    .bids-download__invited-bidders a p {
+      color: #11428c; }
+
+.unread-querries {
+  padding: 60px 25px; }
+  .unread-querries h3.title {
+    margin-bottom: 40px; }
+  .unread-querries .table td:first-child {
+    color: #9e3852; }
+
+.previous-querries {
+  padding: 0 25px; }
+  .previous-querries h3.title {
+    margin-bottom: 40px; }
+
 .tenders-search {
   padding: 0 25px; }
   .tenders-search__bar {
