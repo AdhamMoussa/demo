@@ -14106,6 +14106,174 @@ body {
   .previous-querries h3.title {
     margin-bottom: 40px; }
 
+.new-tender {
+  padding: 0 25px; }
+  .new-tender__form form input {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    color: #7a858d; }
+    .new-tender__form form input::-webkit-input-placeholder {
+      color: #7a858d; }
+    .new-tender__form form input:-ms-input-placeholder {
+      color: #7a858d; }
+    .new-tender__form form input::-ms-input-placeholder {
+      color: #7a858d; }
+    .new-tender__form form input::placeholder {
+      color: #7a858d; }
+  .new-tender__form form label {
+    color: #7a858d;
+    font-size: 30px; }
+  .new-tender__form form select {
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #c9c9c9;
+    width: 100%;
+    color: #7a858d;
+    font-size: 18px; }
+    .new-tender__form form select:focus {
+      outline: none; }
+  .new-tender__form form .row:not(:last-child) {
+    margin-bottom: 70px; }
+  .new-tender__form form .row .col {
+    padding: 0 25px; }
+    .new-tender__form form .row .col:first-child {
+      padding-right: 25px;
+      padding-left: 0; }
+    .new-tender__form form .row .col:last-child {
+      padding-left: 25px;
+      padding-right: 0; }
+  .new-tender__form form .file-input {
+    display: flex;
+    align-items: flex-end;
+    position: relative; }
+    .new-tender__form form .file-input span#pdf-input-placeholder {
+      position: absolute;
+      top: 0;
+      left: 25px;
+      bottom: 0;
+      width: 80%;
+      border-bottom: 1px solid #c9c9c9;
+      font-size: 18px;
+      display: flex;
+      align-items: flex-end;
+      color: #7a858d;
+      cursor: pointer; }
+    .new-tender__form form .file-input input#pdf-input {
+      visibility: hidden; }
+    .new-tender__form form .file-input label {
+      width: 20%;
+      height: 100%;
+      margin: 0;
+      background-color: #eaeaea;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 1.85px;
+      cursor: pointer; }
+  .new-tender__form form .date-input {
+    position: relative; }
+    .new-tender__form form .date-input label {
+      position: absolute;
+      right: 45px;
+      top: -10px; }
+    .new-tender__form form .date-input:last-child label {
+      right: 20px; }
+  .new-tender__form form .companies {
+    display: flex; }
+    .new-tender__form form .companies__item input {
+      display: none; }
+      .new-tender__form form .companies__item input:checked ~ label .card {
+        border: 1px solid #04a9f4;
+        background-color: #f7fcff; }
+      .new-tender__form form .companies__item input:checked ~ label span.checkbox i {
+        color: #636363; }
+    .new-tender__form form .companies__item label {
+      height: 100%;
+      position: relative;
+      cursor: pointer; }
+      .new-tender__form form .companies__item label span.checkbox {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 20px;
+        right: 20px;
+        border: 1px solid #636363;
+        border-radius: 3px; }
+        .new-tender__form form .companies__item label span.checkbox i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+          font-size: 18px;
+          color: transparent; }
+      .new-tender__form form .companies__item label .card {
+        margin: 0 !important;
+        margin-bottom: 60px !important;
+        transition: 0.4s;
+        box-shadow: none;
+        border: 1px solid rgba(209, 217, 222, 0.28);
+        border-radius: 0;
+        min-height: 100%; }
+        .new-tender__form form .companies__item label .card:hover {
+          box-shadow: 0; }
+        .new-tender__form form .companies__item label .card .card-body {
+          padding: 35px 25px 10px; }
+          .new-tender__form form .companies__item label .card .card-body hr {
+            margin: 25px 0; }
+      .new-tender__form form .companies__item label .company-logo {
+        margin-bottom: 24px; }
+        .new-tender__form form .companies__item label .company-logo img {
+          max-height: 80px;
+          max-width: 90%;
+          -o-object-fit: cover;
+             object-fit: cover;
+          -o-object-position: center;
+             object-position: center; }
+      .new-tender__form form .companies__item label .company-name h5 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+        color: #7a858d; }
+      .new-tender__form form .companies__item label .company-networth {
+        margin-bottom: 30px; }
+        .new-tender__form form .companies__item label .company-networth__text {
+          font-size: 18px;
+          color: #11428c;
+          font-weight: 500;
+          margin-bottom: 5px; }
+        .new-tender__form form .companies__item label .company-networth__amount {
+          font-size: 18px;
+          font-weight: 500;
+          color: #9bb0bf; }
+      .new-tender__form form .companies__item label .company-profile-link a {
+        font-size: 16px;
+        font-weight: 500;
+        color: #7a858d; }
+        .new-tender__form form .companies__item label .company-profile-link a i {
+          font-size: 16px;
+          margin-left: 8px; }
+  .new-tender__form form .send-search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px; }
+    .new-tender__form form .send-search span {
+      font-size: 13px;
+      font-weight: 600;
+      color: #7a858d;
+      letter-spacing: 1.85px;
+      margin: 0 40px; }
+    .new-tender__form form .send-search a, .new-tender__form form .send-search button {
+      width: 260px;
+      font-size: 14px; }
+      .new-tender__form form .send-search a i, .new-tender__form form .send-search button i {
+        margin-left: 8px; }
+    .new-tender__form form .send-search #search {
+      background-color: #aebbc4; }
+
 .tenders-search {
   padding: 0 25px; }
   .tenders-search__bar {
