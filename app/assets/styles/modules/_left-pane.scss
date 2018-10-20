@@ -22,11 +22,12 @@
       white-space: nowrap;
     }
   }
-  &__head-sep {
-    width: 1px;
-    height: 12px;
-    background-color: $greyish-blue;
-    margin: 0 12px;
+  &__toggle {
+    i {
+      font-size: 20px;
+      color: $aqua;
+      cursor: pointer;
+    }
   }
   &__user {
     text-align: center;
@@ -105,13 +106,16 @@
       }
       span {
         &::after {
-          content: "\f0da";
+          content: "\f0d7";
           font-family: FontAwesome;
           position: absolute;
           top: 50%;
           right: 47px;
           transform: translateY(-50%);
         }
+      }
+      span.on::after {
+        content: "\f0da";
       }
     }
     &-active {
@@ -132,6 +136,9 @@
         left: -14px;
         transform: translateY(-50%);
       }
+    }
+    a.active {
+      color: $blue !important;
     }
   }
   &__footer {

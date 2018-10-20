@@ -24,6 +24,10 @@
     color: $grey3;
     padding: 25px;
   }
+  .table tbody tr td button.btn,
+  .table tbody tr td a.btn {
+    font-size: 10px;
+  }
   .table td,
   .table th {
     border: none !important;

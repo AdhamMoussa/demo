@@ -13476,12 +13476,12 @@ COLORS
   font-size: 18px; }
 
 .title {
-  font-size: 24px;
+  font-size: 22px;
   color: #45484b;
   margin: 0 0 20px; }
 
 .subtitle {
-  font-size: 18px;
+  font-size: 16px;
   color: #939597;
   margin: 0;
   margin-bottom: 50px; }
@@ -13529,22 +13529,51 @@ body {
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-size: cover; }
+  .page-layout__row.hide-left .page-layout__left-pane {
+    width: 100px; }
+    .page-layout__row.hide-left .page-layout__left-pane .left-pane__head {
+      padding-top: 10px;
+      margin-bottom: 100px; }
+    .page-layout__row.hide-left .page-layout__left-pane .left-pane__head > div {
+      justify-content: center !important; }
+    .page-layout__row.hide-left .page-layout__left-pane .left-pane__toggle i {
+      font-size: 28px; }
+    .page-layout__row.hide-left .page-layout__left-pane .left-pane__logo, .page-layout__row.hide-left .page-layout__left-pane .left-pane__user, .page-layout__row.hide-left .page-layout__left-pane .left-pane__link-text {
+      display: none !important; }
+    .page-layout__row.hide-left .page-layout__left-pane .left-pane__links {
+      padding: 0; }
+    .page-layout__row.hide-left .page-layout__left-pane .left-pane__link {
+      justify-content: center; }
+      .page-layout__row.hide-left .page-layout__left-pane .left-pane__link-icon {
+        margin: 0; }
+    .page-layout__row.hide-left .page-layout__left-pane .left-pane__nested-link {
+      padding: 0;
+      text-align: center; }
+    .page-layout__row.hide-left .page-layout__left-pane .left-pane__footer-links a {
+      margin: 0;
+      display: block; }
+      .page-layout__row.hide-left .page-layout__left-pane .left-pane__footer-links a:not(:last-child) {
+        margin-bottom: 15px; }
+  .page-layout__row.hide-left .page-layout__right-pane {
+    width: calc(100% - 100px); }
 
 .page-layout__left-pane {
-  width: 300px;
+  width: 310px;
   background-color: #fff;
   padding-bottom: 100px;
   position: relative;
   border-right: 1px solid #e7e7e7;
-  min-height: 100vh; }
+  min-height: 100vh;
+  transition: width .5s; }
 
 .page-layout__right-pane {
-  width: calc(100% - 300px);
+  width: calc(100% - 310px);
   background-color: #fbfbfb;
   padding-bottom: 100px;
   margin-bottom: 60px;
   position: relative;
-  min-height: 100vh; }
+  min-height: 100vh;
+  transition: width .5s; }
 
 .left-pane {
   background-image: url("../images/side-pane.png");
@@ -13565,11 +13594,10 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     white-space: nowrap; }
-  .left-pane__head-sep {
-    width: 1px;
-    height: 12px;
-    background-color: #e0e7f0;
-    margin: 0 12px; }
+  .left-pane__toggle i {
+    font-size: 20px;
+    color: #04a9f4;
+    cursor: pointer; }
   .left-pane__user {
     text-align: center;
     margin-bottom: 50px; }
@@ -13630,13 +13658,15 @@ body {
     .left-pane__link-text span {
       color: #9bb0bf; }
     .left-pane__link-text span::after {
-      content: "\f0da";
+      content: "\f0d7";
       font-family: FontAwesome;
       position: absolute;
       top: 50%;
       right: 47px;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%); }
+    .left-pane__link-text span.on::after {
+      content: "\f0da"; }
     .left-pane__link-active {
       color: #11428c !important; }
   .left-pane__nested-link {
@@ -13653,6 +13683,8 @@ body {
         left: -14px;
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%); }
+    .left-pane__nested-link a.active {
+      color: #11428c !important; }
   .left-pane__footer {
     padding: 24px 0;
     background-color: #fff;
@@ -13732,7 +13764,7 @@ body {
     justify-content: space-between;
     align-items: baseline; }
     .footer__inner p, .footer__inner a {
-      font-size: 14px;
+      font-size: 12px;
       line-height: 24px; }
       .footer__inner p.copy, .footer__inner a.copy {
         color: #545c61; }
@@ -13761,7 +13793,7 @@ body {
     font-size: 14px;
     color: #212529; }
   .sections-cards__description h4 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: #11428c;
     margin: 0; }
@@ -13772,9 +13804,9 @@ body {
       .sections-cards__footer > div i {
         margin-right: 7px;
         color: #9da2aa;
-        font-size: 12px; }
+        font-size: 10px; }
       .sections-cards__footer > div span {
-        font-size: 13px; }
+        font-size: 10px; }
 
 .button {
   color: #fff !important;
@@ -13820,6 +13852,10 @@ body {
   font-size: 14px;
   color: #9bb0bf;
   padding: 25px; }
+
+.table-component .table tbody tr td button.btn,
+.table-component .table tbody tr td a.btn {
+  font-size: 10px; }
 
 .table-component .table td,
 .table-component .table th {
@@ -13895,11 +13931,13 @@ body {
     align-items: center;
     margin-bottom: 45px; }
   .latest-tenders__title h2 {
-    font-size: 24px;
+    font-size: 22px;
     color: #45484b;
     margin: 0; }
-  .latest-tenders__add-btn a i {
-    margin-right: 9px; }
+  .latest-tenders__add-btn a {
+    font-size: 12px; }
+    .latest-tenders__add-btn a i {
+      margin-right: 9px; }
 
 .tender-company {
   padding: 0 25px; }
@@ -13908,17 +13946,17 @@ body {
     align-items: center;
     margin-bottom: 57px; }
     .tender-company__head h1 {
-      font-size: 24px;
+      font-size: 22px;
       color: #45484b;
       margin: 0 33px 0 0; }
     .tender-company__head img {
-      max-height: 60px;
+      max-height: 50px;
       max-width: 100%;
       width: auto; }
   .tender-company__table {
     margin-bottom: 40px; }
   .tender-company__doc-title {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     color: #212529;
     margin-bottom: 30px; }
@@ -13950,8 +13988,8 @@ body {
       letter-spacing: 1.85px;
       margin: 0 40px; }
     .tender-company__interest a {
-      width: 260px;
-      font-size: 14px; }
+      width: 220px;
+      font-size: 12px; }
       .tender-company__interest a i {
         margin-left: 8px; }
     .tender-company__interest #not-interested {
@@ -13959,13 +13997,13 @@ body {
   .tender-company__querry {
     margin-bottom: 77px; }
     .tender-company__querry-title {
-      font-size: 18px;
+      font-size: 16px;
       color: #11428c;
       margin-bottom: 50px; }
     .tender-company__querry form input.input {
       display: block;
       width: 100%;
-      font-size: 16px;
+      font-size: 14px;
       margin-bottom: 60px;
       color: #636363; }
       .tender-company__querry form input.input::-webkit-input-placeholder {
@@ -13977,18 +14015,18 @@ body {
       .tender-company__querry form input.input::placeholder {
         color: #a6b8d2; }
     .tender-company__querry form button {
-      width: 260px;
-      font-size: 14px; }
+      width: 220px;
+      font-size: 12px; }
       .tender-company__querry form button i {
         margin-left: 8px; }
 
 .bid-detail {
   background-color: #f5fbff;
   padding: 35px 25px 100px;
-  margin-bottom: 50px; }
+  margin-bottom: 40px; }
   .bid-detail__title {
     margin-bottom: 65px;
-    font-size: 24px;
+    font-size: 22px;
     color: #45484b; }
   .bid-detail__inputs {
     display: flex;
@@ -13996,7 +14034,7 @@ body {
     align-items: center; }
     .bid-detail__inputs input {
       width: 45%;
-      font-size: 16px;
+      font-size: 14px;
       color: #636363; }
       .bid-detail__inputs input::-webkit-input-placeholder {
         color: #a6b8d2; }
@@ -14024,21 +14062,21 @@ body {
   .bids-cards__text {
     margin-right: 20px; }
     .bids-cards__text span {
-      font-size: 14px;
+      font-size: 12px;
       color: #212529; }
     .bids-cards__text p {
-      font-size: 24px;
+      font-size: 22px;
       color: #11428c;
       font-weight: 500;
       line-height: 1; }
   .bids-cards__count {
-    font-size: 24px;
+    font-size: 22px;
     color: #9bb0bf; }
 
 .send-doc {
   margin-bottom: 10px; }
   .send-doc__title {
-    font-size: 18px;
+    font-size: 16px;
     color: #11428c;
     margin-bottom: 50px; }
   .send-doc form {
@@ -14050,7 +14088,7 @@ body {
       margin: 0 50px 60px 0; }
       .send-doc form .send-doc__input input.input {
         width: 100%;
-        font-size: 16px;
+        font-size: 14px;
         color: #636363;
         padding-left: 128px; }
         .send-doc form .send-doc__input input.input::-webkit-input-placeholder {
@@ -14063,12 +14101,12 @@ body {
           color: #a6b8d2; }
       .send-doc form .send-doc__input label {
         position: absolute;
-        font-size: 16px;
+        font-size: 14px;
         color: #a6b8d2;
         margin: 0; }
     .send-doc form button {
-      width: calc(25% - 50px);
-      font-size: 14px; }
+      width: calc(25% - 100px);
+      font-size: 12px; }
       .send-doc form button i {
         margin-left: 8px; }
 
@@ -14076,11 +14114,11 @@ body {
   display: flex;
   margin-bottom: 60px; }
   .bids-download img {
-    width: 40px;
-    height: 50px;
+    width: 30px;
+    height: 40px;
     margin-right: 10px; }
   .bids-download p {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500; }
   .bids-download__bids-received a {
     margin-right: 80px;
@@ -14111,26 +14149,30 @@ body {
   .new-tender__form form input {
     width: 100%;
     height: 100%;
-    font-size: 18px;
+    font-size: 14px;
     color: #7a858d; }
     .new-tender__form form input::-webkit-input-placeholder {
-      color: #7a858d; }
+      color: #7a858d;
+      font-size: 14px; }
     .new-tender__form form input:-ms-input-placeholder {
-      color: #7a858d; }
+      color: #7a858d;
+      font-size: 14px; }
     .new-tender__form form input::-ms-input-placeholder {
-      color: #7a858d; }
+      color: #7a858d;
+      font-size: 14px; }
     .new-tender__form form input::placeholder {
-      color: #7a858d; }
+      color: #7a858d;
+      font-size: 14px; }
   .new-tender__form form label {
     color: #7a858d;
-    font-size: 30px; }
+    font-size: 25px; }
   .new-tender__form form select {
     border: 0;
     background-color: transparent;
     border-bottom: 1px solid #c9c9c9;
     width: 100%;
     color: #7a858d;
-    font-size: 18px; }
+    font-size: 14px; }
     .new-tender__form form select:focus {
       outline: none; }
   .new-tender__form form .row:not(:last-child) {
@@ -14154,7 +14196,8 @@ body {
       bottom: 0;
       width: 80%;
       border-bottom: 1px solid #c9c9c9;
-      font-size: 18px;
+      font-size: 14px;
+      font-weight: 400;
       display: flex;
       align-items: flex-end;
       color: #7a858d;
@@ -14221,7 +14264,7 @@ body {
         .new-tender__form form .companies__item label .card:hover {
           box-shadow: 0; }
         .new-tender__form form .companies__item label .card .card-body {
-          padding: 35px 25px 10px; }
+          padding: 60px 25px 10px; }
           .new-tender__form form .companies__item label .card .card-body hr {
             margin: 25px 0; }
       .new-tender__form form .companies__item label .company-logo {
@@ -14235,26 +14278,26 @@ body {
              object-position: center; }
       .new-tender__form form .companies__item label .company-name h5 {
         margin: 0;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         color: #7a858d; }
       .new-tender__form form .companies__item label .company-networth {
         margin-bottom: 30px; }
         .new-tender__form form .companies__item label .company-networth__text {
-          font-size: 18px;
+          font-size: 16px;
           color: #11428c;
           font-weight: 500;
           margin-bottom: 5px; }
         .new-tender__form form .companies__item label .company-networth__amount {
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 500;
           color: #9bb0bf; }
       .new-tender__form form .companies__item label .company-profile-link a {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
         color: #7a858d; }
         .new-tender__form form .companies__item label .company-profile-link a i {
-          font-size: 16px;
+          font-size: 14px;
           margin-left: 8px; }
   .new-tender__form form .send-search {
     display: flex;
@@ -14267,8 +14310,8 @@ body {
       letter-spacing: 1.85px;
       margin: 0 40px; }
     .new-tender__form form .send-search a, .new-tender__form form .send-search button {
-      width: 260px;
-      font-size: 14px; }
+      width: 200px;
+      font-size: 12px; }
       .new-tender__form form .send-search a i, .new-tender__form form .send-search button i {
         margin-left: 8px; }
     .new-tender__form form .send-search #search {
@@ -14281,9 +14324,9 @@ body {
     position: relative; }
     .tenders-search__bar input {
       width: 100%;
-      font-size: 24px;
+      font-size: 20px;
       color: #939597;
-      padding-bottom: 28px;
+      padding-bottom: 20px;
       padding-right: 50px; }
     .tenders-search__bar label {
       position: absolute;
@@ -14291,7 +14334,7 @@ body {
       right: 0; }
       .tenders-search__bar label i {
         color: #45484b;
-        font-size: 30px; }
+        font-size: 20px; }
   .tenders-search__results-items .card {
     margin: 0 !important;
     margin-bottom: 60px !important;
@@ -14319,24 +14362,24 @@ body {
            object-position: center; }
     .tenders-search__results-item .company-name h5 {
       margin: 0;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 500;
       color: #7a858d; }
     .tenders-search__results-item .company-networth {
       margin-bottom: 30px; }
       .tenders-search__results-item .company-networth__text {
-        font-size: 18px;
+        font-size: 16px;
         color: #11428c;
         font-weight: 500;
         margin-bottom: 5px; }
       .tenders-search__results-item .company-networth__amount {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         color: #9bb0bf; }
     .tenders-search__results-item .company-profile-link a {
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 500;
       color: #7a858d; }
       .tenders-search__results-item .company-profile-link a i {
-        font-size: 16px;
+        font-size: 14px;
         margin-left: 8px; }

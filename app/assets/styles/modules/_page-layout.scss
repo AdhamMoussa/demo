@@ -5,21 +5,74 @@
     background-repeat: no-repeat;
     background-position-x: 100%;
     background-size: cover;
+    &.hide-left {
+      .page-layout__left-pane {
+        width: 100px;
+        .left-pane {
+          &__head {
+            padding-top: 10px;
+            margin-bottom: 100px;
+          }
+          &__head > div {
+            justify-content: center !important;
+          }
+          &__toggle {
+            i {
+              font-size: 28px;
+            }
+          }
+          &__logo,
+          &__user,
+          &__link-text {
+            display: none !important;
+          }
+          &__links {
+            padding: 0;
+          }
+          &__link {
+            justify-content: center;
+            &-icon {
+              margin: 0;
+            }
+          }
+          &__nested-link {
+            padding: 0;
+            text-align: center;
+          }
+          &__footer {
+            &-links {
+              a {
+                margin: 0;
+                display: block;
+                &:not(:last-child) {
+                  margin-bottom: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .page-layout__right-pane {
+        width: calc(100% - 100px);
+      }
+    }
   }
   &__left-pane {
-    width: 300px;
+    width: 310px;
     background-color: #fff;
     padding-bottom: 100px;
     position: relative;
     border-right: 1px solid $grey4;
     min-height: 100vh;
+    transition: width .5s;
   }
   &__right-pane {
-    width: calc(100% - 300px);
+    width: calc(100% - 310px);
     background-color: $grey6;
     padding-bottom: 100px;
     margin-bottom: 60px;
     position: relative;
     min-height: 100vh;
+    transition: width .5s;
   }
 }
