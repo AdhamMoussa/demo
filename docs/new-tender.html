@@ -9,7 +9,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://unpkg.com/js-datepicker/datepicker.css">
-  <link rel="stylesheet" href="assets/styles/styles-14aab10af1.css"/>
+  <link rel="stylesheet" href="assets/styles/styles-c54b20e91b.css"/>
 
   <title>Provide It</title>
 </head>
@@ -17,20 +17,19 @@
 <body>
   <div class="main-container">
     <div class="page-layout">
-      <div class="page-layout__row">
+      <div class="page-layout__row hide-left">
         <!-- start left side -->
         <div class="page-layout__left-pane">
           <div class="left-pane">
             <!-- head -->
             <div class="left-pane__head">
-              <div class="d-flex justify-content-center align-items-center">
-                <div class="left-pane__logo d-flex align-items-center">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center left-pane__logo">
                   <img src="assets/images/logo.png" alt="logo" class="img-fluid">
                   <h1 class="left-pane__logo-name font18 m-0">Provide It</h1>
                 </div>
-                <div class="left-pane__head-sep"></div>
-                <div class="left-pane__head-text">
-                  <p class="font8 m-0">Simple, smart & scalable<br />Tenders management tool</p>
+                <div class="left-pane__toggle">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
                 </div>
               </div>
             </div>
@@ -69,14 +68,14 @@
                       <img src="assets/images/dashboard-icons/tenders-left.png" alt="tenders icon">
                     </div>
                     <div class="left-pane__link-text">
-                      <span class="font15 left-pane__link-active">Tenders</span>
+                      <span class="font15 left-pane__link-active on">Tenders</span>
                     </div>
                   </div>
                 </a>
                 <!-- tenders nested links -->
                 <div class="left-pane__nested-links collapse" id="collapseTenders">
                   <div class="left-pane__nested-link">
-                    <a class="font13" href="#">New Tender</a>
+                    <a class="font13 active" href="#">New Tender</a>
                   </div>
                   <div class="left-pane__nested-link">
                     <a class="font13" href="#">Old Tenders</a>
@@ -220,25 +219,26 @@
                       </div>
                       <div class="col file-input">
                         <span id="pdf-input-placeholder">PDF *</span>
-                        <input type="file" id="pdf-input">
+                        <input type="file" id="pdf-input" required>
                         <label for="pdf-input">Browse</label>
                       </div>
                     </div>
                     <div class="row no-gutters">
                       <div class="col date-input">
-                        <input placeholder="Date of Interest *" class="input" type="text" id="interest-date">
+                        <input placeholder="Date of Interest *" class="input" type="text" id="interest-date" required>
                         <label for="interest-date">
                           <i class="fa fa-calendar" aria-hidden="true"></i>
                         </label>
                       </div>
                       <div class="col date-input">
-                        <input placeholder="Querry Submission Date *" class="input" type="text" id="querry-date">
+                        <input placeholder="Querry Submission Date *" class="input" type="text" id="querry-date"
+                          required>
                         <label for="querry-date">
                           <i class="fa fa-calendar" aria-hidden="true"></i>
                         </label>
                       </div>
                       <div class="col date-input">
-                        <input placeholder="Final Submission Date *" class="input" type="text" id="final-date">
+                        <input placeholder="Final Submission Date *" class="input" type="text" id="final-date" required>
                         <label for="final-date">
                           <i class="fa fa-calendar" aria-hidden="true"></i>
                         </label>
@@ -422,7 +422,7 @@
     const picker2 = datepicker("#querry-date");
     const picker3 = datepicker("#final-date");
   </script>
-  <script src="assets/scripts/App-2a8e0c9e2a.js"></script>
+  <script src="assets/scripts/App-cea96f5407.js"></script>
 </body>
 
 </html>
