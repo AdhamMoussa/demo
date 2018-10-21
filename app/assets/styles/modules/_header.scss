@@ -1,20 +1,45 @@
 .header {
-  background-color: $light-blue;
   color: #fff;
+  background-color: $light-blue;
   &__inner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    // align-items: center;
+  }
+  &__logo {
     padding: 12px 25px 9px;
+    background-color: #fff;
+    img {
+      width: 24px;
+      height: 40px;
+      margin-right: 7px;
+    }
+    &-name {
+      color: $aqua;
+      font-weight: 700;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    @include xLargeUp {
+      display: none !important;
+    }
   }
   &__welcome {
+    padding: 12px 25px 9px;
+    display: none;
+    @include largeUp {
+      display: flex;
+      align-items: center;
+    }
     p {
       font-weight: 300;
       margin: 0;
     }
   }
   &__user {
+    padding: 12px 25px 9px;
     display: flex;
+    align-items: center;
     &-updates {
       margin-right: 25px;
       &-icon {
@@ -56,6 +81,20 @@
         object-position: center;
         border-radius: 50%;
       }
+    }
+  }
+  &__menu-icon {
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 70;
+    i {
+      font-size: 18px;
+    }
+    @include xLargeUp {
+      display: none;
     }
   }
 }

@@ -3,9 +3,12 @@ import $ from "jquery";
 $(function() {
   // left pane toggle
   const pageRow = $('.page-layout__row');
+  const leftPane = $('.page-layout__left-pane');
   const toggleIcon = $('.left-pane__toggle');
   const leftPaneLinks = $('.left-pane__link-wrapper');
   const leftPaneNestedLinks = $('.left-pane__nested-links');
+  const menuIcon = $('#menu-icon');
+  const pageOverlay = $('#page-overlay');
 
   //dashboard link arrow
   const dashboardArrowLinks = $('[data-toggle=collapse]');
@@ -19,7 +22,7 @@ $(function() {
   toggleIcon.click(() => {
     pageRow.toggleClass("hide-left");
     leftPaneNestedLinks.each(function (_, el) {
-      $(el).removeClass("show");
+      $(el).removeClass("show").parent().find('.left-pane__link-text span').removeClass('on');
     });
 
   });
@@ -28,6 +31,18 @@ $(function() {
       pageRow.removeClass("hide-left");
     });
   });
+  const toggleFunc = () => {
+    if (leftPane.hasClass("page-layout__left-pane--show")) {
+      pageOverlay.fadeOut();
+    } else {
+      pageOverlay.fadeIn();
+    }
+    leftPane.toggleClass("page-layout__left-pane--show");
+  };
+  menuIcon.click(toggleFunc);
+  pageOverlay.click(toggleFunc);
+  $('.left-pane__close').click(toggleFunc);
+
 
   // toggle arrow link on click
   dashboardArrowLinks.each(function (_, link) {

@@ -1,78 +1,109 @@
 .page-layout {
   &__row {
-    display: flex;
     background-image: url("../images/bg.png");
     background-repeat: no-repeat;
     background-position-x: 100%;
     background-size: cover;
+    @include xLargeUp {
+      display: flex;
+    }
     &.hide-left {
-      .page-layout__left-pane {
-        width: 100px;
-        .left-pane {
-          &__head {
-            padding-top: 10px;
-            margin-bottom: 100px;
-          }
-          &__head > div {
-            justify-content: center !important;
-          }
-          &__toggle {
-            i {
-              font-size: 28px;
+      @include xLargeUp {
+        .page-layout__left-pane {
+          width: 100px;
+          .left-pane {
+            &__head {
+              padding-top: 10px;
+              margin-bottom: 100px;
             }
-          }
-          &__logo,
-          &__user,
-          &__link-text {
-            display: none !important;
-          }
-          &__links {
-            padding: 0;
-          }
-          &__link {
-            justify-content: center;
-            &-icon {
-              margin: 0;
+            &__head > div {
+              justify-content: center !important;
             }
-          }
-          &__nested-link {
-            padding: 0;
-            text-align: center;
-          }
-          &__footer {
-            &-links {
-              a {
+            &__toggle {
+              i {
+                font-size: 28px;
+              }
+            }
+            &__logo,
+            &__user,
+            &__link-text {
+              display: none !important;
+            }
+            &__links {
+              padding: 0;
+            }
+            &__link {
+              justify-content: center;
+              &-icon {
                 margin: 0;
-                display: block;
-                &:not(:last-child) {
-                  margin-bottom: 15px;
+              }
+            }
+            &__nested-link {
+              padding: 0;
+              text-align: center;
+            }
+            &__footer {
+              &-links {
+                a {
+                  margin: 0;
+                  display: block;
+                  &:not(:last-child) {
+                    margin-bottom: 15px;
+                  }
                 }
               }
             }
           }
         }
-      }
-      .page-layout__right-pane {
-        width: calc(100% - 100px);
+        .page-layout__right-pane {
+          @include xLargeUp {
+            width: calc(100% - 100px);
+          }
+        }
       }
     }
   }
   &__left-pane {
+    position: fixed;
+    top: 0;
+    left: -100%;
     width: 310px;
     background-color: #fff;
-    padding-bottom: 100px;
-    position: relative;
-    border-right: 1px solid $grey4;
-    min-height: 100vh;
-    transition: width .5s;
+    height: 100vh;
+    overflow: auto;
+    transition: width 0.5s, left 0.5s;
+    z-index: 100;
+    @include xLargeUp {
+      position: relative;
+      height: unset;
+      top: unset;
+      left: unset;
+      border-right: 1px solid $grey4;
+    }
+    &--show {
+      left: 0;
+    }
   }
   &__right-pane {
-    width: calc(100% - 310px);
+    width: 100%;
     background-color: $grey6;
     padding-bottom: 100px;
-    margin-bottom: 60px;
     position: relative;
     min-height: 100vh;
-    transition: width .5s;
+    transition: width 0.5s;
+    @include xLargeUp {
+      width: calc(100% - 310px);
+    }
   }
+}
+
+.page-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.4);
+  z-index: 50;
+  display: none;
 }

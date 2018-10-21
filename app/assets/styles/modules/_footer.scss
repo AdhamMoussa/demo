@@ -1,4 +1,5 @@
 .footer {
+  background-color: #f5fbff;
   position: absolute;
   left: 0;
   right: 0;
@@ -6,8 +7,13 @@
   &__inner {
     padding: 24px 25px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
+    @include smallUp {
+      flex-direction: row;
+      align-items: baseline;
+    }
     p, a {
       font-size: 12px;
       line-height: 24px;

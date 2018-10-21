@@ -9,7 +9,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://unpkg.com/js-datepicker/datepicker.css">
-  <link rel="stylesheet" href="assets/styles/styles-c54b20e91b.css"/>
+  <link rel="stylesheet" href="assets/styles/styles-273f402a33.css"/>
 
   <title>Provide It</title>
 </head>
@@ -30,6 +30,9 @@
                 </div>
                 <div class="left-pane__toggle">
                   <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <div class="left-pane__close">
+                  <i class="fa fa-times" aria-hidden="true"></i>
                 </div>
               </div>
             </div>
@@ -68,7 +71,7 @@
                       <img src="assets/images/dashboard-icons/tenders-left.png" alt="tenders icon">
                     </div>
                     <div class="left-pane__link-text">
-                      <span class="font15 left-pane__link-active on">Tenders</span>
+                      <span class="font15 left-pane__link-active">Tenders</span>
                     </div>
                   </div>
                 </a>
@@ -175,6 +178,10 @@
           <!-- Start Header -->
           <header class="header">
             <div class="header__inner">
+              <div class="d-flex align-items-center header__logo">
+                <img src="assets/images/logo.png" alt="logo" class="img-fluid">
+                <h1 class="left-pane__logo-name font18 m-0">Provide It</h1>
+              </div>
               <div class="header__welcome">
                 <p class="font12">Weclome <span>Richard V. Welsh</span> to your dashboard!</p>
               </div>
@@ -202,6 +209,9 @@
                 <div class="header__user-icon">
                   <img src="assets/images/user-photo.png" alt="user photo">
                 </div>
+                <div class="header__menu-icon" id="menu-icon">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
               </div>
             </div>
           </header>
@@ -214,30 +224,30 @@
                 <div class="new-tender__form">
                   <form>
                     <div class="row no-gutters">
-                      <div class="col">
+                      <div class="col-lg">
                         <input type="text" class="input" placeholder="Details *" required>
                       </div>
-                      <div class="col file-input">
+                      <div class="col-lg file-input">
                         <span id="pdf-input-placeholder">PDF *</span>
                         <input type="file" id="pdf-input" required>
                         <label for="pdf-input">Browse</label>
                       </div>
                     </div>
                     <div class="row no-gutters">
-                      <div class="col date-input">
+                      <div class="col-lg date-input">
                         <input placeholder="Date of Interest *" class="input" type="text" id="interest-date" required>
                         <label for="interest-date">
                           <i class="fa fa-calendar" aria-hidden="true"></i>
                         </label>
                       </div>
-                      <div class="col date-input">
+                      <div class="col-lg date-input">
                         <input placeholder="Querry Submission Date *" class="input" type="text" id="querry-date"
                           required>
                         <label for="querry-date">
                           <i class="fa fa-calendar" aria-hidden="true"></i>
                         </label>
                       </div>
-                      <div class="col date-input">
+                      <div class="col-lg date-input">
                         <input placeholder="Final Submission Date *" class="input" type="text" id="final-date" required>
                         <label for="final-date">
                           <i class="fa fa-calendar" aria-hidden="true"></i>
@@ -245,7 +255,7 @@
                       </div>
                     </div>
                     <div class="row no-gutters">
-                      <div class="col">
+                      <div class="col-lg">
                         <select>
                           <option disabled selected>Category *</option>
                           <option value="1">category 1</option>
@@ -253,7 +263,7 @@
                           <option value="3">category 3</option>
                         </select>
                       </div>
-                      <div class="col">
+                      <div class="col-lg">
                         <select>
                           <option disabled selected>Classification *</option>
                           <option value="1">classification 1</option>
@@ -272,7 +282,7 @@
                     </div>
                     <!-- /send or search -->
                     <div class="row companies">
-                      <div class="col-md-3 companies__item">
+                      <div class="col-sm-6 col-lg-3 companies__item">
                         <input type="checkbox" id="company1">
                         <label for="company1">
                           <!-- Card -->
@@ -301,7 +311,7 @@
                           </span>
                         </label>
                       </div>
-                      <div class="col-md-3 companies__item">
+                      <div class="col-sm-6 col-lg-3 companies__item">
                         <input type="checkbox" id="company2">
                         <label for="company2">
                           <!-- Card -->
@@ -330,7 +340,7 @@
                           </span>
                         </label>
                       </div>
-                      <div class="col-md-3 companies__item">
+                      <div class="col-sm-6 col-lg-3 companies__item">
                         <input type="checkbox" id="company3">
                         <label for="company3">
                           <!-- Card -->
@@ -359,7 +369,7 @@
                           </span>
                         </label>
                       </div>
-                      <div class="col-md-3 companies__item">
+                      <div class="col-sm-6 col-lg-3 companies__item">
                         <input type="checkbox" id="company4">
                         <label for="company4">
                           <!-- Card -->
@@ -406,6 +416,7 @@
         <!-- /end right side -->
       </div>
     </div>
+    <div class="page-overlay" id="page-overlay"></div>
   </div>
   <!-- SCRIPTS -->
   <!-- JQuery -->
@@ -422,7 +433,7 @@
     const picker2 = datepicker("#querry-date");
     const picker3 = datepicker("#final-date");
   </script>
-  <script src="assets/scripts/App-cea96f5407.js"></script>
+  <script src="assets/scripts/App-82b89df351.js"></script>
 </body>
 
 </html>
