@@ -276,7 +276,7 @@
   }
 }
 
-.new-tender {
+.new-tender, .company-info {
   padding: 0 25px;
   &__form {
     form {
@@ -334,7 +334,7 @@
         display: flex;
         align-items: flex-end;
         position: relative;
-        span#pdf-input-placeholder {
+        span {
           position: absolute;
           top: 0;
           left: 0;
@@ -351,7 +351,7 @@
             left: 25px;
           }
         }
-        input#pdf-input {
+        input {
           visibility: hidden;
         }
         label {
@@ -372,8 +372,11 @@
         position: relative;
         label {
           position: absolute;
-          right: 45px;
+          right: 0;
           top: -10px;
+          @include smallUp {
+            right: 45px;
+          }
         }
         &:last-child {
           label {
@@ -504,23 +507,85 @@
           letter-spacing: 1.85px;
           margin: 20px 0;
           text-align: center;
-          width: 200px;
+          width: 100%;
           @include smallUp {
             width: unset;
             margin: 0 40px;
           }
         }
         a, button {
-          width: 200px;
+          width: 100%;
           font-size: 12px;
           i {
             margin-left: 8px;
+          }
+          @include smallUp {
+            width: 200px;
           }
         }
         #search {
           background-color: #aebbc4;
         }
       }
+    }
+  }
+}
+
+.company-info {
+  padding: 0;
+  &__head {
+    padding: 0 25px;
+  }
+  &__form-section {
+    padding: 0 25px;
+  }
+  &__form-subtitle {
+    margin-bottom: 40px;
+    h3 {
+      font-size: 16px;
+      font-weight: 500;
+      color: $grey1;
+    }
+  }
+  &__form-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    input {
+      width: 20px !important;
+      height: 20px !important;
+      margin-right: 10px;
+    }
+    label {
+      margin: 0;
+      font-size: 14px !important;
+      color: $grey2 !important;
+    }
+  }
+  .sub-row {
+    .input:first-child {
+      margin-right: 15px;
+    }
+    .input:last-child {
+      margin-left: 15px;
+    }
+  }
+  hr {
+    margin-bottom: 70px;
+  }
+  &__form-checkbox-q {
+    p {
+      color: $grey2;
+    }
+    .company-info__form-checkbox:first-child {
+      margin-right: 30px;
+    }
+  }
+  .file-input {
+    padding: 0 !important;
+    span {
+      left: 0 !important;
+      width: 100% !important;
     }
   }
 }

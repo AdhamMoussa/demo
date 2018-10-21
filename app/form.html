@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Styles CSS -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- build:css assets/styles/styles.css -->
+  <link rel="stylesheet" href="temp/styles/styles.css">
+  <!-- endbuild -->
+
+  <title>Provide It</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="page-layout">
+      <div class="page-layout__row hide-left">
+        <!-- start left side -->
+        <div class="page-layout__left-pane">
+          <div class="left-pane">
+            <!-- head -->
+            <div class="left-pane__head">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center left-pane__logo">
+                  <img src="assets/images/logo.png" alt="logo" class="img-fluid">
+                  <h1 class="left-pane__logo-name font18 m-0">Provide It</h1>
+                </div>
+                <div class="left-pane__toggle">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <div class="left-pane__close">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <!-- user -->
+            <div class="left-pane__user">
+              <div class="left-pane__user-img">
+                <img src="assets/images/user-photo.png" alt="user" class="img-fluid">
+              </div>
+              <div class="left-pane__user-info">
+                <div class="left-pane__user-name font15">Richard V.Welsh</div>
+                <div class="left-pane__user-title font12">Project Manager</div>
+              </div>
+              <!-- use "offline" class for offline status -->
+              <div class="left-pane__user-status online">
+                <span>online</span>
+              </div>
+            </div>
+            <!-- links -->
+            <div class="left-pane__links">
+              <!-- dashboard -->
+              <div class="left-pane__link-wrapper">
+                <div class="left-pane__link">
+                  <div class="left-pane__link-icon">
+                    <img src="assets/images/dashboard-icons/dashboard-icon-grey.png" alt="dashboard icon">
+                  </div>
+                  <div class="left-pane__link-text">
+                    <a class="font15" href="#">Dashboard</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Tenders -->
+              <div class="left-pane__link-wrapper">
+                <a data-toggle="collapse" href="#collapseTenders" aria-expanded="false" aria-controls="collapseTenders">
+                  <div class="left-pane__link">
+                    <div class="left-pane__link-icon">
+                      <img src="assets/images/dashboard-icons/tenders-left.png" alt="tenders icon">
+                    </div>
+                    <div class="left-pane__link-text">
+                      <span class="font15 left-pane__link-active">Tenders</span>
+                    </div>
+                  </div>
+                </a>
+                <!-- tenders nested links -->
+                <div class="left-pane__nested-links collapse" id="collapseTenders">
+                  <div class="left-pane__nested-link">
+                    <a class="font13" href="#">New Tender</a>
+                  </div>
+                  <div class="left-pane__nested-link">
+                    <a class="font13" href="#">Old Tenders</a>
+                  </div>
+                  <div class="left-pane__nested-link">
+                    <a class="font13" href="#">Future Tenders</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Profile -->
+              <div class="left-pane__link-wrapper">
+                <a data-toggle="collapse" href="#collapseProfile" aria-expanded="false" aria-controls="collapseProfile">
+                  <div class="left-pane__link">
+                    <div class="left-pane__link-icon">
+                      <img src="assets/images/dashboard-icons/profile-icon-grey.png" alt="profile icon">
+                    </div>
+                    <div class="left-pane__link-text">
+                      <span class="font15">Profile</span>
+                    </div>
+                  </div>
+                </a>
+                <!-- profile nested links -->
+                <div class="left-pane__nested-links collapse" id="collapseProfile">
+                  <!-- nested link example
+                    <div class="left-pane__nested-link">
+                      <a class="font13" href="#">nested link</a>
+                    </div>
+                  -->
+                </div>
+              </div>
+              <!-- settings -->
+              <div class="left-pane__link-wrapper">
+                <div class="left-pane__link">
+                  <div class="left-pane__link-icon">
+                    <img src="assets/images/dashboard-icons/settings-icon-grey.png" alt="settings icon">
+                  </div>
+                  <div class="left-pane__link-text">
+                    <a class="font15" href="#">Settings</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Employees -->
+              <div class="left-pane__link-wrapper">
+                <a data-toggle="collapse" href="#collapseEmployees" aria-expanded="false" aria-controls="collapseEmployees">
+                  <div class="left-pane__link">
+                    <div class="left-pane__link-icon">
+                      <img src="assets/images/dashboard-icons/employees-icon-grey.png" alt="employees icon">
+                    </div>
+                    <div class="left-pane__link-text">
+                      <span class="font15" href="#">Employees</span>
+                    </div>
+                  </div>
+                </a>
+                <!-- employees nested links -->
+                <div class="left-pane__nested-links collapse" id="collapseEmployees">
+                  <!-- nested link example
+                      <div class="left-pane__nested-link">
+                        <a class="font13" href="#">nested link</a>
+                      </div>
+                    -->
+                </div>
+              </div>
+              <!-- Logout -->
+              <div class="left-pane__link-wrapper">
+                <div class="left-pane__link">
+                  <div class="left-pane__link-icon">
+                    <img src="assets/images/dashboard-icons/logout-icon.png" alt="logout icon">
+                  </div>
+                  <div class="left-pane__link-text">
+                    <a class="font15" href="#">Logout</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- left pane footer -->
+          </div>
+          <div class="left-pane__footer">
+            <div class="left-pane__footer-links">
+              <a href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /end left side -->
+        <!-- start right side -->
+        <div class="page-layout__right-pane">
+          <!-- Start Header -->
+          <header class="header">
+            <div class="header__inner">
+              <div class="d-flex align-items-center header__logo">
+                <img src="assets/images/logo.png" alt="logo" class="img-fluid">
+                <h1 class="left-pane__logo-name font18 m-0">Provide It</h1>
+              </div>
+              <div class="header__welcome">
+                <p class="font12">Weclome <span>Richard V. Welsh</span> to your dashboard!</p>
+              </div>
+              <div class="header__user">
+                <!-- updates -->
+                <div class="header__user-updates d-flex align-items-center">
+                  <!-- notifications -->
+                  <div class="header__user-updates-icon">
+                    <i class="fa fa-bell" aria-hidden="true"></i>
+                    <!-- count -->
+                    <div class="header__user-updates-count">
+                      <span>3</span>
+                    </div>
+                  </div>
+                  <!-- messages -->
+                  <div class="header__user-updates-icon">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <!-- count -->
+                    <div class="header__user-updates-count">
+                      <span>6</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- user icon -->
+                <div class="header__user-icon">
+                  <img src="assets/images/user-photo.png" alt="user photo">
+                </div>
+                <div class="header__menu-icon" id="menu-icon">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </header>
+          <!-- /End Header -->
+          <div class="right-pane">
+            <div class="right-pane__content">
+              <div class="company-info">
+                <div class="company-info__head">
+                  <h2 class="title">Company Information</h2>
+                  <p class="subtitle">Fill up the form for company info.</p>
+                </div>
+                <div class="company-info__form">
+                  <form>
+                    <!-- form section -->
+                    <div class="company-info__form-section">
+                      <div class="row no-gutters">
+                        <div class="col-lg">
+                          <input type="text" class="input" placeholder="Legal Name of Company (a)" required>
+                        </div>
+                        <div class="col-lg">
+                          <input type="text" class="input" placeholder="Common Trading Name of Company  (If different from a)"
+                            required>
+                        </div>
+                      </div>
+                      <div class="row no-gutters">
+                        <div class="col-lg">
+                          <input type="text" class="input" placeholder="Registered Address" required>
+                        </div>
+                        <div class="col-lg">
+                          <input type="text" class="input" placeholder="Physical Address" required>
+                        </div>
+                      </div>
+                      <div class="row no-gutters">
+                        <div class="col-lg row no-gutters sub-row">
+                          <input type="number" class="col input" placeholder="Telephone" required>
+                          <input type="number" class="col input" placeholder="Fax" required>
+                        </div>
+                        <div class="col-lg">
+                          <input type="number" class="input" placeholder="Number of years in operation under the present business"
+                            required>
+                        </div>
+                      </div>
+                      <div class="row no-gutters">
+                        <div class="col-lg">
+                          <input type="text" class="input" placeholder="Any other name, with company doing business past 5 years"
+                            required>
+                        </div>
+                        <div class="col-lg">
+                          <input type="text" class="input" placeholder="Place of registration (i.e,  Dubai, Other Emirates of UAE)"
+                            required>
+                        </div>
+                      </div>
+                      <div class="row no-gutters">
+                        <select>
+                          <option disabled selected>Classification</option>
+                          <option value="1">classification 1</option>
+                          <option value="2">classification 2</option>
+                          <option value="3">classification 3</option>
+                        </select>
+                      </div>
+                      <div class="company-info__form-subtitle">
+                        <h3>Category</h3>
+                      </div>
+                      <div class="row no-gutters">
+                        <div class="col-lg-6 company-info__form-checkbox">
+                          <input type="checkbox" id="category1">
+                          <label for="category1">Main Works General Civil Works</label>
+                        </div>
+                        <div class="col-lg-6 company-info__form-checkbox">
+                          <input type="checkbox" id="category2">
+                          <label for="category2">Enabling Works (Exacvation, Sharing)</label>
+                        </div>
+                        <div class="col-lg-6 company-info__form-checkbox">
+                          <input type="checkbox" id="category3">
+                          <label for="category3">Infrastructure Works (Roads, Driveways, Utility Services, etc)</label>
+                        </div>
+                        <div class="col-lg-6 company-info__form-checkbox">
+                          <input type="checkbox" id="category4">
+                          <label for="category4">Aluminium and Glazzing</label>
+                        </div>
+                        <div class="col-lg-6 company-info__form-checkbox">
+                          <input type="checkbox" id="category5">
+                          <label for="category5">Internal & External Cladding / Facaed Works</label>
+                        </div>
+                        <div class="col-lg-6 company-info__form-checkbox">
+                          <input type="checkbox" id="category6">
+                          <label for="category6">Metal Works</label>
+                        </div>
+                        <div class="col-lg-6 company-info__form-checkbox">
+                          <input type="checkbox" id="category7">
+                          <label for="category7">Joinery Works</label>
+                        </div>
+                        <div class="col-lg-6 company-info__form-checkbox">
+                          <input type="checkbox" id="category8">
+                          <label for="category8">Building Maintanience unit</label>
+                        </div>
+                        <div class="col-lg-6 company-info__form-checkbox">
+                          <input type="checkbox" id="category9">
+                          <label for="category9">Landscape and iriigation (Hard and Sofft Landscaping)</label>
+                        </div>
+                        <div class="col-lg-6 company-info__form-checkbox">
+                          <input type="checkbox" id="category10">
+                          <label for="category10">Swimming Pool and Water Feature</label>
+                        </div>
+                        <div class="col-lg-6 company-info__form-checkbox">
+                          <input type="checkbox" id="category11">
+                          <label for="category11">Fit-out and/or Refurbishment Work</label>
+                        </div>
+                        <div class="col-lg-6 company-info__form-checkbox">
+                          <input type="checkbox" id="category12">
+                          <label for="category12">Mechanical, Electrical and plumbing</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /form section -->
+                    <!-- ------- -->
+                    <hr />
+                    <!-- ------- -->
+                    <!-- form section -->
+                    <div class="company-info__form-section">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="company-info__form-subtitle">
+                            <h3>Machinery and Equipment</h3>
+                          </div>
+                          <div class="company-info__form-checkbox-q">
+                            <p>Does your company have a fabrication shop?</p>
+                            <div class="d-flex">
+                              <div class="company-info__form-checkbox">
+                                <input type="radio" id="yes1" name="q1">
+                                <label for="yes1">Yes</label>
+                              </div>
+                              <div class="company-info__form-checkbox">
+                                <input type="radio" id="no1" name="q1">
+                                <label for="no1">No</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="company-info__form-checkbox-q">
+                            <p>Your Company have an Equipment yard?</p>
+                            <div class="d-flex">
+                              <div class="company-info__form-checkbox">
+                                <input type="radio" id="yes2" name="q2">
+                                <label for="yes2">Yes</label>
+                              </div>
+                              <div class="company-info__form-checkbox">
+                                <input type="radio" id="no2" name="q2">
+                                <label for="no2">No</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="company-info__form-checkbox-q">
+                            <p>Does Your Company have a Design or Engineering Department?</p>
+                            <div class="d-flex">
+                              <div class="company-info__form-checkbox">
+                                <input type="radio" id="yes3" name="q3">
+                                <label for="yes3">Yes</label>
+                              </div>
+                              <div class="company-info__form-checkbox">
+                                <input type="radio" id="no3" name="q3">
+                                <label for="no3">No</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="company-info__form-checkbox-q">
+                            <p>Does Your Company have Planning Department?</p>
+                            <div class="d-flex">
+                              <div class="company-info__form-checkbox">
+                                <input type="radio" id="yes4" name="q4">
+                                <label for="yes4">Yes</label>
+                              </div>
+                              <div class="company-info__form-checkbox">
+                                <input type="radio" id="no4" name="q4">
+                                <label for="no4">No</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="company-info__form-subtitle">
+                            <h3>Quality Assurance / Quality Control</h3>
+                          </div>
+                          <div class="company-info__form-checkbox-q">
+                            <p>Is Your Company Certified?</p>
+                            <div class="d-flex">
+                              <div class="company-info__form-checkbox">
+                                <input type="radio" id="yes5" name="q5">
+                                <label for="yes5">Yes</label>
+                              </div>
+                              <div class="company-info__form-checkbox">
+                                <input type="radio" id="no5" name="q5">
+                                <label for="no5">No</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="company-info__form-checkbox-q">
+                            <p>Does Your Company have QA/QC Department?</p>
+                            <div class="d-flex">
+                              <div class="company-info__form-checkbox">
+                                <input type="radio" id="yes6" name="q6">
+                                <label for="yes6">Yes</label>
+                              </div>
+                              <div class="company-info__form-checkbox">
+                                <input type="radio" id="no6" name="q6">
+                                <label for="no6">No</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="company-info__form-checkbox-q">
+                            <p>Does Your Company have QA/QC Department?</p>
+                            <div class="d-flex">
+                              <div class="company-info__form-checkbox">
+                                <input type="radio" id="yes7" name="q7">
+                                <label for="yes7">Yes</label>
+                              </div>
+                              <div class="company-info__form-checkbox">
+                                <input type="radio" id="no7" name="q7">
+                                <label for="no7">No</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /form section -->
+                    <!-- ------ -->
+                    <hr />
+                    <!-- ------ -->
+                    <!-- form section -->
+                    <div class="company-info__form-section">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="company-info__form-subtitle">
+                            <h3>Quality Assurance / Quality Control</h3>
+                          </div>
+                          <div class="company-info__form-checkbox-q">
+                            <p>Is Your Company Certified?</p>
+                            <div class="d-flex">
+                              <div class="company-info__form-checkbox">
+                                <input type="radio" id="yes8" name="q8">
+                                <label for="yes8">Yes</label>
+                              </div>
+                              <div class="company-info__form-checkbox">
+                                <input type="radio" id="no8" name="q8">
+                                <label for="no8">No</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="company-info__form-checkbox-q">
+                            <p>Does Your Company have QA/QC Department?</p>
+                            <div class="d-flex">
+                              <div class="company-info__form-checkbox">
+                                <input type="radio" id="yes9" name="q9">
+                                <label for="yes9">Yes</label>
+                              </div>
+                              <div class="company-info__form-checkbox">
+                                <input type="radio" id="no9" name="q9">
+                                <label for="no9">No</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="company-info__form-checkbox-q">
+                            <p>Does Your Company have QA/QC Department?</p>
+                            <div class="d-flex">
+                              <div class="company-info__form-checkbox">
+                                <input type="radio" id="yes10" name="q10">
+                                <label for="yes10">Yes</label>
+                              </div>
+                              <div class="company-info__form-checkbox">
+                                <input type="radio" id="no10" name="q10">
+                                <label for="no10">No</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="company-info__form-subtitle">
+                            <h3>Quality Assurance / Quality Control</h3>
+                          </div>
+                          <div class="col-lg file-input">
+                            <span id="file-input-placeholder">Logo *</span>
+                            <input type="file" id="logo-input" data-placeholder="Logo *" required>
+                            <label for="logo-input">Browse</label>
+                          </div>
+                          <div class="col-lg file-input">
+                            <span id="file-input-placeholder">License *</span>
+                            <input type="file" id="license-input" data-placeholder="License *" required>
+                            <label for="license-input">Browse</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /form section -->
+                    <!-- save -->
+                    <div class="save">
+                      <button type="submit" class="btn button button--large">Save<i class="fa fa-angle-double-right"
+                          aria-hidden="true"></i></button>
+                    </div>
+                    <!-- /save -->
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Start Footer -->
+          <footer class="footer">
+            <div class="footer__inner">
+              <p class="copy m-0">&copy; 2018 Provite IT GmbH. All rights reserved</p>
+              <a href="https://www.proviteit.com" target="_blank" class="url m-0">www.proviteit.com</a>
+            </div>
+          </footer>
+          <!-- /End Footer -->
+        </div>
+        <!-- /end right side -->
+      </div>
+    </div>
+    <div class="page-overlay" id="page-overlay"></div>
+  </div>
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="assets/scripts/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="assets/scripts/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="assets/scripts/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="assets/scripts/mdb.min.js"></script>
+  <!-- build:js assets/scripts/App.js -->
+  <script src="temp/scripts/app.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>

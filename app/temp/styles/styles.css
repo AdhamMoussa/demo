@@ -14230,58 +14230,58 @@ body {
   .previous-querries h3.title {
     margin-bottom: 40px; }
 
-.new-tender {
+.new-tender, .company-info {
   padding: 0 25px; }
-  .new-tender__form form input {
+  .new-tender__form form input, .company-info__form form input {
     width: 100%;
     height: 100%;
     font-size: 14px;
     color: #7a858d; }
-    .new-tender__form form input::-webkit-input-placeholder {
+    .new-tender__form form input::-webkit-input-placeholder, .company-info__form form input::-webkit-input-placeholder {
       color: #7a858d;
       font-size: 14px; }
-    .new-tender__form form input:-ms-input-placeholder {
+    .new-tender__form form input:-ms-input-placeholder, .company-info__form form input:-ms-input-placeholder {
       color: #7a858d;
       font-size: 14px; }
-    .new-tender__form form input::-ms-input-placeholder {
+    .new-tender__form form input::-ms-input-placeholder, .company-info__form form input::-ms-input-placeholder {
       color: #7a858d;
       font-size: 14px; }
-    .new-tender__form form input::placeholder {
+    .new-tender__form form input::placeholder, .company-info__form form input::placeholder {
       color: #7a858d;
       font-size: 14px; }
-  .new-tender__form form label {
+  .new-tender__form form label, .company-info__form form label {
     color: #7a858d;
     font-size: 25px; }
-  .new-tender__form form select {
+  .new-tender__form form select, .company-info__form form select {
     border: 0;
     background-color: transparent;
     border-bottom: 1px solid #c9c9c9;
     width: 100%;
     color: #7a858d;
     font-size: 14px; }
-    .new-tender__form form select:focus {
+    .new-tender__form form select:focus, .company-info__form form select:focus {
       outline: none; }
   @media only screen and (min-width: 992px) {
-    .new-tender__form form .row:not(:last-child) {
+    .new-tender__form form .row:not(:last-child), .company-info__form form .row:not(:last-child) {
       margin-bottom: 70px; } }
-  .new-tender__form form .row .col-lg {
+  .new-tender__form form .row .col-lg, .company-info__form form .row .col-lg {
     margin-bottom: 70px; }
     @media only screen and (min-width: 992px) {
-      .new-tender__form form .row .col-lg {
+      .new-tender__form form .row .col-lg, .company-info__form form .row .col-lg {
         padding: 0 25px; } }
     @media only screen and (min-width: 992px) {
-      .new-tender__form form .row .col-lg:first-child {
+      .new-tender__form form .row .col-lg:first-child, .company-info__form form .row .col-lg:first-child {
         padding-right: 25px;
         padding-left: 0; } }
     @media only screen and (min-width: 992px) {
-      .new-tender__form form .row .col-lg:last-child {
+      .new-tender__form form .row .col-lg:last-child, .company-info__form form .row .col-lg:last-child {
         padding-left: 25px;
         padding-right: 0; } }
-  .new-tender__form form .file-input {
+  .new-tender__form form .file-input, .company-info__form form .file-input {
     display: flex;
     align-items: flex-end;
     position: relative; }
-    .new-tender__form form .file-input span#pdf-input-placeholder {
+    .new-tender__form form .file-input span, .company-info__form form .file-input span {
       position: absolute;
       top: 0;
       left: 0;
@@ -14295,11 +14295,11 @@ body {
       color: #7a858d;
       cursor: pointer; }
       @media only screen and (min-width: 992px) {
-        .new-tender__form form .file-input span#pdf-input-placeholder {
+        .new-tender__form form .file-input span, .company-info__form form .file-input span {
           left: 25px; } }
-    .new-tender__form form .file-input input#pdf-input {
+    .new-tender__form form .file-input input, .company-info__form form .file-input input {
       visibility: hidden; }
-    .new-tender__form form .file-input label {
+    .new-tender__form form .file-input label, .company-info__form form .file-input label {
       width: 20%;
       height: 100%;
       margin: 0;
@@ -14311,32 +14311,35 @@ body {
       font-weight: 500;
       letter-spacing: 1.85px;
       cursor: pointer; }
-  .new-tender__form form .date-input {
+  .new-tender__form form .date-input, .company-info__form form .date-input {
     position: relative; }
-    .new-tender__form form .date-input label {
+    .new-tender__form form .date-input label, .company-info__form form .date-input label {
       position: absolute;
-      right: 45px;
+      right: 0;
       top: -10px; }
+      @media only screen and (min-width: 576px) {
+        .new-tender__form form .date-input label, .company-info__form form .date-input label {
+          right: 45px; } }
     @media only screen and (min-width: 992px) {
-      .new-tender__form form .date-input:last-child label {
+      .new-tender__form form .date-input:last-child label, .company-info__form form .date-input:last-child label {
         right: 20px; } }
-  .new-tender__form form .companies {
+  .new-tender__form form .companies, .company-info__form form .companies {
     display: flex; }
-    .new-tender__form form .companies__item {
+    .new-tender__form form .companies__item, .company-info__form form .companies__item {
       margin-bottom: 30px; }
-      .new-tender__form form .companies__item input {
+      .new-tender__form form .companies__item input, .company-info__form form .companies__item input {
         display: none; }
-        .new-tender__form form .companies__item input:checked ~ label .card {
+        .new-tender__form form .companies__item input:checked ~ label .card, .company-info__form form .companies__item input:checked ~ label .card {
           border: 1px solid #04a9f4;
           background-color: #f7fcff; }
-        .new-tender__form form .companies__item input:checked ~ label span.checkbox i {
+        .new-tender__form form .companies__item input:checked ~ label span.checkbox i, .company-info__form form .companies__item input:checked ~ label span.checkbox i {
           color: #636363; }
-      .new-tender__form form .companies__item label {
+      .new-tender__form form .companies__item label, .company-info__form form .companies__item label {
         height: 100%;
         width: 100%;
         position: relative;
         cursor: pointer; }
-        .new-tender__form form .companies__item label span.checkbox {
+        .new-tender__form form .companies__item label span.checkbox, .company-info__form form .companies__item label span.checkbox {
           position: absolute;
           width: 25px;
           height: 25px;
@@ -14344,7 +14347,7 @@ body {
           right: 20px;
           border: 1px solid #636363;
           border-radius: 3px; }
-          .new-tender__form form .companies__item label span.checkbox i {
+          .new-tender__form form .companies__item label span.checkbox i, .company-info__form form .companies__item label span.checkbox i {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -14352,7 +14355,7 @@ body {
                     transform: translate(-50%, -50%);
             font-size: 18px;
             color: transparent; }
-        .new-tender__form form .companies__item label .card {
+        .new-tender__form form .companies__item label .card, .company-info__form form .companies__item label .card {
           margin: 0 !important;
           margin-bottom: 60px !important;
           transition: 0.4s;
@@ -14360,72 +14363,115 @@ body {
           border: 1px solid rgba(209, 217, 222, 0.28);
           border-radius: 0;
           min-height: 100%; }
-          .new-tender__form form .companies__item label .card:hover {
+          .new-tender__form form .companies__item label .card:hover, .company-info__form form .companies__item label .card:hover {
             box-shadow: 0; }
-          .new-tender__form form .companies__item label .card .card-body {
+          .new-tender__form form .companies__item label .card .card-body, .company-info__form form .companies__item label .card .card-body {
             padding: 60px 25px 10px; }
-            .new-tender__form form .companies__item label .card .card-body hr {
+            .new-tender__form form .companies__item label .card .card-body hr, .company-info__form form .companies__item label .card .card-body hr {
               margin: 25px 0; }
-        .new-tender__form form .companies__item label .company-logo {
+        .new-tender__form form .companies__item label .company-logo, .company-info__form form .companies__item label .company-logo {
           margin-bottom: 24px; }
-          .new-tender__form form .companies__item label .company-logo img {
+          .new-tender__form form .companies__item label .company-logo img, .company-info__form form .companies__item label .company-logo img {
             max-height: 80px;
             max-width: 90%;
             -o-object-fit: cover;
                object-fit: cover;
             -o-object-position: center;
                object-position: center; }
-        .new-tender__form form .companies__item label .company-name h5 {
+        .new-tender__form form .companies__item label .company-name h5, .company-info__form form .companies__item label .company-name h5 {
           margin: 0;
           font-size: 16px;
           font-weight: 500;
           color: #7a858d; }
-        .new-tender__form form .companies__item label .company-networth {
+        .new-tender__form form .companies__item label .company-networth, .company-info__form form .companies__item label .company-networth {
           margin-bottom: 30px; }
-          .new-tender__form form .companies__item label .company-networth__text {
+          .new-tender__form form .companies__item label .company-networth__text, .company-info__form form .companies__item label .company-networth__text {
             font-size: 16px;
             color: #11428c;
             font-weight: 500;
             margin-bottom: 5px; }
-          .new-tender__form form .companies__item label .company-networth__amount {
+          .new-tender__form form .companies__item label .company-networth__amount, .company-info__form form .companies__item label .company-networth__amount {
             font-size: 16px;
             font-weight: 500;
             color: #9bb0bf; }
-        .new-tender__form form .companies__item label .company-profile-link a {
+        .new-tender__form form .companies__item label .company-profile-link a, .company-info__form form .companies__item label .company-profile-link a {
           font-size: 14px;
           font-weight: 500;
           color: #7a858d; }
-          .new-tender__form form .companies__item label .company-profile-link a i {
+          .new-tender__form form .companies__item label .company-profile-link a i, .company-info__form form .companies__item label .company-profile-link a i {
             font-size: 14px;
             margin-left: 8px; }
-  .new-tender__form form .send-search {
+  .new-tender__form form .send-search, .company-info__form form .send-search {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 80px; }
     @media only screen and (min-width: 576px) {
-      .new-tender__form form .send-search {
+      .new-tender__form form .send-search, .company-info__form form .send-search {
         align-items: center;
         flex-direction: row; } }
-    .new-tender__form form .send-search span {
+    .new-tender__form form .send-search span, .company-info__form form .send-search span {
       font-size: 13px;
       font-weight: 600;
       color: #7a858d;
       letter-spacing: 1.85px;
       margin: 20px 0;
       text-align: center;
-      width: 200px; }
+      width: 100%; }
       @media only screen and (min-width: 576px) {
-        .new-tender__form form .send-search span {
+        .new-tender__form form .send-search span, .company-info__form form .send-search span {
           width: unset;
           margin: 0 40px; } }
-    .new-tender__form form .send-search a, .new-tender__form form .send-search button {
-      width: 200px;
+    .new-tender__form form .send-search a, .new-tender__form form .send-search button, .company-info__form form .send-search a, .company-info__form form .send-search button {
+      width: 100%;
       font-size: 12px; }
-      .new-tender__form form .send-search a i, .new-tender__form form .send-search button i {
+      .new-tender__form form .send-search a i, .new-tender__form form .send-search button i, .company-info__form form .send-search a i, .company-info__form form .send-search button i {
         margin-left: 8px; }
-    .new-tender__form form .send-search #search {
+      @media only screen and (min-width: 576px) {
+        .new-tender__form form .send-search a, .new-tender__form form .send-search button, .company-info__form form .send-search a, .company-info__form form .send-search button {
+          width: 200px; } }
+    .new-tender__form form .send-search #search, .company-info__form form .send-search #search {
       background-color: #aebbc4; }
+
+.company-info {
+  padding: 0; }
+  .company-info__head {
+    padding: 0 25px; }
+  .company-info__form-section {
+    padding: 0 25px; }
+  .company-info__form-subtitle {
+    margin-bottom: 40px; }
+    .company-info__form-subtitle h3 {
+      font-size: 16px;
+      font-weight: 500;
+      color: #636363; }
+  .company-info__form-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px; }
+    .company-info__form-checkbox input {
+      width: 20px !important;
+      height: 20px !important;
+      margin-right: 10px; }
+    .company-info__form-checkbox label {
+      margin: 0;
+      font-size: 14px !important;
+      color: #7a858d !important; }
+  .company-info .sub-row .input:first-child {
+    margin-right: 15px; }
+  .company-info .sub-row .input:last-child {
+    margin-left: 15px; }
+  .company-info hr {
+    margin-bottom: 70px; }
+  .company-info__form-checkbox-q p {
+    color: #7a858d; }
+  .company-info__form-checkbox-q .company-info__form-checkbox:first-child {
+    margin-right: 30px; }
+  .company-info .file-input {
+    padding: 0 !important; }
+    .company-info .file-input span {
+      left: 0 !important;
+      width: 100% !important; }
 
 .tenders-search {
   padding: 0 25px; }

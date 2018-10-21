@@ -14,9 +14,8 @@ $(function() {
   const dashboardArrowLinks = $('[data-toggle=collapse]');
 
   // form file-input
-  const fileInput = $("#pdf-input");
-  const fileInputLabel = $("#pdf-input ~ label");
-  const fileInputPlaceholder = $("#pdf-input-placeholder");
+  // const fileInputWrapper = $(".file-input");
+  const fileInput = $(".file-input");
 
   // left pane toggle
   toggleIcon.click(() => {
@@ -53,16 +52,20 @@ $(function() {
 
   // form file-input functionality
   if (fileInput.length > 0) {
-    fileInput.change(e => {
-      if (fileInput[0].files.length > 0) {
-        const fileName = fileInput[0].files[0].name;
-        fileInputPlaceholder.html(fileName);
-      } else {
-        fileInputPlaceholder.html("PDF *");
-      }
-    });
-    fileInputPlaceholder.click(() => {
-      fileInputLabel.click();
-    });
+    const fileInputFunc = (el)  => {
+      $(el).find("input").change(e => {
+        if (e.target.files.length > 0) {
+          const fileName = e.target.files[0].name;
+          $(e.target).siblings("span").html(fileName);
+        } else {
+          const placeholder = $(el).children("input").attr("data-placeholder");
+          $(e.target).siblings("span").html(placeholder);
+        }
+      });
+      $(el).find("span").click(e => {
+        $(e.target).siblings("label").click();
+      });
+    };
+    fileInput.each((_, el) => fileInputFunc(el));
   }
 });
