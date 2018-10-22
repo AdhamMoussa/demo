@@ -22,6 +22,10 @@
   }
   &__results {
     &-items {
+      justify-content: center;
+      @include largeUp {
+        justify-content: flex-start;
+      }
       .card {
         margin: 0 !important;
         margin-bottom: 60px !important;

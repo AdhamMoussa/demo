@@ -1,4 +1,8 @@
 .table-component {
+  overflow: auto;
+  .table {
+    min-width: 1100px;
+  }
   .table-striped tbody tr:nth-of-type(odd) {
     background-color: #fff !important;
   }
@@ -15,14 +19,20 @@
     border-bottom: 1px solid $grey4;
   }
   .table thead tr th {
-    font-size: 14px;
+    font-size: 12px;
     color: $black;
     font-weight: 500;
+    @include largeUp {
+      font-size: 14px;
+    }
   }
   .table tbody tr td {
-    font-size: 14px;
+    font-size: 12px;
     color: $grey3;
     padding: 25px;
+    @include largeUp {
+      font-size: 14px;
+    }
   }
   .table tbody tr td button.btn,
   .table tbody tr td a.btn {

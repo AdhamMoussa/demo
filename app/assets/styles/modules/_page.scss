@@ -3,19 +3,31 @@
   &__head {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
     margin-bottom: 45px;
+    @include mediumUp {
+      flex-direction: row;
+      align-items: center;
+    }
   }
   &__title {
     h2 {
-      font-size: 22px;
+      font-size: 18px;
       color: $black2;
-      margin: 0;
+      margin: 0 0 20px 0;
+      @include largeUp {
+        margin: 0;
+        font-size: 22px;
+      }
     }
   }
   &__add-btn {
     a {
-      font-size: 12px;
+      font-size: 10px;
+      @include largeUp {
+        font-size: 12px;
+      }
       i {
         margin-right: 9px;
       }
@@ -76,22 +88,36 @@
   }
   &__interest {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    @include smallUp {
+      flex-direction: row;
+      align-items: center;
+    }
     span {
       font-size: 13px;
       font-weight: 600;
       color: $grey2;
       letter-spacing: 1.85px;
-      margin: 0 40px;
+      margin: 20px 0;
+      text-align: center;
+      width: 100%;
+      @include smallUp {
+        width: unset;
+        margin: 0 40px;
+      }
     }
     a {
-      width: 220px;
+      width: 100%;
       font-size: 12px;
       i {
         margin-left: 8px;
       }
+      @include smallUp {
+        width: 200px;
+      }
     }
-    #not-interested {
+#not-interested {
       background-color: #aebbc4;
     }
   }
@@ -135,33 +161,45 @@
   }
   &__inputs {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     input {
-      width: 45%;
+      width: 100%;
       font-size: 14px;
       color: $grey1;
       &::placeholder {
         color: #a6b8d2;
+      }
+      &:first-child {
+        margin-bottom: 40px;
+        @include smallUp {
+          margin-bottom: 0;
+        }
+      }
+      @include smallUp {
+        width: 45%;
       }
     }
   }
 }
 
 .bids-cards {
-  margin-bottom: 50px;
-  .card-deck {
-    margin: 0 !important;
+  margin-bottom: 20px;
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
   }
   .card {
+    width: 200px;
     margin: 0 !important;
     transition: 0.4s;
     box-shadow: none;
     border: 1px solid rgba(209, 217, 222, 0.28);
     border-radius: 0;
-    &:not(:last-child) {
-      margin-right: 54px !important;
-    }
+    margin-bottom: 30px !important;
     &:hover {
       box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -195,30 +233,32 @@
   }
   form {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
+    justify-content: center;
+    margin-bottom: 60px;
     .send-doc__input {
-      position: relative;
-      width: 75%;
-      margin: 0 50px 60px 0;
+      width: 100%;
+      margin: 0 0 30px 0;
+      @include smallUp {
+        width: 75%;
+        margin: 0 50px 0 0;
+      }
       input.input {
         width: 100%;
         font-size: 14px;
         color: $grey1;
-        padding-left: 128px;
         &::placeholder {
           color: #a6b8d2;
         }
       }
-      label {
-        position: absolute;
-        font-size: 14px;
-        color: #a6b8d2;
-        margin: 0;
-      }
     }
     button {
-      width: calc(25% - 100px);
+      width: 100%;
       font-size: 12px;
+      @include smallUp {
+        width: calc(25% - 50px);
+      }
       i {
         margin-left: 8px;
       }
@@ -228,7 +268,11 @@
 
 .bids-download {
   display: flex;
+  flex-direction: column;
   margin-bottom: 60px;
+  @include smallUp {
+    flex-direction: row;
+  }
   img {
     width: 30px;
     height: 40px;
@@ -239,6 +283,10 @@
     font-weight: 500;
   }
   &__bids-received {
+    margin-bottom: 30px;
+    @include smallUp {
+      margin-bottom: 0;
+    }
     a {
       margin-right: 80px;
       display: flex;
@@ -339,7 +387,7 @@
           top: 0;
           left: 0;
           bottom: 0;
-          width: 80%;
+          width: 100%;
           border-bottom: 1px solid #c9c9c9;
           font-size: 14px;
           font-weight: 400;

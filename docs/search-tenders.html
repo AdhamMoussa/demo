@@ -8,7 +8,7 @@
   <!-- Styles CSS -->
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/styles/styles-273f402a33.css"/>
+  <link rel="stylesheet" href="assets/styles/styles-bc8a4fd724.css"/>
 
   <title>Provide It</title>
 </head>
@@ -16,20 +16,22 @@
 <body>
   <div class="main-container">
     <div class="page-layout">
-      <div class="page-layout__row">
+      <div class="page-layout__row hide-left">
         <!-- start left side -->
         <div class="page-layout__left-pane">
           <div class="left-pane">
             <!-- head -->
             <div class="left-pane__head">
-              <div class="d-flex justify-content-center align-items-center">
-                <div class="left-pane__logo d-flex align-items-center">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center left-pane__logo">
                   <img src="assets/images/logo.png" alt="logo" class="img-fluid">
                   <h1 class="left-pane__logo-name font18 m-0">Provide It</h1>
                 </div>
-                <div class="left-pane__head-sep"></div>
-                <div class="left-pane__head-text">
-                  <p class="font8 m-0">Simple, smart & scalable<br />Tenders management tool</p>
+                <div class="left-pane__toggle">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <div class="left-pane__close">
+                  <i class="fa fa-times" aria-hidden="true"></i>
                 </div>
               </div>
             </div>
@@ -100,10 +102,10 @@
                 <!-- profile nested links -->
                 <div class="left-pane__nested-links collapse" id="collapseProfile">
                   <!-- nested link example
-                    <div class="left-pane__nested-link">
-                      <a class="font13" href="#">nested link</a>
-                    </div>
-                  -->
+                        <div class="left-pane__nested-link">
+                          <a class="font13" href="#">nested link</a>
+                        </div>
+                      -->
                 </div>
               </div>
               <!-- settings -->
@@ -132,10 +134,10 @@
                 <!-- employees nested links -->
                 <div class="left-pane__nested-links collapse" id="collapseEmployees">
                   <!-- nested link example
-                      <div class="left-pane__nested-link">
-                        <a class="font13" href="#">nested link</a>
-                      </div>
-                    -->
+                          <div class="left-pane__nested-link">
+                            <a class="font13" href="#">nested link</a>
+                          </div>
+                        -->
                 </div>
               </div>
               <!-- Logout -->
@@ -150,8 +152,8 @@
                 </div>
               </div>
             </div>
+            <!-- left pane footer -->
           </div>
-          <!-- left pane footer -->
           <div class="left-pane__footer">
             <div class="left-pane__footer-links">
               <a href="#">
@@ -175,6 +177,10 @@
           <!-- Start Header -->
           <header class="header">
             <div class="header__inner">
+              <div class="d-flex align-items-center header__logo">
+                <img src="assets/images/logo.png" alt="logo" class="img-fluid">
+                <h1 class="left-pane__logo-name font18 m-0">Provide It</h1>
+              </div>
               <div class="header__welcome">
                 <p class="font12">Weclome <span>Richard V. Welsh</span> to your dashboard!</p>
               </div>
@@ -202,6 +208,9 @@
                 <div class="header__user-icon">
                   <img src="assets/images/user-photo.png" alt="user photo">
                 </div>
+                <div class="header__menu-icon" id="menu-icon">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
               </div>
             </div>
           </header>
@@ -211,17 +220,19 @@
               <!-- Start Search Tenders -->
               <div class="tenders-search">
                 <div class="tenders-search__bar">
-                  <label for="search-input">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </label>
-                  <input class="input" type="text" id="search-input" placeholder="Search Tenders..." />
+                  <form>
+                    <label for="search-input">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </label>
+                    <input class="input" type="text" id="search-input" placeholder="Search Tenders..." />
+                  </form>
                 </div>
                 <div class="tenders-search__results">
                   <h2 class="title">Search results for <span>construction companies</span></h2>
                   <p class="subtitle">Showing <span>8</span> out of <span>10</span> results</p>
-                  <div class="tenders-search__results-items row alig">
+                  <div class="tenders-search__results-items row">
                     <!-- item -->
-                    <div class="tenders-search__results-item col-xl-3">
+                    <div class="tenders-search__results-item col-sm-6 col-lg-4 col-xl-3">
                       <!-- Card -->
                       <div class="card">
                         <!--Card body-->
@@ -246,7 +257,7 @@
                     </div>
                     <!-- /item -->
                     <!-- item -->
-                    <div class="tenders-search__results-item col-xl-3">
+                    <div class="tenders-search__results-item col-sm-6 col-lg-4 col-xl-3">
                       <!-- Card -->
                       <div class="card">
                         <!--Card body-->
@@ -271,7 +282,7 @@
                     </div>
                     <!-- /item -->
                     <!-- item -->
-                    <div class="tenders-search__results-item col-xl-3">
+                    <div class="tenders-search__results-item col-sm-6 col-lg-4 col-xl-3">
                       <!-- Card -->
                       <div class="card">
                         <!--Card body-->
@@ -296,7 +307,7 @@
                     </div>
                     <!-- /item -->
                     <!-- item -->
-                    <div class="tenders-search__results-item col-xl-3">
+                    <div class="tenders-search__results-item col-sm-6 col-lg-4 col-xl-3">
                       <!-- Card -->
                       <div class="card">
                         <!--Card body-->
@@ -321,7 +332,7 @@
                     </div>
                     <!-- /item -->
                     <!-- item -->
-                    <div class="tenders-search__results-item col-xl-3">
+                    <div class="tenders-search__results-item col-sm-6 col-lg-4 col-xl-3">
                       <!-- Card -->
                       <div class="card">
                         <!--Card body-->
@@ -346,7 +357,7 @@
                     </div>
                     <!-- /item -->
                     <!-- item -->
-                    <div class="tenders-search__results-item col-xl-3">
+                    <div class="tenders-search__results-item col-sm-6 col-lg-4 col-xl-3">
                       <!-- Card -->
                       <div class="card">
                         <!--Card body-->
@@ -371,7 +382,7 @@
                     </div>
                     <!-- /item -->
                     <!-- item -->
-                    <div class="tenders-search__results-item col-xl-3">
+                    <div class="tenders-search__results-item col-sm-6 col-lg-4 col-xl-3">
                       <!-- Card -->
                       <div class="card">
                         <!--Card body-->
@@ -396,7 +407,7 @@
                     </div>
                     <!-- /item -->
                     <!-- item -->
-                    <div class="tenders-search__results-item col-xl-3">
+                    <div class="tenders-search__results-item col-sm-6 col-lg-4 col-xl-3">
                       <!-- Card -->
                       <div class="card">
                         <!--Card body-->
@@ -438,6 +449,7 @@
         <!-- /end right side -->
       </div>
     </div>
+    <div class="page-overlay" id="page-overlay"></div>
   </div>
   <!-- SCRIPTS -->
   <!-- JQuery -->
@@ -448,7 +460,7 @@
   <script type="text/javascript" src="assets/scripts/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="assets/scripts/mdb.min.js"></script>
-  <script src="assets/scripts/App-82b89df351.js"></script>
+  <script src="assets/scripts/App-e3d80fc256.js"></script>
 </body>
 
 </html>

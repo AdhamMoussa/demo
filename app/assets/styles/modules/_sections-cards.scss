@@ -1,18 +1,22 @@
 .sections-cards {
   padding: 0 25px 50px;
   border-bottom: 1px solid $grey4;
-  .card-deck {
-    margin: 0 !important;
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
   .card {
+    // flex-grow: 1;
+    min-width: 200px;
+    width: 20%;
     margin: 0 !important;
+    margin-bottom: 30px !important;
     transition: 0.4s;
     box-shadow: none;
     border: 1px solid rgba(209, 217, 222, 0.28);
     border-radius: 0;
-    &:not(:last-child) {
-      margin-right: 54px !important;
-    }
+    // @include
     &:hover {
       box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);

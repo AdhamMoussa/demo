@@ -18,20 +18,22 @@
 <body>
   <div class="main-container">
     <div class="page-layout">
-      <div class="page-layout__row">
+      <div class="page-layout__row hide-left">
         <!-- start left side -->
         <div class="page-layout__left-pane">
           <div class="left-pane">
             <!-- head -->
             <div class="left-pane__head">
-              <div class="d-flex justify-content-center align-items-center">
-                <div class="left-pane__logo d-flex align-items-center">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center left-pane__logo">
                   <img src="assets/images/logo.png" alt="logo" class="img-fluid">
                   <h1 class="left-pane__logo-name font18 m-0">Provide It</h1>
                 </div>
-                <div class="left-pane__head-sep"></div>
-                <div class="left-pane__head-text">
-                  <p class="font8 m-0">Simple, smart & scalable<br />Tenders management tool</p>
+                <div class="left-pane__toggle">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <div class="left-pane__close">
+                  <i class="fa fa-times" aria-hidden="true"></i>
                 </div>
               </div>
             </div>
@@ -102,10 +104,10 @@
                 <!-- profile nested links -->
                 <div class="left-pane__nested-links collapse" id="collapseProfile">
                   <!-- nested link example
-                    <div class="left-pane__nested-link">
-                      <a class="font13" href="#">nested link</a>
-                    </div>
-                  -->
+                        <div class="left-pane__nested-link">
+                          <a class="font13" href="#">nested link</a>
+                        </div>
+                      -->
                 </div>
               </div>
               <!-- settings -->
@@ -134,10 +136,10 @@
                 <!-- employees nested links -->
                 <div class="left-pane__nested-links collapse" id="collapseEmployees">
                   <!-- nested link example
-                      <div class="left-pane__nested-link">
-                        <a class="font13" href="#">nested link</a>
-                      </div>
-                    -->
+                          <div class="left-pane__nested-link">
+                            <a class="font13" href="#">nested link</a>
+                          </div>
+                        -->
                 </div>
               </div>
               <!-- Logout -->
@@ -152,8 +154,8 @@
                 </div>
               </div>
             </div>
+            <!-- left pane footer -->
           </div>
-          <!-- left pane footer -->
           <div class="left-pane__footer">
             <div class="left-pane__footer-links">
               <a href="#">
@@ -177,6 +179,10 @@
           <!-- Start Header -->
           <header class="header">
             <div class="header__inner">
+              <div class="d-flex align-items-center header__logo">
+                <img src="assets/images/logo.png" alt="logo" class="img-fluid">
+                <h1 class="left-pane__logo-name font18 m-0">Provide It</h1>
+              </div>
               <div class="header__welcome">
                 <p class="font12">Weclome <span>Richard V. Welsh</span> to your dashboard!</p>
               </div>
@@ -204,6 +210,9 @@
                 <div class="header__user-icon">
                   <img src="assets/images/user-photo.png" alt="user photo">
                 </div>
+                <div class="header__menu-icon" id="menu-icon">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
               </div>
             </div>
           </header>
@@ -213,7 +222,7 @@
               <!-- Start sections cards -->
               <div class="sections-cards">
                 <!-- Card deck -->
-                <div class="card-deck">
+                <div class="sections-cards__row">
                   <!-- Tenders Card -->
                   <div class="card">
                     <!--Card body-->
@@ -365,6 +374,7 @@
         <!-- /end right side -->
       </div>
     </div>
+    <div class="page-overlay" id="page-overlay"></div>
   </div>
   <!-- SCRIPTS -->
   <!-- JQuery -->

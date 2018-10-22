@@ -1,14 +1,21 @@
 .header {
   color: #fff;
-  background-color: $light-blue;
   &__inner {
+    background-color: $light-blue;
     display: flex;
     justify-content: space-between;
-    // align-items: center;
+    flex-wrap: wrap;
+    @include xSmallUp {
+      flex-wrap: nowrap;
+    }
   }
   &__logo {
     padding: 12px 25px 9px;
     background-color: #fff;
+    width: 100%;
+    @include xSmallUp {
+      width: unset;
+    }
     img {
       width: 24px;
       height: 40px;
@@ -40,6 +47,12 @@
     padding: 12px 25px 9px;
     display: flex;
     align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    @include xSmallUp {
+      justify-content: center;
+      width: unset;
+    }
     &-updates {
       margin-right: 25px;
       &-icon {

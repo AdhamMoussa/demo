@@ -12,8 +12,12 @@
 
 .button--large {
   background-color: $aqua;
-  width: 187px;
-  padding: 14px 32px;
+  width: 140px;
+  padding: 10px 0;
+  @include largeUp {
+    padding: 14px 0;
+    width: 187px;
+  }
 }
 
 .button--small {
