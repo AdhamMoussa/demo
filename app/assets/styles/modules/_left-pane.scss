@@ -177,6 +177,10 @@
         color: $grey2;
         font-size: 18px;
         line-height: 1;
+        transition: .4s;
+        &:hover {
+          color: $blue;
+        }
         &:not(:last-child) {
           margin-right: 15px;
         }

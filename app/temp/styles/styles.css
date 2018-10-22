@@ -13742,7 +13742,10 @@ body {
     .left-pane__footer-links a {
       color: #7a858d;
       font-size: 18px;
-      line-height: 1; }
+      line-height: 1;
+      transition: .4s; }
+      .left-pane__footer-links a:hover {
+        color: #11428c; }
       .left-pane__footer-links a:not(:last-child) {
         margin-right: 15px; }
 
@@ -14384,15 +14387,13 @@ body {
       align-items: flex-end;
       color: #7a858d;
       cursor: pointer; }
-      @media only screen and (min-width: 992px) {
-        .new-tender__form form .file-input span,
-        .company-info__form form .file-input span {
-          left: 25px; } }
     .new-tender__form form .file-input input,
     .company-info__form form .file-input input {
       visibility: hidden; }
     .new-tender__form form .file-input label,
     .company-info__form form .file-input label {
+      position: absolute;
+      right: 0;
       width: 20%;
       height: 100%;
       margin: 0;

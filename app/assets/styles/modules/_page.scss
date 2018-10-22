@@ -396,14 +396,13 @@
           align-items: flex-end;
           color: $grey2;
           cursor: pointer;
-          @include largeUp {
-            left: 25px;
-          }
         }
         input {
           visibility: hidden;
         }
         label {
+          position: absolute;
+          right: 0;
           width: 20%;
           height: 100%;
           margin: 0;
