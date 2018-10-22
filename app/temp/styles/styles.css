@@ -14591,7 +14591,8 @@ body {
       font-size: 14px !important;
       color: #7a858d !important; }
   .company-info .sub-row input {
-    height: 30px; }
+    height: 30px;
+    padding: 0 !important; }
   @media only screen and (min-width: 992px) {
     .company-info .sub-row .input:first-child {
       margin-right: 15px; } }
