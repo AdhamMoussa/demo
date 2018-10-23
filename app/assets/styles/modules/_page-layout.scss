@@ -66,22 +66,22 @@
   &__left-pane {
     position: fixed;
     top: 0;
-    #{$start-direction}: -320px;
+    #{$end-direction}: -320px;
     width: 310px;
     background-color: #fff;
     height: 100vh;
     overflow: auto;
-    transition: width 0.5s, left 0.5s;
+    transition: width 0.5s, $end-direction 0.5s;
     z-index: 100;
     @include xLargeUp {
       position: relative;
       height: unset;
       top: unset;
-      #{$start-direction}: unset;
+      #{$end-direction}: unset;
       border-#{$end-direction}: 1px solid $grey4;
     }
     &--show {
-      #{$start-direction}: 0;
+      #{$end-direction}: 0;
     }
   }
   &__right-pane {

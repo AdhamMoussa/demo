@@ -1,7 +1,7 @@
 .table-component {
   overflow: auto;
   .table {
-    min-width: 1100px;
+    min-width: 1200px;
   }
   .table-striped tbody tr:nth-of-type(odd) {
     background-color: #fff !important;
@@ -19,11 +19,12 @@
     border-bottom: 1px solid $grey4;
   }
   .table thead tr th {
-    font-size: 12px;
-    color: $black;
+    font-size: 10px;
+    color: $grey1;
     font-weight: 500;
+    padding: 25px;
     @include largeUp {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
   .table tbody tr td {
@@ -59,4 +60,8 @@
       color: #a4a6a7;
     }
   }
+}
+
+.dates-table {
+    min-width: 630px !important;
 }

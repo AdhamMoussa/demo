@@ -3,12 +3,11 @@
   &__head {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     flex-direction: column;
+    align-items: center;
     margin-bottom: 45px;
-    @include mediumUp {
+    @include smallUp {
       flex-direction: row;
-      align-items: center;
     }
   }
   &__title {
@@ -24,7 +23,12 @@
   }
 
   &__add-btn {
+    width: 100%;
+    @include smallUp {
+      width: 140px;
+    }
     a {
+      width: 100%;
       font-size: 10px;
       @include largeUp {
         font-size: 12px;
@@ -142,8 +146,11 @@
         }
       }
       button {
-        width: 220px;
+        width: 100%;
         font-size: 12px;
+        @include smallUp {
+          width: 220px;
+        }
         i {
           margin-#{$start-direction}: 8px;
         }
@@ -154,7 +161,7 @@
 
 .bid-detail {
   background-color: #f5fbff;
-  padding: 35px 25px 100px;
+  padding: 50px 25px 100px;
   margin-bottom: 40px;
   &__title {
     margin-bottom: 65px;
@@ -162,25 +169,39 @@
     color: $black2;
   }
   &__inputs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    input {
-      width: 100%;
-      font-size: 14px;
-      color: $grey1;
-      &::placeholder {
-        color: #a6b8d2;
-      }
-      &:first-child {
-        margin-bottom: 40px;
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      input {
+        width: 100%;
+        font-size: 14px;
+        color: $grey1;
+        &::placeholder {
+          color: #a6b8d2;
+        }
+        &:first-child {
+          margin-bottom: 40px;
+          @include smallUp {
+            margin-bottom: 0;
+          }
+        }
         @include smallUp {
-          margin-bottom: 0;
+          width: 45%;
         }
       }
-      @include smallUp {
-        width: 45%;
+      button {
+        width: 100%;
+        font-size: 12px;
+        margin-top: 40px;
+        background-color: #6282b3;
+        @include smallUp {
+          width: 220px;
+        }
+        i {
+          margin-#{$start-direction}: 8px;
+        }
       }
     }
   }
@@ -192,9 +213,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    @media (min-width: 860px) {
+      justify-content: space-between;
+    }
   }
   .card {
-    width: 200px;
+    width: 22%;
+    min-width: 200px;
+    max-width: 320px;
     margin: 0 !important;
     transition: 0.4s;
     box-shadow: none;
@@ -356,15 +382,8 @@
           outline: none;
         }
       }
-      .row {
-        &:not(:last-child) {
-          @include largeUp {
-            margin-bottom: 70px;
-          }
-        }
-      }
       .row .col-lg {
-        margin-bottom: 70px;
+        margin-bottom: 40px;
         @include largeUp {
           padding: 0 25px;
         }
@@ -601,7 +620,7 @@
   &__form-checkbox {
     display: flex;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     input {
       flex-shrink: 0;
       width: 20px !important;
@@ -650,6 +669,12 @@
   }
   .save {
     padding: 0 25px;
+    button {
+      width: 100%;
+      @include smallUp {
+        width: 140px;
+      }
+    }
   }
   input,
   select {
