@@ -1,0 +1,26 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../../node_modules/mdbootstrap/scss/mdb.scss';
+
+// base
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/typography';
+@import 'base/global';
+
+// layout
+@import 'modules/page-layout';
+@import 'modules/left-pane';
+@import 'modules/right-pane';
+
+// components
+@import 'modules/header';
+@import 'modules/footer';
+@import 'modules/sections-cards';
+@import 'modules/button';
+@import 'modules/table-component';
+@import 'modules/input';
+@import 'modules/pagination';
+
+// specific page
+@import 'modules/page';
+@import 'modules/tenders-search';

@@ -29,10 +29,10 @@
     color: #626467;
   }
   .prev {
-    margin-right: 25px;
+    margin-#{$end-direction}: 25px;
   }
   .next {
-    margin-left: 25px;
+    margin-#{$start-direction}: 25px;
   }
   .page-numbers.disabled,
   .page-numbers:hover {

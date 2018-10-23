@@ -54,11 +54,11 @@
       width: unset;
     }
     &-updates {
-      margin-right: 25px;
+      margin-#{$end-direction}: 25px;
       &-icon {
         position: relative;
         &:first-child {
-          margin-right: 40px;
+          margin-#{$end-direction}: 40px;
         }
         i {
           font-size: 15px;
@@ -67,7 +67,7 @@
       &-count {
         position: absolute;
         top: -7px;
-        left: 7px;
+        #{$start-direction}: 7px;
         width: 17px;
         height: 17px;
         border-radius: 50%;
@@ -97,7 +97,7 @@
     }
   }
   &__menu-icon {
-    margin-left: 40px;
+    margin-#{$start-direction}: 40px;
     display: flex;
     justify-content: center;
     align-items: center;

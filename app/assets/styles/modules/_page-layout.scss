@@ -66,7 +66,7 @@
   &__left-pane {
     position: fixed;
     top: 0;
-    left: -320px;
+    #{$start-direction}: -320px;
     width: 310px;
     background-color: #fff;
     height: 100vh;
@@ -77,11 +77,11 @@
       position: relative;
       height: unset;
       top: unset;
-      left: unset;
-      border-right: 1px solid $grey4;
+      #{$start-direction}: unset;
+      border-#{$end-direction}: 1px solid $grey4;
     }
     &--show {
-      left: 0;
+      #{$start-direction}: 0;
     }
   }
   &__right-pane {

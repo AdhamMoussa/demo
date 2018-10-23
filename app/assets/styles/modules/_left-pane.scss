@@ -86,7 +86,7 @@
     }
   }
   &__links {
-    padding-left: 64px;
+    padding-#{$start-direction}: 64px;
   }
   &__link-wrapper {
     &:not(:last-child) {
@@ -110,7 +110,7 @@
     margin-bottom: 19px;
     position: relative;
     &-icon {
-      margin-right: 24px;
+      margin-#{$end-direction}: 24px;
       img {
         width: 26px;
         height: 26px;
@@ -129,7 +129,7 @@
           font-family: FontAwesome;
           position: absolute;
           top: 50%;
-          right: 47px;
+          #{$end-direction}: 47px;
           transform: translateY(-50%);
         }
       }
@@ -142,7 +142,7 @@
     }
   }
   &__nested-link {
-    padding-left: 64px;
+    padding-#{$start-direction}: 64px;
     a {
       color: $grey3;
       display: block;
@@ -152,7 +152,7 @@
         font-family: FontAwesome;
         position: absolute;
         top: 50%;
-        left: -14px;
+        #{$start-direction}: -14px;
         transform: translateY(-50%);
       }
     }
@@ -182,7 +182,7 @@
           color: $blue;
         }
         &:not(:last-child) {
-          margin-right: 15px;
+          margin-#{$end-direction}: 15px;
         }
       }
     }

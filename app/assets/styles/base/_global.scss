@@ -32,6 +32,8 @@
 
 body {
   font-family: poppins;
+  direction: $direction;
+  text-align: $start-direction;
 }
 
 .main-container {

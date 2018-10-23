@@ -8,12 +8,12 @@
       font-size: 20px;
       color: #939597;
       padding-bottom: 20px;
-      padding-right: 50px;
+      padding-#{$end-direction}: 50px;
     }
     label {
       position: absolute;
       top: 7.5px;
-      right: 0;
+      #{$end-direction}: 0;
       i {
         color: $black2;
         font-size: 20px;
@@ -87,7 +87,7 @@
             color: $grey2;
             i {
               font-size: 14px;
-              margin-left: 8px;
+              margin-#{$start-direction}: 8px;
             }
           }
         }

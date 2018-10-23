@@ -13517,7 +13517,9 @@ COLORS
   box-sizing: border-box !important; }
 
 body {
-  font-family: poppins; }
+  font-family: poppins;
+  direction: ltr;
+  text-align: left; }
 
 .main-container {
   max-width: 1920px;
@@ -14074,7 +14076,8 @@ body {
     .tender-company__head h1 {
       font-size: 22px;
       color: #45484b;
-      margin: 0 33px 0 0; }
+      margin: 0;
+      margin-right: 33px; }
     .tender-company__head img {
       max-height: 50px;
       max-width: 100%;
@@ -14242,7 +14245,8 @@ body {
       @media only screen and (min-width: 576px) {
         .send-doc form .send-doc__input {
           width: 75%;
-          margin: 0 50px 0 0; } }
+          margin: 0;
+          margin-right: 50px; } }
       .send-doc form .send-doc__input input.input {
         width: 100%;
         font-size: 14px;
@@ -14612,6 +14616,9 @@ body {
       width: 100% !important; }
   .company-info .save {
     padding: 0 25px; }
+  .company-info input:only-child,
+  .company-info select:only-child {
+    padding: 0 !important; }
 
 .tenders-search {
   padding: 0 25px; }

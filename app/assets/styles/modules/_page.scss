@@ -30,7 +30,7 @@
         font-size: 12px;
       }
       i {
-        margin-right: 9px;
+        margin-#{$end-direction}: 9px;
       }
     }
   }
@@ -45,7 +45,8 @@
     h1 {
       font-size: 22px;
       color: $black2;
-      margin: 0 33px 0 0;
+      margin: 0;
+      margin-#{$end-direction}: 33px;
     }
     img {
       max-height: 50px;
@@ -73,7 +74,7 @@
         img {
           width: 44px;
           height: 50px;
-          margin-right: 10px;
+          margin-#{$end-direction}: 10px;
         }
         p {
           font-size: 14px;
@@ -112,7 +113,7 @@
       width: 100%;
       font-size: 12px;
       i {
-        margin-left: 8px;
+        margin-#{$start-direction}: 8px;
       }
       @include smallUp {
         width: 200px;
@@ -144,7 +145,7 @@
         width: 220px;
         font-size: 12px;
         i {
-          margin-left: 8px;
+          margin-#{$start-direction}: 8px;
         }
       }
     }
@@ -206,7 +207,7 @@
     }
   }
   &__text {
-    margin-right: 20px;
+    margin-#{$end-direction}: 20px;
     span {
       font-size: 12px;
       color: $black;
@@ -242,7 +243,8 @@
       margin: 0 0 30px 0;
       @include smallUp {
         width: 75%;
-        margin: 0 50px 0 0;
+        margin: 0;
+        margin-#{$end-direction}: 50px;
       }
       input.input {
         width: 100%;
@@ -260,7 +262,7 @@
         width: calc(25% - 50px);
       }
       i {
-        margin-left: 8px;
+        margin-#{$start-direction}: 8px;
       }
     }
   }
@@ -276,7 +278,7 @@
   img {
     width: 30px;
     height: 40px;
-    margin-right: 10px;
+    margin-#{$end-direction}: 10px;
   }
   p {
     font-size: 12px;
@@ -288,7 +290,7 @@
       margin-bottom: 0;
     }
     a {
-      margin-right: 80px;
+      margin-#{$end-direction}: 80px;
       display: flex;
       align-items: center;
       p {
@@ -368,14 +370,14 @@
         }
         &:first-child {
           @include largeUp {
-            padding-right: 25px;
-            padding-left: 0;
+            padding-#{$end-direction}: 25px;
+            padding-#{$start-direction}: 0;
           }
         }
         &:last-child {
           @include largeUp {
-            padding-left: 25px;
-            padding-right: 0;
+            padding-#{$start-direction}: 25px;
+            padding-#{$end-direction}: 0;
           }
         }
       }
@@ -386,7 +388,7 @@
         span {
           position: absolute;
           top: 0;
-          left: 0;
+          #{$start-direction}: 0;
           bottom: 0;
           width: 100%;
           border-bottom: 1px solid #c9c9c9;
@@ -402,7 +404,7 @@
         }
         label {
           position: absolute;
-          right: 0;
+          #{$end-direction}: 0;
           width: 20%;
           height: 100%;
           margin: 0;
@@ -420,16 +422,16 @@
         position: relative;
         label {
           position: absolute;
-          right: 0;
+          #{$end-direction}: 0;
           top: -10px;
           @include smallUp {
-            right: 45px;
+            #{$end-direction}: 45px;
           }
         }
         &:last-child {
           label {
             @include largeUp {
-              right: 20px;
+              #{$end-direction}: 20px;
             }
           }
         }
@@ -462,13 +464,13 @@
               width: 25px;
               height: 25px;
               top: 20px;
-              right: 20px;
+              #{$end-direction}: 20px;
               border: 1px solid $grey1;
               border-radius: 3px;
               i {
                 position: absolute;
                 top: 50%;
-                left: 50%;
+                #{$start-direction}: 50%;
                 transform: translate(-50%, -50%);
                 font-size: 18px;
                 color: transparent;
@@ -531,7 +533,7 @@
                   color: $grey2;
                   i {
                     font-size: 14px;
-                    margin-left: 8px;
+                    margin-#{$start-direction}: 8px;
                   }
                 }
               }
@@ -566,7 +568,7 @@
           width: 100%;
           font-size: 12px;
           i {
-            margin-left: 8px;
+            margin-#{$start-direction}: 8px;
           }
           @include smallUp {
             width: 200px;
@@ -604,7 +606,7 @@
       flex-shrink: 0;
       width: 20px !important;
       height: 20px !important;
-      margin-right: 10px;
+      margin-#{$end-direction}: 10px;
     }
     label {
       margin: 0;
@@ -619,12 +621,12 @@
     }
     .input:first-child {
       @include largeUp {
-        margin-right: 15px;
+        margin-#{$end-direction}: 15px;
       }
     }
     .input:last-child {
       @include largeUp {
-        margin-left: 15px;
+        margin-#{$start-direction}: 15px;
       }
     }
   }
@@ -636,17 +638,23 @@
       color: $grey2;
     }
     .company-info__form-checkbox:first-child {
-      margin-right: 30px;
+      margin-#{$end-direction}: 30px;
     }
   }
   .file-input {
     padding: 0 !important;
     span {
-      left: 0 !important;
+      #{$start-direction}: 0 !important;
       width: 100% !important;
     }
   }
   .save {
     padding: 0 25px;
+  }
+  input,
+  select {
+    &:only-child {
+      padding: 0 !important;
+    }
   }
 }
