@@ -4,28 +4,30 @@
     background-color: $light-blue;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    @include xSmallUp {
-      flex-wrap: nowrap;
-    }
   }
   &__logo {
-    padding: 12px 25px 9px;
+    padding: 12px 10px 9px;
     background-color: #fff;
-    width: 100%;
-    @include xSmallUp {
-      width: unset;
+    @media (min-width: 440px) {
+      padding: 12px 25px 9px;
     }
     img {
-      width: 24px;
-      height: 40px;
+      width: 14px;
+      height: auto;
       margin-right: 7px;
+      @media (min-width: 440px) {
+        width: 24px;
+      }
     }
     &-name {
       color: $aqua;
       font-weight: 700;
       text-transform: uppercase;
       white-space: nowrap;
+      font-size: 12px;
+      @media (min-width: 440px) {
+        font-size: 18px;
+      }
     }
     @include xLargeUp {
       display: none !important;
@@ -47,12 +49,7 @@
     padding: 12px 25px 9px;
     display: flex;
     align-items: center;
-    width: 100%;
-    justify-content: flex-end;
-    @include xSmallUp {
-      justify-content: center;
-      width: unset;
-    }
+    justify-content: center;
     &-updates {
       margin-#{$end-direction}: 25px;
       &-icon {
@@ -97,12 +94,15 @@
     }
   }
   &__menu-icon {
-    margin-#{$start-direction}: 40px;
+    margin-#{$start-direction}: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     z-index: 70;
+    @include xSmallUp {
+      margin-#{$start-direction}: 40px;
+    }
     i {
       font-size: 18px;
     }
