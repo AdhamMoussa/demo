@@ -14372,6 +14372,9 @@ body {
     .company-info__form form input::placeholder {
       color: #7a858d;
       font-size: 14px; }
+  .new-tender__form form .invalid-input,
+  .company-info__form form .invalid-input {
+    border-bottom-color: #9e3852 !important; }
   .new-tender__form form label,
   .company-info__form form label {
     color: #7a858d;
@@ -14387,6 +14390,17 @@ body {
     .new-tender__form form select:focus,
     .company-info__form form select:focus {
       outline: none; }
+  .new-tender__form form span.invalid-input-msg,
+  .company-info__form form span.invalid-input-msg {
+    color: #9e3852;
+    font-size: 12px;
+    visibility: hidden; }
+    .new-tender__form form span.invalid-input-msg--visible,
+    .company-info__form form span.invalid-input-msg--visible {
+      visibility: visible; }
+  .new-tender__form form .row,
+  .company-info__form form .row {
+    align-items: flex-start; }
   .new-tender__form form .row .col-lg,
   .company-info__form form .row .col-lg {
     margin-bottom: 40px; }
@@ -14459,7 +14473,8 @@ body {
         right: 20px; } }
   .new-tender__form form .companies,
   .company-info__form form .companies {
-    display: flex; }
+    display: flex;
+    align-items: stretch; }
     .new-tender__form form .companies__item,
     .company-info__form form .companies__item {
       margin-bottom: 30px; }
@@ -14608,7 +14623,7 @@ body {
   .company-info__form-section {
     padding: 0 25px; }
   .company-info__form-subtitle {
-    margin-bottom: 40px; }
+    margin-bottom: 25px; }
     .company-info__form-subtitle h3 {
       font-size: 16px;
       font-weight: 500;
@@ -14637,8 +14652,9 @@ body {
       margin-left: 15px; } }
   .company-info hr {
     margin-bottom: 70px; }
-  .company-info__form-checkbox-q p {
-    color: #7a858d; }
+  .company-info__form-checkbox-q > p {
+    color: #7a858d;
+    margin: 0; }
   .company-info__form-checkbox-q .company-info__form-checkbox:first-child {
     margin-right: 30px; }
   .company-info .file-input {
@@ -14647,7 +14663,11 @@ body {
       left: 0 !important;
       width: 100% !important; }
   .company-info .save {
-    padding: 0 25px; }
+    padding: 0 25px;
+    margin-top: 40px; }
+    @media only screen and (min-width: 992px) {
+      .company-info .save {
+        margin: 0; } }
     .company-info .save button {
       width: 100%; }
       @media only screen and (min-width: 576px) {

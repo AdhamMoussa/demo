@@ -224,54 +224,71 @@
                 <h2 class="title">Add New Tender</h2>
                 <p class="subtitle">Fill up the form below for the new tender.</p>
                 <div class="new-tender__form">
-                  <form>
+                  <form id="new-tender-form" novalidate>
                     <div class="row no-gutters">
                       <div class="col-lg">
-                        <input type="text" class="input" placeholder="Details *" required>
+                        <input type="text" class="input" placeholder="Details *" name="details" required>
+                        <span class="invalid-input-msg">Please insert valid details!!</span>
                       </div>
-                      <div class="col-lg file-input">
-                        <span id="file-input-placeholder">PDF *</span>
-                        <input type="file" id="pdf-input" data-placeholder="PDF *" required>
-                        <label for="pdf-input">Browse</label>
-                      </div>
-                    </div>
-                    <div class="row no-gutters">
-                      <div class="col-lg date-input">
-                        <input placeholder="Date of Interest *" class="input" type="text" id="interest-date" required>
-                        <label for="interest-date">
-                          <i class="fa fa-calendar" aria-hidden="true"></i>
-                        </label>
-                      </div>
-                      <div class="col-lg date-input">
-                        <input placeholder="Querry Submission Date *" class="input" type="text" id="querry-date"
-                          required>
-                        <label for="querry-date">
-                          <i class="fa fa-calendar" aria-hidden="true"></i>
-                        </label>
-                      </div>
-                      <div class="col-lg date-input">
-                        <input placeholder="Final Submission Date *" class="input" type="text" id="final-date" required>
-                        <label for="final-date">
-                          <i class="fa fa-calendar" aria-hidden="true"></i>
-                        </label>
+                      <div class="col-lg">
+                        <div class="file-input">
+                          <span id="file-input-placeholder">PDF *</span>
+                          <input type="file" id="pdf-input" data-placeholder="PDF *" name="pdf" required>
+                          <label for="pdf-input">Browse</label>
+                        </div>
+                        <span class="invalid-input-msg" id="file-input-invalid">Please insert PDF file!!</span>
                       </div>
                     </div>
                     <div class="row no-gutters">
                       <div class="col-lg">
-                        <select>
-                          <option disabled selected>Category *</option>
-                          <option value="1">category 1</option>
-                          <option value="2">category 2</option>
-                          <option value="3">category 3</option>
-                        </select>
+                        <div class="date-input">
+                          <input placeholder="Date of Interest *" class="input" type="text" id="interest-date" name="dateOfInterest"
+                            required>
+                          <label for="interest-date">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                          </label>
+                        </div>
+                        <span class="invalid-input-msg" id="interest-date-invalid">Please insert Date of Interest!!</span>
                       </div>
                       <div class="col-lg">
-                        <select>
-                          <option disabled selected>Classification *</option>
-                          <option value="1">classification 1</option>
-                          <option value="2">classification 2</option>
-                          <option value="3">classification 3</option>
+                        <div class="date-input">
+                          <input placeholder="Querry Submission Date *" class="input" type="text" id="querry-date" name="querryDate"
+                            required>
+                          <label for="querry-date">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                          </label>
+                        </div>
+                        <span class="invalid-input-msg" id="querry-date-invalid">Please insert Querry Submission Date!!</span>
+                      </div>
+                      <div class="col-lg">
+                        <div class="date-input">
+                          <input placeholder="Final Submission Date *" class="input" type="text" id="final-date" name="finalDate"
+                            required>
+                          <label for="final-date">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                          </label>
+                        </div>
+                        <span class="invalid-input-msg" id="final-date-invalid">Please insert Final Submission Date!!</span>
+                      </div>
+                    </div>
+                    <div class="row no-gutters">
+                      <div class="col-lg">
+                        <select name="category">
+                          <option value="-1" disabled selected>Category *</option>
+                          <option value="category1">category 1</option>
+                          <option value="category2">category 2</option>
+                          <option value="category3">category 3</option>
                         </select>
+                        <span class="invalid-input-msg" id="category-invalid">Please choose a Category!!</span>
+                      </div>
+                      <div class="col-lg">
+                        <select name="classification">
+                          <option value="-1" disabled selected>Classification *</option>
+                          <option value="classification1">classification 1</option>
+                          <option value="classification2">classification 2</option>
+                          <option value="classification3">classification 3</option>
+                        </select>
+                        <span class="invalid-input-msg" id="classification-invalid">Please choose a Classification!!</span>
                       </div>
                     </div>
                     <!-- send or search -->
@@ -283,9 +300,10 @@
                           aria-hidden="true"></i></a>
                     </div>
                     <!-- /send or search -->
+                    <span class="invalid-input-msg mb-4 d-block" id="companies-checkbox-invalid">Please select at least one Company!!</span>
                     <div class="row companies">
                       <div class="col-sm-6 col-lg-3 companies__item">
-                        <input type="checkbox" id="company1">
+                        <input type="checkbox" id="company1" class="company-checkbox">
                         <label for="company1">
                           <!-- Card -->
                           <div class="card">
@@ -314,7 +332,7 @@
                         </label>
                       </div>
                       <div class="col-sm-6 col-lg-3 companies__item">
-                        <input type="checkbox" id="company2">
+                        <input type="checkbox" id="company2" class="company-checkbox">
                         <label for="company2">
                           <!-- Card -->
                           <div class="card">
@@ -343,7 +361,7 @@
                         </label>
                       </div>
                       <div class="col-sm-6 col-lg-3 companies__item">
-                        <input type="checkbox" id="company3">
+                        <input type="checkbox" id="company3" class="company-checkbox">
                         <label for="company3">
                           <!-- Card -->
                           <div class="card">
@@ -372,7 +390,7 @@
                         </label>
                       </div>
                       <div class="col-sm-6 col-lg-3 companies__item">
-                        <input type="checkbox" id="company4">
+                        <input type="checkbox" id="company4" class="company-checkbox">
                         <label for="company4">
                           <!-- Card -->
                           <div class="card">
@@ -431,9 +449,24 @@
   <script type="text/javascript" src="assets/scripts/mdb.min.js"></script>
   <script src="https://unpkg.com/js-datepicker"></script>
   <script>
-    const picker = datepicker("#interest-date");
-    const picker2 = datepicker("#querry-date");
-    const picker3 = datepicker("#final-date");
+    const picker = datepicker("#interest-date", {
+      onSelect: function () {
+        $("#interest-date").removeClass("invalid-input");
+        $("#interest-date-invalid").removeClass("invalid-input-msg--visible");
+      }
+    });
+    const picker2 = datepicker("#querry-date", {
+      onSelect: function () {
+        $("#querry-date").removeClass("invalid-input");
+        $("#querry-date-invalid").removeClass("invalid-input-msg--visible");
+      }
+    });
+    const picker3 = datepicker("#final-date", {
+      onSelect: function () {
+        $("#final-date").removeClass("invalid-input");
+        $("#final-date-invalid").removeClass("invalid-input-msg--visible");
+      }
+    });
   </script>
   <!-- build:js assets/scripts/App.js -->
   <script src="temp/scripts/app.js"></script>

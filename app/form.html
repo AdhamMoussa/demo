@@ -225,104 +225,119 @@
                   <p class="subtitle">Fill up the form for company info.</p>
                 </div>
                 <div class="company-info__form">
-                  <form>
+                  <form id="company-info-form" novalidate>
                     <!-- form section -->
                     <div class="company-info__form-section">
                       <div class="row no-gutters">
                         <div class="col-lg">
                           <input type="text" class="input" placeholder="Legal Name of Company (a)" required>
+                          <span class="invalid-input-msg">This field is required!!</span>
                         </div>
                         <div class="col-lg">
                           <input type="text" class="input" placeholder="Common Trading Name of Company  (If different from a)"
                             required>
+                          <span class="invalid-input-msg">This field is required!!</span>
                         </div>
                       </div>
                       <div class="row no-gutters">
                         <div class="col-lg">
                           <input type="text" class="input" placeholder="Registered Address" required>
+                          <span class="invalid-input-msg">This field is required!!</span>
                         </div>
                         <div class="col-lg">
                           <input type="text" class="input" placeholder="Physical Address" required>
+                          <span class="invalid-input-msg">This field is required!!</span>
                         </div>
                       </div>
                       <div class="row no-gutters">
                         <div class="col-lg row no-gutters sub-row m-0">
-                          <input type="number" class="col-lg input" placeholder="Telephone" required>
-                          <input type="number" class="col-lg input" placeholder="Fax" required>
+                          <div class="col-lg">
+                            <input type="number" class="input" placeholder="Telephone" required>
+                            <span class="invalid-input-msg">This field is required!!</span>
+                          </div>
+                          <div class="col-lg">
+                            <input type="number" class="input" placeholder="Fax" required>
+                            <span class="invalid-input-msg">This field is required!!</span>
+                          </div>
                         </div>
                         <div class="col-lg">
                           <input type="number" class="input" placeholder="Number of years in operation under the present business"
                             required>
+                          <span class="invalid-input-msg">This field is required!!</span>
                         </div>
                       </div>
                       <div class="row no-gutters">
                         <div class="col-lg">
                           <input type="text" class="input" placeholder="Any other name, with company doing business past 5 years"
                             required>
+                          <span class="invalid-input-msg">This field is required!!</span>
                         </div>
                         <div class="col-lg">
                           <input type="text" class="input" placeholder="Place of registration (i.e,  Dubai, Other Emirates of UAE)"
                             required>
+                          <span class="invalid-input-msg">This field is required!!</span>
                         </div>
                       </div>
-                      <div class="row no-gutters">
-                        <select class="col-lg">
-                          <option disabled selected>Classification</option>
-                          <option value="1">classification 1</option>
-                          <option value="2">classification 2</option>
-                          <option value="3">classification 3</option>
+                      <div class="mb-4">
+                        <select name="classification">
+                          <option value="-1" disabled selected>Classification</option>
+                          <option value="classification1">classification 1</option>
+                          <option value="classification2">classification 2</option>
+                          <option value="classification3">classification 3</option>
                         </select>
+                        <span class="invalid-input-msg">This field is required!!</span>
                       </div>
                       <div class="company-info__form-subtitle">
                         <h3>Category</h3>
+                        <span class="invalid-input-msg" id="category-invalid-msg">Please select at least One Category!!</span>
                       </div>
                       <div class="row no-gutters">
                         <div class="col-lg-6 company-info__form-checkbox">
-                          <input type="checkbox" id="category1">
+                          <input type="checkbox" id="category1" class="category-input">
                           <label for="category1">Main Works General Civil Works</label>
                         </div>
                         <div class="col-lg-6 company-info__form-checkbox">
-                          <input type="checkbox" id="category2">
+                          <input type="checkbox" id="category2" class="category-input">
                           <label for="category2">Enabling Works (Exacvation, Sharing)</label>
                         </div>
                         <div class="col-lg-6 company-info__form-checkbox">
-                          <input type="checkbox" id="category3">
+                          <input type="checkbox" id="category3" class="category-input">
                           <label for="category3">Infrastructure Works (Roads, Driveways, Utility Services, etc)</label>
                         </div>
                         <div class="col-lg-6 company-info__form-checkbox">
-                          <input type="checkbox" id="category4">
+                          <input type="checkbox" id="category4" class="category-input">
                           <label for="category4">Aluminium and Glazzing</label>
                         </div>
                         <div class="col-lg-6 company-info__form-checkbox">
-                          <input type="checkbox" id="category5">
+                          <input type="checkbox" id="category5" class="category-input">
                           <label for="category5">Internal & External Cladding / Facaed Works</label>
                         </div>
                         <div class="col-lg-6 company-info__form-checkbox">
-                          <input type="checkbox" id="category6">
+                          <input type="checkbox" id="category6" class="category-input">
                           <label for="category6">Metal Works</label>
                         </div>
                         <div class="col-lg-6 company-info__form-checkbox">
-                          <input type="checkbox" id="category7">
+                          <input type="checkbox" id="category7" class="category-input">
                           <label for="category7">Joinery Works</label>
                         </div>
                         <div class="col-lg-6 company-info__form-checkbox">
-                          <input type="checkbox" id="category8">
+                          <input type="checkbox" id="category8" class="category-input">
                           <label for="category8">Building Maintanience unit</label>
                         </div>
                         <div class="col-lg-6 company-info__form-checkbox">
-                          <input type="checkbox" id="category9">
+                          <input type="checkbox" id="category9" class="category-input">
                           <label for="category9">Landscape and iriigation (Hard and Sofft Landscaping)</label>
                         </div>
                         <div class="col-lg-6 company-info__form-checkbox">
-                          <input type="checkbox" id="category10">
+                          <input type="checkbox" id="category10" class="category-input">
                           <label for="category10">Swimming Pool and Water Feature</label>
                         </div>
                         <div class="col-lg-6 company-info__form-checkbox">
-                          <input type="checkbox" id="category11">
+                          <input type="checkbox" id="category11" class="category-input">
                           <label for="category11">Fit-out and/or Refurbishment Work</label>
                         </div>
                         <div class="col-lg-6 company-info__form-checkbox">
-                          <input type="checkbox" id="category12">
+                          <input type="checkbox" id="category12" class="category-input">
                           <label for="category12">Mechanical, Electrical and plumbing</label>
                         </div>
                       </div>
@@ -340,6 +355,7 @@
                           </div>
                           <div class="company-info__form-checkbox-q">
                             <p>Does your company have a fabrication shop?</p>
+                            <span class="invalid-input-msg mb-3 d-block">Answer required!!</span>
                             <div class="d-flex">
                               <div class="company-info__form-checkbox">
                                 <input type="radio" id="yes1" name="q1">
@@ -353,6 +369,7 @@
                           </div>
                           <div class="company-info__form-checkbox-q">
                             <p>Your Company have an Equipment yard?</p>
+                            <span class="invalid-input-msg mb-3 d-block">Answer required!!</span>
                             <div class="d-flex">
                               <div class="company-info__form-checkbox">
                                 <input type="radio" id="yes2" name="q2">
@@ -366,6 +383,7 @@
                           </div>
                           <div class="company-info__form-checkbox-q">
                             <p>Does Your Company have a Design or Engineering Department?</p>
+                            <span class="invalid-input-msg mb-3 d-block">Answer required!!</span>
                             <div class="d-flex">
                               <div class="company-info__form-checkbox">
                                 <input type="radio" id="yes3" name="q3">
@@ -379,6 +397,7 @@
                           </div>
                           <div class="company-info__form-checkbox-q">
                             <p>Does Your Company have Planning Department?</p>
+                            <span class="invalid-input-msg mb-3 d-block">Answer required!!</span>
                             <div class="d-flex">
                               <div class="company-info__form-checkbox">
                                 <input type="radio" id="yes4" name="q4">
@@ -397,6 +416,7 @@
                           </div>
                           <div class="company-info__form-checkbox-q">
                             <p>Is Your Company Certified?</p>
+                            <span class="invalid-input-msg mb-3 d-block">Answer required!!</span>
                             <div class="d-flex">
                               <div class="company-info__form-checkbox">
                                 <input type="radio" id="yes5" name="q5">
@@ -410,6 +430,7 @@
                           </div>
                           <div class="company-info__form-checkbox-q">
                             <p>Does Your Company have QA/QC Department?</p>
+                            <span class="invalid-input-msg mb-3 d-block">Answer required!!</span>
                             <div class="d-flex">
                               <div class="company-info__form-checkbox">
                                 <input type="radio" id="yes6" name="q6">
@@ -423,6 +444,7 @@
                           </div>
                           <div class="company-info__form-checkbox-q">
                             <p>Does Your Company have QA/QC Department?</p>
+                            <span class="invalid-input-msg mb-3 d-block">Answer required!!</span>
                             <div class="d-flex">
                               <div class="company-info__form-checkbox">
                                 <input type="radio" id="yes7" name="q7">
@@ -450,6 +472,7 @@
                           </div>
                           <div class="company-info__form-checkbox-q">
                             <p>Is Your Company Certified?</p>
+                            <span class="invalid-input-msg mb-3 d-block">Answer required!!</span>
                             <div class="d-flex">
                               <div class="company-info__form-checkbox">
                                 <input type="radio" id="yes8" name="q8">
@@ -463,6 +486,7 @@
                           </div>
                           <div class="company-info__form-checkbox-q">
                             <p>Does Your Company have QA/QC Department?</p>
+                            <span class="invalid-input-msg mb-3 d-block">Answer required!!</span>
                             <div class="d-flex">
                               <div class="company-info__form-checkbox">
                                 <input type="radio" id="yes9" name="q9">
@@ -476,6 +500,7 @@
                           </div>
                           <div class="company-info__form-checkbox-q">
                             <p>Does Your Company have QA/QC Department?</p>
+                            <span class="invalid-input-msg mb-3 d-block">Answer required!!</span>
                             <div class="d-flex">
                               <div class="company-info__form-checkbox">
                                 <input type="radio" id="yes10" name="q10">
@@ -490,17 +515,24 @@
                         </div>
                         <div class="col-lg-6">
                           <div class="company-info__form-subtitle">
-                            <h3>Quality Assurance / Quality Control</h3>
+                            <h3>Attachments</h3>
                           </div>
-                          <div class="col-lg file-input">
-                            <span id="file-input-placeholder">Logo *</span>
-                            <input type="file" id="logo-input" data-placeholder="Logo *" required>
-                            <label for="logo-input">Browse</label>
+                          <div class="mb-5">
+                            <div class="file-input">
+                              <span id="file-input-placeholder">Logo *</span>
+                              <input type="file" id="logo-input" data-placeholder="Logo *" name="logo" required>
+                              <label for="logo-input">Browse</label>
+                            </div>
+                            <span class="invalid-input-msg" id="invalid-logo-msg">Please insert Logo image!!</span>
                           </div>
-                          <div class="col-lg file-input">
-                            <span id="file-input-placeholder">License *</span>
-                            <input type="file" id="license-input" data-placeholder="License *" required>
-                            <label for="license-input">Browse</label>
+                          <div>
+                            <div class="file-input">
+                              <span id="file-input-placeholder">License *</span>
+                              <input type="file" id="license-input" data-placeholder="License *" name="license"
+                                required>
+                              <label for="license-input">Browse</label>
+                            </div>
+                            <span class="invalid-input-msg" id="invalid-license-msg">Please insert License document!!</span>
                           </div>
                         </div>
                       </div>

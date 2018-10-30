@@ -228,7 +228,7 @@
     margin-bottom: 30px !important;
     &:hover {
       box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
-      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     @include smallUp {
       max-width: 320px;
@@ -370,6 +370,9 @@
           font-size: 14px;
         }
       }
+      .invalid-input {
+        border-bottom-color: #9e3852 !important;
+      }
       label {
         color: $grey2;
         font-size: 25px;
@@ -384,6 +387,17 @@
         &:focus {
           outline: none;
         }
+      }
+      span.invalid-input-msg {
+        color: #9e3852;
+        font-size: 12px;
+        visibility: hidden;
+        &--visible {
+          visibility: visible;
+        }
+      }
+      .row {
+        align-items: flex-start;
       }
       .row .col-lg {
         margin-bottom: 40px;
@@ -460,6 +474,7 @@
       }
       .companies {
         display: flex;
+        align-items: stretch;
         &__item {
           margin-bottom: 30px;
           input {
@@ -613,7 +628,7 @@
     padding: 0 25px;
   }
   &__form-subtitle {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     h3 {
       font-size: 16px;
       font-weight: 500;
@@ -656,8 +671,9 @@
     margin-bottom: 70px;
   }
   &__form-checkbox-q {
-    p {
+    > p {
       color: $grey2;
+      margin: 0;
     }
     .company-info__form-checkbox:first-child {
       margin-#{$end-direction}: 30px;
@@ -672,6 +688,10 @@
   }
   .save {
     padding: 0 25px;
+    margin-top: 40px;
+    @include largeUp {
+      margin: 0;
+    }
     button {
       width: 100%;
       @include smallUp {
