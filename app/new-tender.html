@@ -227,13 +227,16 @@
                   <form id="new-tender-form" novalidate>
                     <div class="row no-gutters">
                       <div class="col-lg">
-                        <input type="text" class="input" placeholder="Details *" name="details" required>
+                        <label for="tender-details" class="input-label">Details *</label>
+                        <input type="text" class="input" placeholder="Enter Details.." name="details" id="tender-details"
+                          required>
                         <span class="invalid-input-msg">Please insert valid details!!</span>
                       </div>
                       <div class="col-lg">
+                        <label for="pdf-input" class="input-label">PDF *</label>
                         <div class="file-input">
-                          <span id="file-input-placeholder">PDF *</span>
-                          <input type="file" id="pdf-input" data-placeholder="PDF *" name="pdf" required>
+                          <span id="file-input-placeholder">Select PDF file</span>
+                          <input type="file" id="pdf-input" data-placeholder="Select PDF file" name="pdf" required>
                           <label for="pdf-input">Browse</label>
                         </div>
                         <span class="invalid-input-msg" id="file-input-invalid">Please insert PDF file!!</span>
@@ -241,8 +244,9 @@
                     </div>
                     <div class="row no-gutters">
                       <div class="col-lg">
+                        <label for="interest-date" class="input-label">Date of Interest *</label>
                         <div class="date-input">
-                          <input placeholder="Date of Interest *" class="input" type="text" id="interest-date" name="dateOfInterest"
+                          <input placeholder="Select Date" class="input" type="text" id="interest-date" name="dateOfInterest"
                             required>
                           <label for="interest-date">
                             <i class="fa fa-calendar" aria-hidden="true"></i>
@@ -251,8 +255,9 @@
                         <span class="invalid-input-msg" id="interest-date-invalid">Please insert Date of Interest!!</span>
                       </div>
                       <div class="col-lg">
+                        <label for="querry-date" class="input-label">Querry Submission Date *</label>
                         <div class="date-input">
-                          <input placeholder="Querry Submission Date *" class="input" type="text" id="querry-date" name="querryDate"
+                          <input placeholder="Select Date" class="input" type="text" id="querry-date" name="querryDate"
                             required>
                           <label for="querry-date">
                             <i class="fa fa-calendar" aria-hidden="true"></i>
@@ -261,8 +266,9 @@
                         <span class="invalid-input-msg" id="querry-date-invalid">Please insert Querry Submission Date!!</span>
                       </div>
                       <div class="col-lg">
+                        <label for="final-date" class="input-label">Final Submission Date *</label>
                         <div class="date-input">
-                          <input placeholder="Final Submission Date *" class="input" type="text" id="final-date" name="finalDate"
+                          <input placeholder="Select Date" class="input" type="text" id="final-date" name="finalDate"
                             required>
                           <label for="final-date">
                             <i class="fa fa-calendar" aria-hidden="true"></i>
@@ -273,21 +279,31 @@
                     </div>
                     <div class="row no-gutters">
                       <div class="col-lg">
-                        <select name="category">
-                          <option value="-1" disabled selected>Category *</option>
-                          <option value="category1">category 1</option>
-                          <option value="category2">category 2</option>
-                          <option value="category3">category 3</option>
-                        </select>
+                        <div class="select-wrapper">
+                          <select name="category" id="category-select">
+                            <option value="-1" disabled selected>Category *</option>
+                            <option value="category1">category 1</option>
+                            <option value="category2">category 2</option>
+                            <option value="category3">category 3</option>
+                          </select>
+                          <label for="category-select" class="select-arrow">
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                          </label>
+                        </div>
                         <span class="invalid-input-msg" id="category-invalid">Please choose a Category!!</span>
                       </div>
                       <div class="col-lg">
-                        <select name="classification">
-                          <option value="-1" disabled selected>Classification *</option>
-                          <option value="classification1">classification 1</option>
-                          <option value="classification2">classification 2</option>
-                          <option value="classification3">classification 3</option>
-                        </select>
+                        <div class="select-wrapper">
+                          <select name="classification" id="classification-select">
+                            <option value="-1" disabled selected>Classification *</option>
+                            <option value="classification1">classification 1</option>
+                            <option value="classification2">classification 2</option>
+                            <option value="classification3">classification 3</option>
+                          </select>
+                          <label for="classification-select" class="select-arrow">
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                          </label>
+                        </div>
                         <span class="invalid-input-msg" id="classification-invalid">Please choose a Classification!!</span>
                       </div>
                     </div>
@@ -300,7 +316,8 @@
                           aria-hidden="true"></i></a>
                     </div>
                     <!-- /send or search -->
-                    <span class="invalid-input-msg mb-4 d-block" id="companies-checkbox-invalid">Please select at least one Company!!</span>
+                    <span class="invalid-input-msg mb-4 d-block" id="companies-checkbox-invalid">Please select at least
+                      one Company!!</span>
                     <div class="row companies">
                       <div class="col-sm-6 col-lg-3 companies__item">
                         <input type="checkbox" id="company1" class="company-checkbox">

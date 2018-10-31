@@ -14009,6 +14009,21 @@ body {
   .input:focus {
     outline: none; }
 
+.invalid-input {
+  border-bottom-color: #9e3852 !important; }
+
+span.invalid-input-msg {
+  color: #9e3852;
+  font-size: 12px;
+  visibility: hidden; }
+  span.invalid-input-msg--visible {
+    visibility: visible; }
+
+.input-label {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #11428c !important; }
+
 .pagination-wrapper {
   margin: 0 auto;
   display: flex;
@@ -14162,7 +14177,7 @@ body {
       display: block;
       width: 100%;
       font-size: 14px;
-      margin-bottom: 60px;
+      margin-bottom: 20px;
       color: #636363; }
       .tender-company__querry form input.input::-webkit-input-placeholder {
         color: #a6b8d2; }
@@ -14189,41 +14204,33 @@ body {
     margin-bottom: 65px;
     font-size: 22px;
     color: #45484b; }
-  .bid-detail__inputs form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center; }
-    .bid-detail__inputs form input {
-      width: 100%;
-      font-size: 14px;
-      color: #636363; }
-      .bid-detail__inputs form input::-webkit-input-placeholder {
-        color: #a6b8d2; }
-      .bid-detail__inputs form input:-ms-input-placeholder {
-        color: #a6b8d2; }
-      .bid-detail__inputs form input::-ms-input-placeholder {
-        color: #a6b8d2; }
-      .bid-detail__inputs form input::placeholder {
-        color: #a6b8d2; }
-      .bid-detail__inputs form input:first-child {
-        margin-bottom: 40px; }
-        @media only screen and (min-width: 576px) {
-          .bid-detail__inputs form input:first-child {
-            margin-bottom: 0; } }
-      @media only screen and (min-width: 576px) {
-        .bid-detail__inputs form input {
-          width: 45%; } }
-    .bid-detail__inputs form button {
-      width: 100%;
-      font-size: 12px;
-      margin-top: 40px;
-      background-color: #6282b3; }
-      @media only screen and (min-width: 576px) {
-        .bid-detail__inputs form button {
-          width: 220px; } }
-      .bid-detail__inputs form button i {
-        margin-left: 8px; }
+  .bid-detail__inputs form input {
+    width: 100%;
+    font-size: 14px;
+    color: #636363; }
+    .bid-detail__inputs form input::-webkit-input-placeholder {
+      color: #a6b8d2; }
+    .bid-detail__inputs form input:-ms-input-placeholder {
+      color: #a6b8d2; }
+    .bid-detail__inputs form input::-ms-input-placeholder {
+      color: #a6b8d2; }
+    .bid-detail__inputs form input::placeholder {
+      color: #a6b8d2; }
+    .bid-detail__inputs form input:first-child {
+      margin-bottom: 40px; }
+      @media only screen and (min-width: 992px) {
+        .bid-detail__inputs form input:first-child {
+          margin-bottom: 0; } }
+  .bid-detail__inputs form button {
+    width: 100%;
+    font-size: 12px;
+    margin-top: 40px;
+    background-color: #6282b3; }
+    @media only screen and (min-width: 576px) {
+      .bid-detail__inputs form button {
+        width: 220px; } }
+    .bid-detail__inputs form button i {
+      margin-left: 8px; }
 
 .bids-cards {
   margin-bottom: 20px; }
@@ -14272,7 +14279,7 @@ body {
   .send-doc form {
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: center;
     justify-content: center;
     margin-bottom: 60px; }
     .send-doc form .send-doc__input {
@@ -14372,32 +14379,41 @@ body {
     .company-info__form form input::placeholder {
       color: #7a858d;
       font-size: 14px; }
-  .new-tender__form form .invalid-input,
-  .company-info__form form .invalid-input {
-    border-bottom-color: #9e3852 !important; }
   .new-tender__form form label,
   .company-info__form form label {
     color: #7a858d;
     font-size: 25px; }
+  .new-tender__form form .select-wrapper,
+  .company-info__form form .select-wrapper {
+    position: relative; }
+    .new-tender__form form .select-wrapper label.select-arrow,
+    .company-info__form form .select-wrapper label.select-arrow {
+      font-size: 14px;
+      color: #7a858d;
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      margin: 0; }
   .new-tender__form form select,
   .company-info__form form select {
+    position: relative;
     border: 0;
     background-color: transparent;
     border-bottom: 1px solid #c9c9c9;
     width: 100%;
     color: #7a858d;
-    font-size: 14px; }
+    font-size: 14px;
+    border-radius: 0;
+    padding: 0;
+    text-indent: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
     .new-tender__form form select:focus,
     .company-info__form form select:focus {
       outline: none; }
-  .new-tender__form form span.invalid-input-msg,
-  .company-info__form form span.invalid-input-msg {
-    color: #9e3852;
-    font-size: 12px;
-    visibility: hidden; }
-    .new-tender__form form span.invalid-input-msg--visible,
-    .company-info__form form span.invalid-input-msg--visible {
-      visibility: visible; }
   .new-tender__form form .row,
   .company-info__form form .row {
     align-items: flex-start; }

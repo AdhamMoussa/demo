@@ -139,7 +139,7 @@
         display: block;
         width: 100%;
         font-size: 14px;
-        margin-bottom: 60px;
+        margin-bottom: 20px;
         color: $grey1;
         &::placeholder {
           color: #a6b8d2;
@@ -170,10 +170,6 @@
   }
   &__inputs {
     form {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
       input {
         width: 100%;
         font-size: 14px;
@@ -183,12 +179,9 @@
         }
         &:first-child {
           margin-bottom: 40px;
-          @include smallUp {
+          @include largeUp {
             margin-bottom: 0;
           }
-        }
-        @include smallUp {
-          width: 45%;
         }
       }
       button {
@@ -264,7 +257,7 @@
   form {
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: center;
     justify-content: center;
     margin-bottom: 60px;
     .send-doc__input {
@@ -370,30 +363,38 @@
           font-size: 14px;
         }
       }
-      .invalid-input {
-        border-bottom-color: #9e3852 !important;
-      }
       label {
         color: $grey2;
         font-size: 25px;
       }
+      .select-wrapper {
+        position: relative;
+        label.select-arrow {
+          font-size: 14px;
+          color: $grey2;
+          position: absolute;
+          top: 50%;
+          right: 5px;
+          transform: translateY(-50%);
+          margin: 0;
+        }
+      }
       select {
+        position: relative;
         border: 0;
         background-color: transparent;
         border-bottom: 1px solid #c9c9c9;
         width: 100%;
         color: $grey2;
         font-size: 14px;
+        border-radius: 0;
+        padding: 0;
+        text-indent: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
         &:focus {
           outline: none;
-        }
-      }
-      span.invalid-input-msg {
-        color: #9e3852;
-        font-size: 12px;
-        visibility: hidden;
-        &--visible {
-          visibility: visible;
         }
       }
       .row {

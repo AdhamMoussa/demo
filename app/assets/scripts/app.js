@@ -261,20 +261,19 @@ $(function() {
       if (companyForm[0].classification.value === "-1") {
         e.preventDefault();
         $(companyForm[0].classification).addClass("invalid-input");
-        $(companyForm[0].classification)
-          .siblings(".invalid-input-msg")
-          .addClass("invalid-input-msg--visible");
+        $("#invalid-classification-msg").addClass("invalid-input-msg--visible");
         $(companyForm[0].classification).change(function() {
           if (companyForm[0].classification.value === "-1") {
             $(companyForm[0].classification).addClass("invalid-input");
-            $(companyForm[0].classification)
-              .siblings(".invalid-input-msg")
-              .addClass("invalid-input-msg--visible");
+            $("#invalid-classification-msg").addClass(
+              "invalid-input-msg--visible"
+            );
           } else {
             $(companyForm[0].classification).removeClass("invalid-input");
-            $(companyForm[0].classification)
-              .siblings(".invalid-input-msg")
-              .removeClass("invalid-input-msg--visible");
+            $(companyForm[0].classification);
+            $("#invalid-classification-msg").removeClass(
+              "invalid-input-msg--visible"
+            );
           }
         });
       }
@@ -368,6 +367,111 @@ $(function() {
           .siblings("#file-input-placeholder")
           .removeClass("invalid-input");
         $("#invalid-license-msg").removeClass("invalid-input-msg--visible");
+      }
+    });
+  }
+  //////////////////
+  // querry form //
+  ////////////////
+  const querryForm = $("#querry-form");
+  if (querryForm.length > 0) {
+    querryForm.submit(function(e) {
+      if (querryForm[0].querry.value === "") {
+        e.preventDefault();
+        $(querryForm[0].querry).addClass("invalid-input");
+        $("#invalid-querry-msg").addClass("invalid-input-msg--visible");
+        $(querryForm[0].querry).keyup(function() {
+          if (querryForm[0].querry.value === "") {
+            $(querryForm[0].querry).addClass("invalid-input");
+            $("#invalid-querry-msg").addClass("invalid-input-msg--visible");
+          } else {
+            $(querryForm[0].querry).removeClass("invalid-input");
+            $("#invalid-querry-msg").removeClass("invalid-input-msg--visible");
+          }
+        });
+      }
+    });
+  }
+  ///////////////
+  // bid form //
+  /////////////
+  const bidForm = $("#bid-form");
+  if (bidForm.length > 0) {
+    bidForm.submit(function(e) {
+      if (bidForm[0].bidDetails.value.length === 0) {
+        e.preventDefault();
+        $(bidForm[0].bidDetails)
+          .addClass("invalid-input")
+          .siblings(".invalid-input-msg")
+          .addClass("invalid-input-msg--visible");
+        $(bidForm[0].bidDetails).keyup(function() {
+          if (bidForm[0].bidDetails.value.length === 0) {
+            $(bidForm[0].bidDetails)
+              .addClass("invalid-input")
+              .siblings(".invalid-input-msg")
+              .addClass("invalid-input-msg--visible");
+          } else {
+            $(bidForm[0].bidDetails)
+              .removeClass("invalid-input")
+              .siblings(".invalid-input-msg")
+              .removeClass("invalid-input-msg--visible");
+          }
+        });
+      } else {
+        $(bidForm[0].bidDetails)
+          .removeClass("invalid-input")
+          .siblings(".invalid-input-msg")
+          .removeClass("invalid-input-msg--visible");
+      }
+      if (bidForm[0].bidAmount.value.length === 0) {
+        e.preventDefault();
+        $(bidForm[0].bidAmount)
+          .addClass("invalid-input")
+          .siblings(".invalid-input-msg")
+          .addClass("invalid-input-msg--visible");
+        $(bidForm[0].bidAmount).keyup(function() {
+          if (bidForm[0].bidAmount.value.length === 0) {
+            $(bidForm[0].bidAmount)
+              .addClass("invalid-input")
+              .siblings(".invalid-input-msg")
+              .addClass("invalid-input-msg--visible");
+          } else {
+            $(bidForm[0].bidAmount)
+              .removeClass("invalid-input")
+              .siblings(".invalid-input-msg")
+              .removeClass("invalid-input-msg--visible");
+          }
+        });
+      } else {
+        $(bidForm[0].bidAmount)
+          .removeClass("invalid-input")
+          .siblings(".invalid-input-msg")
+          .removeClass("invalid-input-msg--visible");
+      }
+    });
+  }
+  ////////////////////
+  // send doc form //
+  //////////////////
+  const sendDocForm = $("#send-doc-form");
+  if(sendDocForm.length > 0) {
+    sendDocForm.submit(function (e) {
+      if (sendDocForm[0].docURL.value.length === 0) {
+        e.preventDefault();
+        $(sendDocForm[0].docURL).addClass("invalid-input").siblings(".invalid-input-msg").addClass("invalid-input-msg--visible");
+        $(sendDocForm[0].docURL).keyup(function() {
+          if (sendDocForm[0].docURL.value.length === 0) {
+            $(sendDocForm[0].docURL)
+              .addClass("invalid-input")
+              .siblings(".invalid-input-msg")
+              .addClass("invalid-input-msg--visible");
+          } else {
+            $(sendDocForm[0].docURL)
+              .removeClass("invalid-input")
+              .siblings(".invalid-input-msg")
+              .removeClass("invalid-input-msg--visible");
+          }
+        });
       }
     });
   }

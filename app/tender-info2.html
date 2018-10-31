@@ -264,8 +264,11 @@
                 <!-- Querry -->
                 <div class="tender-company__querry">
                   <h3 class="tender-company__querry-title">Do you have any querry ?</h3>
-                  <form>
-                    <input type="text" class="input" placeholder="Type you question">
+                  <form id="querry-form" novalidate>
+                    <label for="querry-input" class="input-label">Querry *</label>
+                    <input type="text" class="input" placeholder="Type you question" name="querry" id="querry-input"
+                      required>
+                    <span class="invalid-input-msg mb-4 d-block" id="invalid-querry-msg">The field is required!!</span>
                     <button type="submit" class="btn button button--large">Send Querry<i class="fa fa-angle-double-right"
                         aria-hidden="true"></i></button>
                   </form>
@@ -275,11 +278,23 @@
                 <div class="bid-detail">
                   <h3 class="bid-detail__title">Bid Detail</h3>
                   <div class="bid-detail__inputs">
-                    <form>
-                      <input type="text" class="input" placeholder="Enter Bid details">
-                      <input type="number" class="input" placeholder="Enter Amount in AED">
+                    <form id="bid-form" novalidate>
+                      <div class="row">
+                        <div class="col-lg">
+                          <label for="bid-detail" class="input-label">Bid Details *</label>
+                          <input type="text" class="input mb-2" placeholder="Enter Bid details" name="bidDetails" id="bid-detail"
+                            required>
+                          <span class="invalid-input-msg">The field is required!!</span>
+                        </div>
+                        <div class="col-lg">
+                          <label for="bid-amount" class="input-label">Amount *</label>
+                          <input type="number" class="input mb-2" placeholder="Enter Amount in AED" name="bidAmount" id="bid-amount"
+                            required>
+                          <span class="invalid-input-msg">The field is required!!</span>
+                        </div>
+                      </div>
                       <button type="submit" class="btn button button--large">Bid<i class="fa fa-angle-double-right"
-                        aria-hidden="true"></i></button>
+                          aria-hidden="true"></i></button>
                     </form>
                   </div>
                 </div>
@@ -350,7 +365,7 @@
                     <a class='page-numbers' href='#'>4</a>
                     <a class='page-numbers' href='#'>5</a>
                     <a class="next" href="#">
-                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      <i class="fa fa-chevron-right" aria-hidden="true"></i>
                     </a>
                   </div>
                 </div>

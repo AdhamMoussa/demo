@@ -332,9 +332,11 @@
                 <!-- send doc -->
                 <div class="send-doc">
                   <h3 class="send-doc__title">Send final documentation</h3>
-                  <form>
+                  <form id="send-doc-form" novalidate>
                     <div class="send-doc__input">
-                      <input type="text" class="input" id="send-doc-input" placeholder="Type URL here |">
+                      <label for="send-doc-input" class="input-label">URL *</label>
+                      <input type="text" class="input" id="send-doc-input" name="docURL" placeholder="Type URL here |">
+                      <span class="invalid-input-msg">The field is required!!</span>
                     </div>
                     <button type="submit" class="btn button button--large">Send<i class="fa fa-angle-double-right"
                         aria-hidden="true"></i></button>

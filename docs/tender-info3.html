@@ -8,7 +8,7 @@
   <!-- Styles CSS -->
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/styles/styles-d16c3d1c29.css"/>
+  <link rel="stylesheet" href="assets/styles/styles-4f364cacad.css"/>
 
   <title>Provide It</title>
 </head>
@@ -330,9 +330,11 @@
                 <!-- send doc -->
                 <div class="send-doc">
                   <h3 class="send-doc__title">Send final documentation</h3>
-                  <form>
+                  <form id="send-doc-form" novalidate>
                     <div class="send-doc__input">
-                      <input type="text" class="input" id="send-doc-input" placeholder="Type URL here |">
+                      <label for="send-doc-input" class="input-label">URL *</label>
+                      <input type="text" class="input" id="send-doc-input" name="docURL" placeholder="Type URL here |">
+                      <span class="invalid-input-msg">The field is required!!</span>
                     </div>
                     <button type="submit" class="btn button button--large">Send<i class="fa fa-angle-double-right"
                         aria-hidden="true"></i></button>
@@ -476,7 +478,7 @@
   <script type="text/javascript" src="assets/scripts/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="assets/scripts/mdb.min.js"></script>
-  <script src="assets/scripts/App-b27683909c.js"></script>
+  <script src="assets/scripts/App-20c68f199c.js"></script>
 </body>
 
 </html>
