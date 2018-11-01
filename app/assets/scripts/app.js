@@ -221,6 +221,7 @@ $(function() {
         });
       });
       if (count === 0) {
+        e.preventDefault();
         $("#companies-checkbox-invalid").addClass("invalid-input-msg--visible");
       } else {
         $("#companies-checkbox-invalid").removeClass(
@@ -309,6 +310,7 @@ $(function() {
           });
         });
         if (count === 0) {
+          e.preventDefault();
           $current
             .find("span.invalid-input-msg")
             .addClass("invalid-input-msg--visible");
@@ -320,6 +322,7 @@ $(function() {
       });
       // logo file input
       if (companyForm[0].logo.files.length === 0) {
+        e.preventDefault();
         $(companyForm[0].logo)
           .siblings("#file-input-placeholder")
           .addClass("invalid-input");
@@ -345,6 +348,7 @@ $(function() {
       }
       // license file
       if (companyForm[0].license.files.length === 0) {
+        e.preventDefault();
         $(companyForm[0].license)
           .siblings("#file-input-placeholder")
           .addClass("invalid-input");
